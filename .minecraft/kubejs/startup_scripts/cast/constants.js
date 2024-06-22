@@ -2,6 +2,7 @@
 
 global.casts = [
     {
+        type: "ingot_cast",
         id: "ceramic",
         displayName: "Ceramic",
         texture: "minecraft:block/terracotta",
@@ -23,6 +24,9 @@ global.moltenMetals = [
                 count: 9
             }
         ],
+        results: {
+            ingot_cast: "minecraft:gold_ingot"
+        },
         insideCastName: "gold",
         displayName: "Molten Gold",
         cooledDisplayName: "Gold",

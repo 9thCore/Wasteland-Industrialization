@@ -14,20 +14,20 @@ const registerIngotCast = function(event, material) {
         if (metal.temp <= material.maxTemp) {
             registerFilledIngotCast(
                 event,
-                `kubejs:${metal.id}_${material.id}_ingot_cast`,
+                `kubejs:${metal.id}_${material.id}_${material.type}`,
                 `${material.displayName} Ingot Cast (${metal.displayName})`,
                 material.texture,
                 metal.fluidTexture
             ).randomTick(e => {
                 const level = e.getLevel();
                 const pos = e.block.getPos();
-                level.setBlockAndUpdate(pos, Block.id(`kubejs:${metal.coolId}_${material.id}_ingot_cast`).getBlockState());
-                level.runCommandSilent(`playsound minecraft:block.lava.extinguish block ${pos.x} ${pos.y} ${pos.z} @a 0.5 1.0`);
+                level.setBlockAndUpdate(pos, Block.id(`kubejs:${metal.coolId}_${material.id}_${material.type}`).getBlockState());
+                level.runCommandSilent(`playsound minecraft:block.lava.extinguish block @a ${pos.x} ${pos.y} ${pos.z} 0.5 1.0`);
             });
 
             registerCooledIngotCast(
                 event,
-                `kubejs:${metal.coolId}_${material.id}_ingot_cast`,
+                `kubejs:${metal.coolId}_${material.id}_${material.type}`,
                 `${material.displayName} Ingot Cast (${metal.cooledDisplayName})`,
                 material.texture,
                 metal.cooledTexture
@@ -52,6 +52,6 @@ StartupEvents.registry("block", event => {
 StartupEvents.registry("item", event => {
     registerBaseIngotCast(event, `kubejs:clay_ingot_cast`, "minecraft:block/clay");
     global.casts.forEach(cast => {
-        registerBaseIngotCast(event, `kubejs:${cast.id}_ingot_cast`, cast.texture);
+        registerBaseIngotCast(event, `kubejs:${cast.id}_${cast.type}`, cast.texture);
     })
 });
