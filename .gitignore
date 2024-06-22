@@ -10,3 +10,4 @@
 .minecraft/screenshots/*
 instance.cfg
 .minecraft/*.*
+.minecraft/config/jei/*
