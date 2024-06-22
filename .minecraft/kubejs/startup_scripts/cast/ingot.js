@@ -50,6 +50,22 @@ const stripModPrefix = (s) => {
   }
   
   /**
+   * @param {Registry.Item} e
+   * @param {string} id
+   * @param {string} displayName
+   * @param {object} modelJson
+   * @returns {Internal.BasicItemJS$Builder}
+   */
+  const registerItemCast = (e, id, displayName, modelJson) => {
+    const item = e
+      .create(id)
+      .displayName(displayName)
+      .modelJson(modelJson)
+      .maxStackSize(8)
+    return item
+  }
+  
+  /**
    * @param {Registry.Block} e
    * @param {string} id
    * @param {string} baseTexture
@@ -61,7 +77,7 @@ const stripModPrefix = (s) => {
         base: baseTexture,
       },
     }
-    return registerCast(e, id, getDisplayName(id), modelJson)
+    return registerItemCast(e, id, getDisplayName(id), modelJson)
   }
   
   /**
