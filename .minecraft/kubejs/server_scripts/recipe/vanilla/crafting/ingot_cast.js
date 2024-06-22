@@ -11,7 +11,9 @@ ServerEvents.recipes(event => {
                                     `kubejs:${cast.id}_ingot_cast`,
                                     `${i}x ${item.id}`
                                 ]
-                            ).modifyResult((grid, result) => {
+                            )
+                            .id(`kubejs:fill_cast_${cast.id}_${metal.id}_${item.count}${i}`)
+                            .modifyResult((grid, result) => {
                                 let nbt = grid.find(`kubejs:${cast.id}_ingot_cast`).getNbt();
                                 nbt = nbt ? nbt : global.getCastNBT();
                                 nbt.nugget_count += index * item.count;
