@@ -1,8 +1,8 @@
 7 possible world presets found:
-- "minecraft:amplified"
 - "minecraft:debug_all_block_states"
-- "kubejs:wasteland"
-- "minecraft:large_biomes"
-- "minecraft:single_biome_surface"
 - "minecraft:normal"
+- "minecraft:large_biomes"
+- "minecraft:amplified"
+- "minecraft:single_biome_surface"
+- "kubejs:wasteland"
 - "minecraft:flat"
