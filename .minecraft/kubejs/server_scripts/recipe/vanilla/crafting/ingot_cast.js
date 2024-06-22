@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
         global.moltenMetals.forEach(metal => {
             if (metal.temp <= cast.maxTemp) {
                 metal.items.forEach(item => {
-                    for (let i = 0; i <= 9 - item.count; i++) {
+                    for (let i = 1; i <= Math.min(8, 10 - item.count); i++) {
                         (function(index) {
                             event.shapeless(
                                 `kubejs:${cast.id}_ingot_cast`,
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
                             ).modifyResult((grid, result) => {
                                 let nbt = grid.find(`kubejs:${cast.id}_ingot_cast`).getNbt();
                                 nbt = nbt ? nbt : global.getCastNBT();
-                                nbt.nugget_count += index;
+                                nbt.nugget_count += index * item.count;
                                 if (nbt.nugget_count > 9) {
                                     return Item.of("minecraft:air");
                                 };
