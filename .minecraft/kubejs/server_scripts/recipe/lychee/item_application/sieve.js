@@ -1,3 +1,4 @@
+import { RecipePost } from "../post";
 import { ItemApplicationRecipe } from "./recipe_type"
 
 ServerEvents.recipes(event => {
