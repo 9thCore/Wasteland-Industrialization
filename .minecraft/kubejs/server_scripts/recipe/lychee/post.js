@@ -65,6 +65,23 @@ RecipePost.runCommand = function(command, hide, repeat) {
 
 /**
  * 
+ * @param {String} sound 
+ * @param {String} type 
+ * @param {Number} volume 
+ * @param {Number} pitch 
+ * @param {Boolean} hide 
+ * @param {Boolean} repeat
+ * @returns {Object}
+ */
+RecipePost.playSound = function(sound, type, volume, pitch, hide, repeat) {
+    type = type ? type : "player";
+    volume = volume ? volume : 1.0;
+    pitch = pitch ? pitch : 1.0;
+    return RecipePost.runCommand(`run playsound ${sound} ${type} @a ~ ~ ~ ${volume} ${pitch}`)
+}
+
+/**
+ * 
  * @param {Number} rollMin 
  * @param {Number} rollMax 
  * @param {Object|Object[]} entries 
