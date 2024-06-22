@@ -1,0 +1,390 @@
+{
+	autofocus_id: "439FE08975BE7FDC"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_i"
+	group: "0C436F923DB943E2"
+	icon: "kubejs:pebble"
+	id: "5D5101443D84E9E9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["439FE08975BE7FDC"]
+			description: ["Sticks are usually a vital part of making any sort of tool, so I'm pretty glad to see deadbushes around. First time I find a use for them, actually."]
+			id: "0BFB891A995961E1"
+			tasks: [{
+				id: "3907F585C58F6AA1"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["439FE08975BE7FDC"]
+			description: ["Fortunately, I don't only "]
+			id: "3860BE0D7E657282"
+			tasks: [{
+				id: "20425A3F1F53E2E9"
+				item: "kubejs:pebble"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"huh? hm.. ah ?? what"
+				""
+				"Where is this? What happened? Why am I here?"
+				""
+				"Uhhh... So last thing I remember is... ah! Right, I was on my ship, travelling to some faraway planet."
+				""
+				"So is... this it? I don't remember it looking like this... And for that matter, where &ois&r my ship? No way it just vanished..."
+				""
+				"At least I've still got my trusty journal with me."
+				""
+				"Well, whatever it is, I'm going to starve out here if I don't do something about my situation. Survival first, yeah?"
+			]
+			id: "439FE08975BE7FDC"
+			size: 1.5d
+			tasks: [{
+				id: "5F5D36324FEBD1B0"
+				title: "huh ?"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3860BE0D7E657282"]
+			description: [
+				"With two of these pebbles, some force and hope, I can chisel one down into this form, albeit it's not quite so useful yet."
+				""
+				"However, this method is really wasteful, as most of the rocks break before they are chiseled..."
+			]
+			id: "4A4DC3FA5748C40C"
+			tasks: [{
+				id: "559405F981A36BBD"
+				item: "kubejs:pebble_chiseled"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A4DC3FA5748C40C"]
+			description: ["I've chiseled the pebble down once more and it looks sharp enough to be usable! Now what to do next..."]
+			id: "2EFB56EEB2411F18"
+			tasks: [{
+				id: "45DF26ED2AB03A5E"
+				item: "kubejs:pebble_sharp"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4A4DC3FA5748C40C"]
+			description: ["Lucky find! Some of these pebbles contain some chunks of what appears to be coal. Hopefully these bits still burn as well as the bigger counterpart."]
+			id: "02AF446E71CC020D"
+			tasks: [{
+				id: "6C273B50717F5853"
+				item: "kubejs:coal_bit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2EFB56EEB2411F18"]
+			description: ["The sharp variant of the pebble can be used to chisel down rocks with better efficiency! Still not entirely lossless, though."]
+			id: "316544566416C8B7"
+			tasks: [{
+				id: "10A78A2119FDF256"
+				title: "Sharper's Better"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2EFB56EEB2411F18"]
+			description: [
+				"Success! These deadbushes turned out to be way more useful than I originally ranked them to. They contain a fair amount of fiber."
+				""
+				"A bunch of these should be good enough to make some string for some primitive uses."
+			]
+			id: "1DAA7EF705EFD558"
+			tasks: [
+				{
+					id: "46DEDB93B76F4AB4"
+					title: "Dry Fiber"
+					type: "checkmark"
+				}
+				{
+					id: "55CCA4C69112CE9D"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"1DAA7EF705EFD558"
+				"2EFB56EEB2411F18"
+				"0BFB891A995961E1"
+			]
+			description: [
+				"A stick here, a rock there, and a string to pull them together, and it works! ...Barely."
+				""
+				"This looks like it could break down at any second. I should focus on upgrading my equipment as soon as possible."
+			]
+			id: "41A8CF79FC81C217"
+			tasks: [{
+				id: "22ABCB6109FBEBD2"
+				title: "Makeshift Pickaxe"
+				type: "checkmark"
+			}]
+			title: "Flimsy Pickaxe"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41A8CF79FC81C217"]
+			description: [
+				"Despite seeming rather unreliable, this pickaxe can hold its own and has the ability to dig through this dry ground."
+				""
+				"I can't really do much with it in its current state, maybe I can hydrate it a bit?"
+			]
+			id: "721AE960C5034BD0"
+			tasks: [{
+				id: "0DDD0E8E5C6FA8CA"
+				item: "kubejs:dry_dirt"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["721AE960C5034BD0"]
+			description: ["Throwing the dry variant into water seems to be just enough, I've managed to rehydrate one piece! I wonder just what could be hiding inside..."]
+			id: "3BB3B482AB47EF91"
+			tasks: [{
+				id: "2FF62D1247FF16D7"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A4DC3FA5748C40C"]
+			description: ["The all-too-useful iron has made an appearance. Hopefully it seems like it will long until I can make it useful, I can't wait to use them for my tools!"]
+			id: "4296B7F3F0C4A50A"
+			tasks: [{
+				id: "1C2D3504BFA80E87"
+				item: "kubejs:iron_bit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4A4DC3FA5748C40C"]
+			description: ["There's some copper in here, too! Although I can't do much with it, in its current state."]
+			id: "17D1F46AFEE18FEB"
+			tasks: [{
+				id: "2897A3C138076250"
+				item: "kubejs:copper_bit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0BFB891A995961E1"]
+			id: "3B9A211380B0BF1C"
+			tasks: [{
+				id: "1C89416DD82C3934"
+				item: "kubejs:empty_sieve"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1DAA7EF705EFD558"
+				"3B9A211380B0BF1C"
+			]
+			id: "690A84894AADA6DE"
+			tasks: [{
+				id: "51C05FAE64F1ABEC"
+				item: {
+					Count: 1
+					id: "kubejs:string_sieve"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"690A84894AADA6DE"
+				"3BB3B482AB47EF91"
+			]
+			description: ["Shiny! ...well, not so much, as it stands. But it very much looks like a piece of gold. Doesn't look like it will take too much effort to wash it."]
+			id: "6824017BD33EF972"
+			tasks: [{
+				id: "429BD9CE7245C1CA"
+				title: "Dirty Gold"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"690A84894AADA6DE"
+				"3BB3B482AB47EF91"
+			]
+			id: "732A38F7E7B25502"
+			tasks: [{
+				id: "5C5E738A773A09B7"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0BFB891A995961E1"
+				"3860BE0D7E657282"
+			]
+			id: "4F97ED1810E6220B"
+			tasks: [{
+				id: "049503944619C363"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4F97ED1810E6220B"
+				"732A38F7E7B25502"
+			]
+			id: "71B44445EE1167F0"
+			tasks: [{
+				id: "1C6B1C2780D2E95B"
+				item: "kubejs:ceramic_ingot_cast"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6824017BD33EF972"]
+			description: ["A small amount of gold, obtained from the ground I'm standing on. I don't have access to a way to make it useful right now, so what can I do with it..?"]
+			id: "6D7B880AADB8B30C"
+			tasks: [{
+				id: "29359E3A79EAF9DB"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"71B44445EE1167F0"
+				"6D7B880AADB8B30C"
+			]
+			id: "791DA3CE48A1E920"
+			tasks: [{
+				id: "7ECB56B266EEB204"
+				item: {
+					Count: 1
+					id: "kubejs:ceramic_ingot_cast"
+					tag: {
+						metal_inside: "gold"
+						nugget_count: 9
+					}
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4F97ED1810E6220B"
+				"791DA3CE48A1E920"
+			]
+			id: "7DAB4069E683EFBF"
+			tasks: [{
+				id: "041BFDBE4F4D767B"
+				item: "kubejs:molten_gold_ceramic_ingot_cast"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["611ADE42F9111279"]
+			description: [
+				"Look at this shiny piece of metal... I would not have expected I could have reached gold tools before the iron, stone or even wood tier... but here we are!"
+				""
+				"Now what can I do with this, considering my limited amount of tools..."
+			]
+			id: "4BDDE142AB757ABE"
+			tasks: [{
+				id: "5B417F6F303FC61F"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.5d
+		}
+		{
+			description: ["My very first tool! While made of low quality materials and rather prone to breaking, this metal should be strong enough to crack stone at last!"]
+			id: "2F5C29F43AECC3D1"
+			size: 2.0d
+			tasks: [{
+				id: "3177C2AEEE406D0C"
+				item: {
+					Count: 1
+					id: "minecraft:golden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7DAB4069E683EFBF"]
+			id: "611ADE42F9111279"
+			tasks: [{
+				id: "3240CB87B42AF14A"
+				item: "kubejs:cool_molten_gold_ceramic_ingot_cast"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -8.5d
+		}
+	]
+	title: "Chapter I"
+}

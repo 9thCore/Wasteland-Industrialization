@@ -1,0 +1,12 @@
+# Exclude many things
+
+.minecraft/mods/*
+.minecraft/.probe/*
+.minecraft/crash-reports/*
+.minecraft/ESM/*
+.minecraft/local/*
+.minecraft/logs/*
+.minecraft/saves/*
+.minecraft/screenshots/*
+instance.cfg
+.minecraft/*.*

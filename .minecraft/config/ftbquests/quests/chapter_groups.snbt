@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "29425984254FFC34", title: "Starter" }
+		{ id: "0C436F923DB943E2", title: "Production Line" }
+	]
+}

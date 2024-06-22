@@ -1,0 +1,144 @@
+{
+	autofocus_id: "0C834DACB9259664"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "info"
+	group: "29425984254FFC34"
+	id: "7CA776ED0E78B84F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Welcome to the modpack! These initial checkmark quests will give some quick information on the pack."]
+			id: "0C834DACB9259664"
+			tasks: [{
+				id: "4A3EF2F448B77054"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0C834DACB9259664"]
+			description: [
+				"The dimension has a lot of holes, so spawning in a hole (and thus making starting the pack really difficult) is common. This quest is here to mitigate that!"
+				""
+				"Simply claiming this (repeatable) quest will teleport you ~20 blocks above the surface, along with a slow falling effect. Be sure you land on the surface, though, as the effect only lasts for 5 seconds!"
+			]
+			id: "4EB9341BDE5B03E9"
+			rewards: [{
+				icon: {
+					Count: 1
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Flight: 1b
+						}
+					}
+				}
+				id: "1602CE6A83864860"
+				title: "To the skies!"
+				type: "custom"
+			}]
+			tasks: [{
+				id: "4A718BC8A4581FAC"
+				title: "Stuck? No worries!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C834DACB9259664"]
+			description: [
+				"This modpack is very automation-focused, except the beginning phase in which there is little to no way to automate."
+				""
+				"If factory-style modpacks isn't for you, then this may not be the pack to play!"
+			]
+			id: "44B476677ECFDA08"
+			tasks: [{
+				id: "1B8A3F3414C8F609"
+				title: "Not expert"
+				type: "checkmark"
+			}]
+			title: "The factory must grow"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C834DACB9259664"]
+			description: ["The big rounded square quests are what allow completion of a chapter and continuing to the next."]
+			id: "509D102082928238"
+			tasks: [{
+				id: "060DADC54E8FEA86"
+				title: "useless information"
+				type: "checkmark"
+			}]
+			title: "Required quests"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C834DACB9259664"]
+			description: ["No mobs will naturally spawn (except for Phantoms), so venturing into caves is safe."]
+			id: "413ABC71EEDA16A2"
+			tasks: [{
+				id: "74C733F6950B23D6"
+				title: "No mobs except Phantoms"
+				type: "checkmark"
+			}]
+			title: "No pesky mobs! (except Phantoms)"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0C834DACB9259664"]
+			description: ["In case of great emergencies, a new quest book can be claimed from here."]
+			id: "576160F800AF8836"
+			rewards: [{
+				id: "2DDCC401BF887BBA"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4EA04C44DCBB42ED"
+				title: "Emergency Quest Book"
+				type: "checkmark"
+			}]
+			title: "Lost your book?"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C834DACB9259664"]
+			description: ["Ultimine is installed, by default bound to ` (GRAVE key). Also works for harvesting crops through right-click!"]
+			id: "428856A106441A69"
+			tasks: [{
+				id: "12BA93E094C506F0"
+				title: "Ultimine present"
+				type: "checkmark"
+			}]
+			title: "Ultimine is present"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C834DACB9259664"]
+			description: ["The mod 'Extreme sound muffler' is installed, meaning if you don't like a particular sound (like the rain ambient noise) you can turn its volume down, or turn it off entirely! Only affects your client."]
+			id: "327F0C3A715DC105"
+			tasks: [{
+				id: "0F3B2642B05D2AFE"
+				title: "Extreme muffler"
+				type: "checkmark"
+			}]
+			title: "Sound muffler"
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "Information"
+}

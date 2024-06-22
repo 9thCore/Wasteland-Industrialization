@@ -1,0 +1,68 @@
+{
+	"temperature": 0.8,
+	"downfall": 0.4,
+	"has_precipitation": true,
+	"effects": {
+		"sky_color": 6588415,
+		"fog_color": 6588415,
+		"water_color": 664118,
+		"water_fog_color": 329011
+	},
+	"spawners": {},
+	"spawn_costs": {},
+	"carvers": {
+		"air": [
+			"minecraft:cave",
+			"minecraft:cave_extra_underground",
+			"minecraft:canyon"
+		]
+	},
+	"features": [
+		[],
+		[
+			"kubejs:lake_water_surface"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[],
+		[],
+		[],
+		[
+			"minecraft:ore_granite_upper",
+			"minecraft:ore_granite_lower",
+			"minecraft:ore_diorite_upper",
+			"minecraft:ore_diorite_lower",
+			"minecraft:ore_andesite_upper",
+			"minecraft:ore_andesite_lower",
+			"minecraft:ore_tuff",
+			"minecraft:ore_coal_upper",
+			"minecraft:ore_coal_lower",
+			"minecraft:ore_iron_upper",
+			"minecraft:ore_iron_middle",
+			"minecraft:ore_iron_small",
+			"kubejs:ore_gold",
+			"kubejs:ore_gold_lower",
+			"kubejs:ore_redstone",
+			"kubejs:ore_redstone_lower",
+			"kubejs:ore_diamond",
+			"kubejs:ore_diamond_large",
+			"kubejs:ore_diamond_buried",
+			"kubejs:ore_emerald",
+			"minecraft:ore_lapis",
+			"minecraft:ore_lapis_buried",
+			"minecraft:ore_copper"
+		],
+		[],
+		[
+			"minecraft:spring_water"
+		],
+		[
+			"minecraft:patch_dead_bush",
+			"kubejs:patch_pebble"
+		],
+		[
+			"minecraft:freeze_top_layer"
+		]
+	]
+}
