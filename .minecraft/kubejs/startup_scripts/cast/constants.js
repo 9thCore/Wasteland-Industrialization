@@ -12,6 +12,7 @@ global.casts = [
 global.moltenMetals = [
     {
         id: "molten_gold",
+        coolId: "gold",
         items: [
             {
                 id: "minecraft:gold_nugget",

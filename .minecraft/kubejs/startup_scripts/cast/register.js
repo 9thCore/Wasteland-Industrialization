@@ -18,11 +18,16 @@ const registerIngotCast = function(event, material) {
                 `${material.displayName} Ingot Cast (${metal.displayName})`,
                 material.texture,
                 metal.fluidTexture
-            );
+            ).randomTick(e => {
+                const level = e.getLevel();
+                const pos = e.block.getPos();
+                level.setBlockAndUpdate(pos, Block.id(`kubejs:${metal.coolId}_${material.id}_ingot_cast`).getBlockState());
+                level.runCommandSilent(`playsound minecraft:block.lava.extinguish block ${pos.x} ${pos.y} ${pos.z} @a 0.5 1.0`);
+            });
 
             registerCooledIngotCast(
                 event,
-                `kubejs:cool_${metal.id}_${material.id}_ingot_cast`,
+                `kubejs:${metal.coolId}_${material.id}_ingot_cast`,
                 `${material.displayName} Ingot Cast (${metal.cooledDisplayName})`,
                 material.texture,
                 metal.cooledTexture
