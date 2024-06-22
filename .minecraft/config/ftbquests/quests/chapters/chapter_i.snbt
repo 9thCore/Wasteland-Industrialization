@@ -23,7 +23,7 @@
 		}
 		{
 			dependencies: ["439FE08975BE7FDC"]
-			description: ["Fortunately, I don't only "]
+			description: ["Fortunately, I don't only have access to sticks, but also stones! Dangerous combo."]
 			id: "3860BE0D7E657282"
 			tasks: [{
 				id: "20425A3F1F53E2E9"
@@ -207,6 +207,7 @@
 		}
 		{
 			dependencies: ["0BFB891A995961E1"]
+			description: ["Somehow, putting three sticks next to each other results in a lot more material than had been initially started with! The logistics of this convenient progression I will not question."]
 			id: "3B9A211380B0BF1C"
 			tasks: [{
 				id: "1C89416DD82C3934"
@@ -221,6 +222,7 @@
 				"1DAA7EF705EFD558"
 				"3B9A211380B0BF1C"
 			]
+			description: ["Sieves are an important part of any such situation, right? I couldn't afford to make a bigger one, so I hope this suffices."]
 			id: "690A84894AADA6DE"
 			tasks: [{
 				id: "51C05FAE64F1ABEC"
@@ -256,12 +258,20 @@
 				"690A84894AADA6DE"
 				"3BB3B482AB47EF91"
 			]
+			description: ["Some clay has been hiding inside of this dirt all along! A good material for resistant tools, but I have to process it down first."]
 			id: "732A38F7E7B25502"
-			tasks: [{
-				id: "5C5E738A773A09B7"
-				item: "minecraft:clay_ball"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5C5E738A773A09B7"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					id: "1758A00039777B89"
+					item: "kubejs:clay_ingot_cast"
+					type: "item"
+				}
+			]
 			x: -7.5d
 			y: -0.5d
 		}
@@ -270,6 +280,7 @@
 				"0BFB891A995961E1"
 				"3860BE0D7E657282"
 			]
+			description: ["Some stone, some stick, and I have myself a nice campfire! Primitive, and my only, way of cooking."]
 			id: "4F97ED1810E6220B"
 			tasks: [{
 				id: "049503944619C363"
@@ -284,9 +295,10 @@
 				"4F97ED1810E6220B"
 				"732A38F7E7B25502"
 			]
+			description: ["The campfire is just hot enough to where clay can harden into ceramic! Slowly but surely progressing!"]
 			id: "71B44445EE1167F0"
 			tasks: [{
-				id: "1C6B1C2780D2E95B"
+				id: "6E5E6EB3CF592414"
 				item: "kubejs:ceramic_ingot_cast"
 				type: "item"
 			}]
@@ -310,6 +322,7 @@
 				"71B44445EE1167F0"
 				"6D7B880AADB8B30C"
 			]
+			description: ["While I can't do much with these nuggets, I can melt them down in order to make it into a useful form."]
 			id: "791DA3CE48A1E920"
 			tasks: [{
 				id: "7ECB56B266EEB204"
@@ -331,6 +344,11 @@
 				"4F97ED1810E6220B"
 				"791DA3CE48A1E920"
 			]
+			description: [
+				"The campfire saves the day again! The gold has melted down into a puddle of hot liquid, and I'm frankly kind of scared handling this around..."
+				""
+				"Regardless, "
+			]
 			id: "7DAB4069E683EFBF"
 			tasks: [{
 				id: "041BFDBE4F4D767B"
@@ -341,20 +359,27 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["611ADE42F9111279"]
+			dependencies: ["7DAB4069E683EFBF"]
 			description: [
 				"Look at this shiny piece of metal... I would not have expected I could have reached gold tools before the iron, stone or even wood tier... but here we are!"
 				""
 				"Now what can I do with this, considering my limited amount of tools..."
 			]
 			id: "4BDDE142AB757ABE"
-			tasks: [{
-				id: "5B417F6F303FC61F"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B417F6F303FC61F"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "23E944EFB2557ABD"
+					item: "kubejs:gold_ceramic_ingot_cast"
+					type: "item"
+				}
+			]
 			x: -5.5d
-			y: -10.5d
+			y: -8.5d
 		}
 		{
 			description: ["My very first tool! While made of low quality materials and rather prone to breaking, this metal should be strong enough to crack stone at last!"]
@@ -373,17 +398,6 @@
 			}]
 			x: 0.0d
 			y: -12.5d
-		}
-		{
-			dependencies: ["7DAB4069E683EFBF"]
-			id: "611ADE42F9111279"
-			tasks: [{
-				id: "3240CB87B42AF14A"
-				item: "kubejs:cool_molten_gold_ceramic_ingot_cast"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -8.5d
 		}
 		{
 			dependencies: ["2EFB56EEB2411F18"]
