@@ -10,8 +10,6 @@
  * @param {String} texture 
  */
 const registerIngotCast = function(event, material) {
-    registerBaseIngotCast(event, `kubejs:${material.id}_ingot_cast`, material.texture);
-
     global.moltenMetals.forEach(metal => {
         if (metal.temp <= material.maxTemp) {
             registerFilledIngotCast(
@@ -41,9 +39,14 @@ global.getCastNBT = function() {
 }
 
 StartupEvents.registry("block", event => {
-    registerBaseIngotCast(event, `kubejs:clay_ingot_cast`, "minecraft:block/clay");
-
     global.casts.forEach(cast => {
         registerIngotCast(event, cast);
     });
+});
+
+StartupEvents.registry("item", event => {
+    registerBaseIngotCast(event, `kubejs:clay_ingot_cast`, "minecraft:block/clay");
+    global.casts.forEach(cast => {
+        registerBaseIngotCast(event, `kubejs:${cast.id}_ingot_cast`, cast.texture);
+    })
 });
