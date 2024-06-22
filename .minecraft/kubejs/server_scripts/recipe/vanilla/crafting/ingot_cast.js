@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
         global.moltenMetals.forEach(metal => {
             if (metal.temp <= cast.maxTemp) {
                 metal.items.forEach(item => {
-                    for (let i = 1; i <= Math.min(8, 10 - item.count); i++) {
+                    for (let i = 1; i <= Math.min(8, Math.floor(9 / item.count)); i++) {
                         (function(index) {
                             event.shapeless(
                                 `kubejs:${cast.id}_ingot_cast`,
