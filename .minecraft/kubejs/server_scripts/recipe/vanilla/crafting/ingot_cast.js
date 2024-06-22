@@ -35,6 +35,9 @@ ServerEvents.recipes(event => {
             });
         });
 
-        event.shapeless(`kubejs:${cast.id}_ingot_cast`, `kubejs:${cast.id}_ingot_cast`);
+        event.shapeless(
+            `kubejs:${cast.id}_ingot_cast`,
+            `kubejs:${cast.id}_ingot_cast`
+        ).id(`kubejs:empty_cast_${cast.id}`);
     });
 })
