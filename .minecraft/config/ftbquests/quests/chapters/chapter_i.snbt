@@ -385,6 +385,18 @@
 			x: -5.5d
 			y: -8.5d
 		}
+		{
+			dependencies: ["2EFB56EEB2411F18"]
+			description: ["This pebble is sharp enough to where I can crack open stone with... somewhat good efficiency. I can't harvest cobblestone, but this is a better source of pebbles than whatever I can find on the surface."]
+			id: "6E49871DC57E2863"
+			tasks: [{
+				id: "3D7445D97D335C72"
+				title: "Stone Crumbling"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
 	]
 	title: "Chapter I"
 }
