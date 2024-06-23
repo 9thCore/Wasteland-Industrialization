@@ -29,8 +29,12 @@ StartupEvents.registry('item', event => {
 	event.create('dirty_gold')
 	.displayName('Dirty Gold Nugget')
 
-	event.create('flimsy_pickaxe')
+	event.create('dry_fiber')
+	.displayName('Dry Fiber')
+
+	event.create('flimsy_pickaxe', 'pickaxe')
 	.displayName('Flimsy Pickaxe')
 	.maxStackSize(1)
-	.maxDamage(100)
+	.maxDamage(60)
+	.tier("minecraft:wood")
 })

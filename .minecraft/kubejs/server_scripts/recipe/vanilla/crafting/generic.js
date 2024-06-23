@@ -27,4 +27,28 @@ ServerEvents.recipes(event => {
 			"3x minecraft:string"
 		]
 	);
+
+	event.shaped(
+		"minecraft:string",
+		[
+			"FF",
+			"FF"
+		],
+		{
+			F: "kubejs:dry_fiber"
+		}
+	);
+
+	event.shaped(
+		"kubejs:flimsy_pickaxe",
+		[
+			"PS",
+			"H "
+		],
+		{
+			P: "kubejs:pebble_sharp",
+			S: "minecraft:string",
+			H: "minecraft:stick"
+		}
+	);
 })
