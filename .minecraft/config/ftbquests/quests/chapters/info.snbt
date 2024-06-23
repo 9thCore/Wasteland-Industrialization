@@ -48,7 +48,7 @@
 				title: "Stuck? No worries!"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -79,7 +79,7 @@
 			}]
 			title: "Required quests"
 			x: -1.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0C834DACB9259664"]
@@ -92,7 +92,7 @@
 			}]
 			title: "No pesky mobs! (except Phantoms)"
 			x: -1.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -112,19 +112,6 @@
 			title: "Lost your book?"
 			x: 1.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["0C834DACB9259664"]
-			description: ["Ultimine is installed, by default bound to ` (GRAVE key). Also works for harvesting crops through right-click!"]
-			id: "428856A106441A69"
-			tasks: [{
-				id: "12BA93E094C506F0"
-				title: "Ultimine present"
-				type: "checkmark"
-			}]
-			title: "Ultimine is present"
-			x: -1.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["0C834DACB9259664"]
