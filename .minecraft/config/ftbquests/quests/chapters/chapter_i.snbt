@@ -142,14 +142,21 @@
 				"A stick here, a rock there, and a string to pull them together, and it works! ...Barely."
 				""
 				"This looks like it could break down at any second. I should focus on upgrading my equipment as soon as possible."
+				""
+				"[ Author's note: cannot have a tool tier below gold, so \"breaking\" is done through Lychee, or in other words, no breaking animation and a random break time. Holding LC works fine and should usually result in fast breaks, however ]"
 			]
 			id: "41A8CF79FC81C217"
 			tasks: [{
-				id: "22ABCB6109FBEBD2"
-				title: "Makeshift Pickaxe"
-				type: "checkmark"
+				id: "2D4D9982694C150A"
+				item: {
+					Count: 1
+					id: "kubejs:flimsy_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
 			}]
-			title: "Flimsy Pickaxe"
 			x: -3.5d
 			y: 1.5d
 		}
@@ -246,9 +253,9 @@
 			description: ["Shiny! ...well, not so much, as it stands. But it very much looks like a piece of gold. Doesn't look like it will take too much effort to wash it."]
 			id: "6824017BD33EF972"
 			tasks: [{
-				id: "429BD9CE7245C1CA"
-				title: "Dirty Gold"
-				type: "checkmark"
+				id: "73484B38D62B4452"
+				item: "kubejs:dirty_gold"
+				type: "item"
 			}]
 			x: -7.5d
 			y: 3.5d
@@ -295,7 +302,7 @@
 				"4F97ED1810E6220B"
 				"732A38F7E7B25502"
 			]
-			description: ["The campfire is just hot enough to where clay can harden into ceramic! Slowly but surely progressing!"]
+			description: ["The campfire is just hot enough to where clay can harden into ceramic!"]
 			id: "71B44445EE1167F0"
 			tasks: [{
 				id: "6E5E6EB3CF592414"
@@ -345,9 +352,9 @@
 				"791DA3CE48A1E920"
 			]
 			description: [
-				"The campfire saves the day again! The gold has melted down into a puddle of hot liquid, and I'm frankly kind of scared handling this around..."
+				"The campfire saves the day again! The gold has melted down into a puddle of hot liquid, and I'm frankly kind of scared handling this..."
 				""
-				"Regardless, "
+				"Regardless, I should probably put it down and wait for it to cool down before I burn my hands off."
 			]
 			id: "7DAB4069E683EFBF"
 			tasks: [{
