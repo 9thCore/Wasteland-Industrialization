@@ -8,8 +8,11 @@ export let ItemApplicationRecipe = {};
  * @param {String|String[]} items
  * @param {Object} blockPredicate
  * @param {Object} post
+ * @param {Object[]} conditions
+ * @param {Object[]} contextualConditions
+ * @param {Object[]} forgeConditions
  */
-ItemApplicationRecipe.register = function(event, items, blockPredicate, post) {
+ItemApplicationRecipe.register = function(event, items, blockPredicate, post, contextualConditions, forgeConditions) {
     let items_in = [];
     items = Array.isArray(items) ? items : [items];
     items.forEach(name => {
@@ -22,6 +25,8 @@ ItemApplicationRecipe.register = function(event, items, blockPredicate, post) {
         type: "lychee:block_interacting",
         item_in: items_in,
         block_in: blockPredicate,
-        post: post
+        post: post,
+        conditions: forgeConditions ? forgeConditions : [],
+        contextual: contextualConditions ? contextualConditions : []
     });
 };
