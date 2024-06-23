@@ -114,7 +114,7 @@
 			description: [
 				"Success! These deadbushes turned out to be way more useful than I originally ranked them to. They contain a fair amount of fiber."
 				""
-				"A bunch of these should be good enough to make some string for some primitive uses."
+				"A bunch of these should be good enough to make some string."
 			]
 			id: "1DAA7EF705EFD558"
 			tasks: [
@@ -188,7 +188,7 @@
 		}
 		{
 			dependencies: ["4A4DC3FA5748C40C"]
-			description: ["The all-too-useful iron has made an appearance. Hopefully it seems like it will long until I can make it useful, I can't wait to use them for my tools!"]
+			description: ["The all-too-useful iron has made an appearance. Hopefully it won't be long until I can make use of it!"]
 			id: "4296B7F3F0C4A50A"
 			tasks: [{
 				id: "1C2D3504BFA80E87"
@@ -212,7 +212,7 @@
 		}
 		{
 			dependencies: ["786B144376671612"]
-			description: ["Somehow, putting three sticks next to each other results in a lot more material than had been initially started with! The logistics of this convenient progression I will not question."]
+			description: ["My hand isn't good enough of a sifter, hopefully this works a bit better. I do need some sort of mesh, however."]
 			id: "3B9A211380B0BF1C"
 			tasks: [{
 				id: "1C89416DD82C3934"
@@ -227,7 +227,7 @@
 				"1DAA7EF705EFD558"
 				"3B9A211380B0BF1C"
 			]
-			description: ["Sieves are an important part of any such situation, right? I couldn't afford to make a bigger one, so I hope this suffices."]
+			description: ["This seems like it should be good enough for the time being. Let's see what I can uncover this time!"]
 			id: "690A84894AADA6DE"
 			tasks: [{
 				id: "51C05FAE64F1ABEC"
@@ -263,7 +263,7 @@
 				"690A84894AADA6DE"
 				"3BB3B482AB47EF91"
 			]
-			description: ["Some clay has been hiding inside of this dirt all along! A good material for resistant tools, but I have to process it down first."]
+			description: ["Some clay has been hiding inside of this dirt all along! A good material for resistant tools, but I have to process it first."]
 			id: "732A38F7E7B25502"
 			tasks: [
 				{
@@ -282,7 +282,7 @@
 		}
 		{
 			dependencies: ["786B144376671612"]
-			description: ["Some stone, some stick, and I have myself a nice campfire! Primitive, and my only, way of cooking."]
+			description: ["With access to logs, I can now construct a primitive fire!"]
 			id: "4F97ED1810E6220B"
 			tasks: [{
 				id: "049503944619C363"
@@ -309,14 +309,14 @@
 		}
 		{
 			dependencies: ["6824017BD33EF972"]
-			description: ["A small amount of gold, obtained from the ground I'm standing on. I don't have access to a way to make it useful right now, so what can I do with it..?"]
+			description: ["A small amount of gold, obtained from the ground I'm standing on. I don't have access to a way to make it useful right now, though..."]
 			id: "6D7B880AADB8B30C"
 			tasks: [{
 				id: "29359E3A79EAF9DB"
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -7.5d
 			y: -2.5d
 		}
 		{
@@ -339,7 +339,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: -2.5d
 		}
 		{
@@ -358,16 +358,12 @@
 				item: "kubejs:molten_gold_ceramic_ingot_cast"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -2.5d
+			x: -11.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7DAB4069E683EFBF"]
-			description: [
-				"Look at this shiny piece of metal... I would not have expected I could have reached gold tools before the iron, stone or even wood tier... but here we are!"
-				""
-				"Now what can I do with this, considering my limited amount of tools..."
-			]
+			description: ["Look at this shiny piece of metal... I would not have expected I could have reached gold tools before the iron, stone or even wood tier... but here we are!"]
 			id: "4BDDE142AB757ABE"
 			tasks: [
 				{
@@ -381,13 +377,27 @@
 					type: "item"
 				}
 			]
-			x: -15.5d
-			y: -2.5d
+			x: -13.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4BDDE142AB757ABE"]
 			description: ["My very first tool! While made of low quality materials and rather prone to breaking, this metal should be strong enough to crack stone at last!"]
 			id: "2F5C29F43AECC3D1"
+			rewards: [
+				{
+					count: 4
+					id: "25E3FC315D652A92"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "68C4E1A2F4D18A13"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "3177C2AEEE406D0C"
@@ -400,8 +410,8 @@
 				}
 				type: "item"
 			}]
-			x: -18.5d
-			y: -2.5d
+			x: -16.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EFB56EEB2411F18"]
@@ -417,13 +427,33 @@
 		}
 		{
 			dependencies: ["3BB3B482AB47EF91"]
+			description: ["Oh hey, a tree acorn! Does its existence mean this planet is a good enough place to grow it..?"]
 			id: "786B144376671612"
 			tasks: [{
-				id: "41875A1433E699BE"
-				item: "kubejs:oak_acorn"
+				id: "28F705F82F60ABE1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(kubejs:acorns)"
+					}
+				}
+				title: "Any Acorn"
 				type: "item"
 			}]
 			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["786B144376671612"]
+			description: ["I'm not sure why, but wooden tools don't seem to have quite as much durability as I recall them to. I can't make one remain in one piece no matter what I do. I guess I'll have to find a tool some other way..."]
+			id: "6D1C2C877CAC3F52"
+			tasks: [{
+				id: "19AF9C247995BA5F"
+				title: "Wooden tools... unavailable?"
+				type: "checkmark"
+			}]
+			x: -11.5d
 			y: 3.5d
 		}
 	]
