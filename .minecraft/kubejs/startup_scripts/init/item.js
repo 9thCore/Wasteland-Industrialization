@@ -37,4 +37,22 @@ StartupEvents.registry('item', event => {
 	.maxStackSize(1)
 	.maxDamage(60)
 	.tier('flimsy')
+
+	event.create('oak_acorn')
+	.displayName('Oak Acorn')
+
+	event.create('birch_acorn')
+	.displayName('Birch Acorn')
+
+	event.create('spruce_acorn')
+	.displayName('Spruce Acorn')
+
+	event.create('acacia_acorn')
+	.displayName('Acacia Acorn')
+
+	event.create('jungle_acorn')
+	.displayName('Jungle Acorn')
+
+	event.create('dark_oak_acorn')
+	.displayName('Dark Oak Acorn')
 })
