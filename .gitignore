@@ -9,6 +9,13 @@
 .minecraft/saves/*
 .minecraft/screenshots/*
 instance.cfg
-.minecraft/*.*
-.minecraft/config/jei/*
 .minecraft/kubejs/config/*
+.minecraft/resourcepacks/*
+.minecraft/.vscode/*
+.minecraft/options.txt
+.minecraft/rhino*
+.minecraft/patchouli*
+.minecraft/usercache.json
+.minecraft/usernamecache.json
+.minecraft/.qmenu*
+.minecraft/icon.png
