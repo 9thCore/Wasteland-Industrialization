@@ -2,30 +2,37 @@ ServerEvents.recipes(event => {
 	event.shaped(
 		"kubejs:empty_sieve",
 		[
-			" S",
-			"SS"
+			"PBP",
+			" P "
 		],
 		{
-			S: "minecraft:stick"
+			P: "#minecraft:planks",
+			B: "minecraft:bowl"
 		}
 	);
 
 	event.shaped(
 		"kubejs:clay_ingot_cast",
 		[
-			"CC"
+			"C C",
+			"CCC"
 		],
 		{
 			C: "minecraft:clay_ball"
 		}
 	);
 
-	event.shapeless(
+	event.shaped(
 		"kubejs:string_sieve",
 		[
-			"kubejs:empty_sieve",
-			"3x minecraft:string"
-		]
+			"SSS",
+			"SES",
+			"SSS"
+		],
+		{
+			E: "kubejs:empty_sieve",
+			S: "minecraft:string"
+		}
 	);
 
 	event.shaped(
