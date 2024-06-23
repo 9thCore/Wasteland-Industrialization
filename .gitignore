@@ -11,3 +11,4 @@
 instance.cfg
 .minecraft/*.*
 .minecraft/config/jei/*
+.minecraft/kubejs/config/*
