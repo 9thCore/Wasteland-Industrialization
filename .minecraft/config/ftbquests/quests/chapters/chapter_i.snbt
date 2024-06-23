@@ -119,12 +119,12 @@
 			id: "1DAA7EF705EFD558"
 			tasks: [
 				{
-					id: "46DEDB93B76F4AB4"
-					title: "Dry Fiber"
-					type: "checkmark"
+					id: "01F31D4AF6051692"
+					item: "kubejs:dry_fiber"
+					type: "item"
 				}
 				{
-					id: "55CCA4C69112CE9D"
+					id: "58EA8F7D70671C11"
 					item: "minecraft:string"
 					type: "item"
 				}
@@ -142,8 +142,6 @@
 				"A stick here, a rock there, and a string to pull them together, and it works! ...Barely."
 				""
 				"This looks like it could break down at any second. I should focus on upgrading my equipment as soon as possible."
-				""
-				"[ Author's note: cannot have a tool tier below gold, so \"breaking\" is done through Lychee, or in other words, no breaking animation and a random break time. Holding LC works fine and should usually result in fast breaks, however ]"
 			]
 			id: "41A8CF79FC81C217"
 			tasks: [{
@@ -213,7 +211,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0BFB891A995961E1"]
+			dependencies: ["786B144376671612"]
 			description: ["Somehow, putting three sticks next to each other results in a lot more material than had been initially started with! The logistics of this convenient progression I will not question."]
 			id: "3B9A211380B0BF1C"
 			tasks: [{
@@ -221,8 +219,8 @@
 				item: "kubejs:empty_sieve"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -257,8 +255,8 @@
 				item: "kubejs:dirty_gold"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -283,10 +281,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"0BFB891A995961E1"
-				"3860BE0D7E657282"
-			]
+			dependencies: ["786B144376671612"]
 			description: ["Some stone, some stick, and I have myself a nice campfire! Primitive, and my only, way of cooking."]
 			id: "4F97ED1810E6220B"
 			tasks: [{
@@ -294,8 +289,8 @@
 				item: "minecraft:campfire"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -9.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -309,8 +304,8 @@
 				item: "kubejs:ceramic_ingot_cast"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.5d
+			x: -9.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6824017BD33EF972"]
@@ -321,8 +316,8 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 1.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -341,9 +336,10 @@
 						nugget_count: 9
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
-			x: -9.5d
+			x: -7.5d
 			y: -2.5d
 		}
 		{
@@ -362,8 +358,8 @@
 				item: "kubejs:molten_gold_ceramic_ingot_cast"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -6.5d
+			x: -13.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7DAB4069E683EFBF"]
@@ -385,10 +381,11 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: -8.5d
+			x: -15.5d
+			y: -2.5d
 		}
 		{
+			dependencies: ["4BDDE142AB757ABE"]
 			description: ["My very first tool! While made of low quality materials and rather prone to breaking, this metal should be strong enough to crack stone at last!"]
 			id: "2F5C29F43AECC3D1"
 			size: 2.0d
@@ -403,8 +400,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -12.5d
+			x: -18.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EFB56EEB2411F18"]
@@ -417,6 +414,17 @@
 			}]
 			x: -1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["3BB3B482AB47EF91"]
+			id: "786B144376671612"
+			tasks: [{
+				id: "41875A1433E699BE"
+				item: "kubejs:oak_acorn"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.5d
 		}
 	]
 	title: "Chapter I"

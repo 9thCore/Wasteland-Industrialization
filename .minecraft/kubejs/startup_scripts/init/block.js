@@ -20,7 +20,6 @@ StartupEvents.registry('block', event => {
 	.fullBlock(true)
 	.requiresTool(true)
 	.tagBlock('minecraft:mineable/pickaxe')
-	.tagBlock('forge:needs_wood_tool')
 	.hardness(0.5)
 	.resistance(2.0)
 })

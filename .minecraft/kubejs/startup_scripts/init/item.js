@@ -32,8 +32,9 @@ StartupEvents.registry('item', event => {
 	event.create('dry_fiber')
 	.displayName('Dry Fiber')
 
-	event.create('flimsy_pickaxe')
+	event.create('flimsy_pickaxe', 'pickaxe')
 	.displayName('Flimsy Pickaxe')
 	.maxStackSize(1)
 	.maxDamage(60)
+	.tier('flimsy')
 })
