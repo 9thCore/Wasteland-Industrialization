@@ -36,5 +36,5 @@ StartupEvents.registry('item', event => {
 	.displayName('Flimsy Pickaxe')
 	.maxStackSize(1)
 	.maxDamage(60)
-	.tier("minecraft:wood")
+	.tier("flimsy")
 })
