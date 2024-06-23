@@ -77,7 +77,7 @@ RecipePost.playSound = function(sound, type, volume, pitch, hide, repeat) {
     type = type ? type : "player";
     volume = volume ? volume : 1.0;
     pitch = pitch ? pitch : 1.0;
-    return RecipePost.runCommand(`run playsound ${sound} ${type} @a ~ ~ ~ ${volume} ${pitch}`)
+    return RecipePost.runCommand(`run playsound ${sound} ${type} @a ~ ~ ~ ${volume} ${pitch}`, hide, repeat)
 }
 
 /**
