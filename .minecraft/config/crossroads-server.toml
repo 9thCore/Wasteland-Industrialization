@@ -19,7 +19,7 @@
 
 [Specializations]
 	#Allow Multiple specializations per player in Multiplayer?
-	paths_multi = false
+	paths_multi = true
 	#Allow forgetting paths using Path Sigils?
 	path_forget = false
 	#Allow Multiple specializations per player in Singleplayer?
