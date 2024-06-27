@@ -65,7 +65,7 @@ global.moltenMetals = [
                 count: 9
             },
             {
-                id: "crossroads:dust_gold",
+                id: "electrodynamics:dustgold",
                 recipeId: "dst",
                 count: 9
             },
@@ -224,7 +224,7 @@ global.moltenMetals = [
                 count: 9
             },
             {
-                id: "crossroads:dust_iron",
+                id: "electrodynamics:dustiron",
                 recipeId: "dst",
                 count: 9
             },
@@ -358,7 +358,7 @@ global.moltenMetals = [
         coolId: "copper",
         items: [
             {
-                id: "crossroads:nugget_copper",
+                id: "electrodynamics:nuggetcopper",
                 recipeId: "nug",
                 count: 1
             },
@@ -378,7 +378,7 @@ global.moltenMetals = [
                 count: 9
             },
             {
-                id: "crossroads:dust_copper",
+                id: "electrodynamics:dustcopper",
                 recipeId: "dst",
                 count: 9
             },
@@ -574,7 +574,7 @@ global.moltenMetals = [
         results: {
             ingot_cast: "minecraft:copper_ingot",
             block_cast: "minecraft:copper_block",
-            nugget_cast: "9x crossroads:nugget_copper"
+            nugget_cast: "9x electrodynamics:nuggetcopper"
         },
         displayName: "Molten Copper",
         cooledDisplayName: "Copper",
@@ -587,22 +587,22 @@ global.moltenMetals = [
         coolId: "tin",
         items: [
             {
-                id: "crossroads:nugget_tin",
+                id: "electrodynamics:nuggettin",
                 recipeId: "nug",
                 count: 1
             },
             {
-                id: "crossroads:ingot_tin",
+                id: "electrodynamics:ingottin",
                 recipeId: "ing",
                 count: 9
             },
             {
-                id: "crossroads:raw_tin",
+                id: "electrodynamics:raworetin",
                 recipeId: "raw",
                 count: 9
             },
             {
-                id: "crossroads:dust_tin",
+                id: "electrodynamics:dusttin",
                 recipeId: "dst",
                 count: 9
             },
@@ -623,22 +623,22 @@ global.moltenMetals = [
                 count: 9
             },
             {
-                id: "crossroads:ore_tin",
+                id: "electrodynamics:oretin",
                 recipeId: "ore",
                 count: 12
             },
             {
-                id: "crossroads:ore_tin_deep",
+                id: "electrodynamics:deepslateoretin",
                 recipeId: "dore",
                 count: 12
             },
             {
-                id: "crossroads:block_tin",
+                id: "electrodynamics:resourceblocktin",
                 recipeId: "blk",
                 count: 81
             },
             {
-                id: "crossroads:block_raw_tin",
+                id: "electrodynamics:raworeblocktin",
                 recipeId: "rblk",
                 count: 81
             },
@@ -676,14 +676,14 @@ global.moltenMetals = [
             }
         ],
         results: {
-            ingot_cast: "crossroads:ingot_tin",
-            block_cast: "crossroads:block_tin",
-            nugget_cast: "9x crossroads:nugget_tin"
+            ingot_cast: "electrodynamics:ingottin",
+            block_cast: "electrodynamics:resourceblocktin",
+            nugget_cast: "9x electrodynamics:nuggettin"
         },
         displayName: "Molten Tin",
         cooledDisplayName: "Tin",
         fluidTexture: "crossroads:block/molten_tin_still",
-        cooledTexture: "crossroads:block/block_tin",
+        cooledTexture: "electrodynamics:block/resource/resourceblocktin",
         temp: 1000
     }
 ];

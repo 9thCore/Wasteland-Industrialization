@@ -16,22 +16,12 @@
         event.remove("minecraft:copper_ingot");
         event.remove("minecraft:copper_ingot_from_waxed_copper_block");
         event.remove("crossroads:base_materials/copper_ingot_nugg");
+        event.remove("electrodynamics:copper_nuggets_to_copper_ingot");
         event.remove("crossroads:base_materials/copper_nugget");
         event.remove("minecraft:copper_block");
         
-        event.remove("crossroads:base_materials/tin_ingot_nugg");
-        event.remove("crossroads:base_materials/tin_nugget");
-        event.remove("crossroads:base_materials/tin_ingot_block");
-        event.remove("crossroads:base_materials/tin_block");
-        
-        event.remove("crossroads:base_materials/bronze_ingot_nugg");
-        event.remove("crossroads:base_materials/bronze_nugget");
-        event.remove("crossroads:base_materials/bronze_ingot_block");
-        event.remove("crossroads:base_materials/bronze_block");
-        event.remove("crossroads:base_materials/bronze_alloy_ingot");
         event.remove("crossroads:base_materials/bronze_alloy_nugg");
-        event.remove("crossroads:base_materials/bronze_alloy_block");
-        
+
         event.remove("crossroads:base_materials/copshowium_ingot_nugg");
         event.remove("crossroads:base_materials/copshowium_nugget");
         event.remove("crossroads:base_materials/copshowium_ingot_block");
