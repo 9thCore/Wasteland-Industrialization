@@ -489,66 +489,6 @@ global.moltenMetals = [
                 count: 40
             },
             {
-                id: "minecraft:waxed_copper_block",
-                recipeId: "blkw",
-                count: 81
-            },
-            {
-                id: "minecraft:waxed_cut_copper",
-                recipeId: "cutw",
-                count: 81
-            },
-            {
-                id: "minecraft:waxed_cut_copper_stairs",
-                recipeId: "cutstw",
-                count: 60
-            },
-            {
-                id: "minecraft:waxed_cut_copper_slab",
-                recipeId: "cutslw",
-                count: 40
-            },
-            {
-                id: "minecraft:waxed_weathered_copper",
-                recipeId: "weaw",
-                count: 81
-            },
-            {
-                id: "minecraft:waxed_weathered_cut_copper",
-                recipeId: "wcutw",
-                count: 81
-            },
-            {
-                id: "minecraft:waxed_weathered_cut_copper_stairs",
-                recipeId: "wcutstw",
-                count: 60
-            },
-            {
-                id: "minecraft:waxed_weathered_cut_copper_slab",
-                recipeId: "wcutslw",
-                count: 40
-            },
-            {
-                id: "minecraft:waxed_oxidized_copper",
-                recipeId: "oxiw",
-                count: 81
-            },
-            {
-                id: "minecraft:waxed_oxidized_cut_copper",
-                recipeId: "ocutw",
-                count: 81
-            },
-            {
-                id: "minecraft:waxed_oxidized_cut_copper_stairs",
-                recipeId: "ocutstw",
-                count: 60
-            },
-            {
-                id: "minecraft:waxed_oxidized_cut_copper_slab",
-                recipeId: "ocutslw",
-                count: 40
-            },
-            {
                 id: "minecraft:raw_copper_block",
                 recipeId: "rblk",
                 count: 81
@@ -628,26 +568,6 @@ global.moltenMetals = [
             {
                 id: "quark:oxidized_cut_copper_vertical_slab",
                 recipeId: "ocutv",
-                count: 40
-            },
-            {
-                id: "quark:waxed_cut_copper_vertical_slab",
-                recipeId: "cutvw",
-                count: 40
-            },
-            {
-                id: "quark:waxed_exposed_cut_copper_vertical_slab",
-                recipeId: "ecutvw",
-                count: 40
-            },
-            {
-                id: "quark:waxed_weathered_cut_copper_vertical_slab",
-                recipeId: "wcutvw",
-                count: 40
-            },
-            {
-                id: "quark:waxed_oxidized_cut_copper_vertical_slab",
-                recipeId: "ocutvw",
                 count: 40
             }
         ],
