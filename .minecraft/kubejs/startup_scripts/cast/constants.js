@@ -661,5 +661,109 @@ global.moltenMetals = [
         fluidTexture: "crossroads:block/molten_copper_still",
         cooledTexture: "minecraft:block/copper_block",
         temp: 1000
+    },
+    {
+        id: "molten_tin",
+        coolId: "tin",
+        items: [
+            {
+                id: "crossroads:nugget_tin",
+                recipeId: "nug",
+                count: 1
+            },
+            {
+                id: "crossroads:ingot_tin",
+                recipeId: "ing",
+                count: 9
+            },
+            {
+                id: "crossroads:raw_tin",
+                recipeId: "raw",
+                count: 9
+            },
+            {
+                id: "crossroads:dust_tin",
+                recipeId: "dst",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_clump",
+                nbt: {
+                    material: "tin"
+                },
+                recipeId: "cmp",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_gravel",
+                nbt: {
+                    material: "tin"
+                },
+                recipeId: "gvl",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_tin",
+                recipeId: "ore",
+                count: 12
+            },
+            {
+                id: "crossroads:ore_tin_deep",
+                recipeId: "dore",
+                count: 12
+            },
+            {
+                id: "crossroads:block_tin",
+                recipeId: "blk",
+                count: 81
+            },
+            {
+                id: "crossroads:block_raw_tin",
+                recipeId: "rblk",
+                count: 81
+            },
+            {
+                id: "crossroads:gear_base",
+                nbt: {
+                    material: "tin"
+                },
+                recipeId: "gear",
+                count: 17
+            },
+            {
+                id: "crossroads:gear_base_large",
+                nbt: {
+                    material: "tin"
+                },
+                recipeId: "lgear",
+                count: 49
+            },
+            {
+                id: "crossroads:axle",
+                nbt: {
+                    material: "tin"
+                },
+                recipeId: "axle",
+                count: 9
+            },
+            {
+                id: "crossroads:axle_mount",
+                nbt: {
+                    material: "tin"
+                },
+                recipeId: "mnt",
+                count: 3
+            }
+        ],
+        results: {
+            ingot_cast: "crossroads:ingot_tin",
+            block_cast: "crossroads:block_tin",
+            nugget_cast: "9x crossroads:nugget_tin"
+        },
+        displayName: "Molten Tin",
+        cooledDisplayName: "Tin",
+        fluidTexture: "crossroads:block/molten_tin_still",
+        cooledTexture: "crossroads:block/block_tin",
+        temp: 1000
     }
 ];
