@@ -34,8 +34,6 @@ const stripModPrefix = (s) => {
       .displayName(displayName)
       .stoneSoundType()
       .fullBlock(false)
-      .box(5, 0, 3, 11, 4, 13)
-      .box(6, 3, 1, 10, 4, 15)
       .notSolid()
       .hardness(0.0)
       .resistance(0.0)
@@ -69,10 +67,11 @@ const stripModPrefix = (s) => {
    * @param {Registry.Block} e
    * @param {string} id
    * @param {string} baseTexture
+   * @param {string} type
    */
-  const registerBaseIngotCast = (e, id, baseTexture) => {
+  const registerBaseCast = (e, id, baseTexture, type) => {
     const modelJson = {
-      parent: 'kubejs:block/base_ingot_cast',
+      parent: `kubejs:block/base_${type}`,
       textures: {
         base: baseTexture,
       },
@@ -86,16 +85,18 @@ const stripModPrefix = (s) => {
    * @param {string} displayName
    * @param {string} baseTexture
    * @param {string} fluidTexture
+   * @param {string} type
    */
-  const registerFilledIngotCast = (
+  const registerFilledCast = (
     e,
     id,
     displayName,
     baseTexture,
-    fluidTexture
+    fluidTexture,
+    type
   ) => {
     const modelJson = {
-      parent: 'kubejs:block/filled_ingot_cast',
+      parent: `kubejs:block/filled_${type}`,
       textures: {
         base: baseTexture,
         fluid: fluidTexture,
@@ -110,16 +111,18 @@ const stripModPrefix = (s) => {
    * @param {string} displayName
    * @param {string} baseTexture
    * @param {string} ingotTexture
+   * @param {string} type
    */
-  const registerCooledIngotCast = (
+  const registerCooledCast = (
     e,
     id,
     displayName,
     baseTexture,
-    ingotTexture
+    ingotTexture,
+    type
   ) => {
     const modelJson = {
-      parent: 'kubejs:block/filled_ingot_cast',
+      parent: `kubejs:block/filled_${type}`,
       textures: {
         base: baseTexture,
         fluid: ingotTexture,

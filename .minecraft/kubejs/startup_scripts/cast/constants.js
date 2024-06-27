@@ -1,12 +1,46 @@
 // priority 200
 
+global.castTypes = {
+    ingot_cast: {
+        size: 9,
+        displayName: "Ingot Cast",
+        modifier: block => {
+            block.box(5, 0, 3, 11, 4, 13).box(6, 3, 1, 10, 4, 15);
+        },
+        campfireMeltable: true
+    },
+    block_cast: {
+        size: 81,
+        displayName: "Block Cast",
+        modifier: block => {},
+        campfireMeltable: false
+    },
+    nugget_cast: {
+        size: 9,
+        displayName: "Nuggets Cast",
+        modifier: block => {
+            block.box(5, 0, 3, 11, 4, 13).box(6, 3, 1, 10, 4, 15);
+        },
+        campfireMeltable: true
+    }
+};
+
 global.casts = [
     {
-        type: "ingot_cast",
+        types: ["ingot_cast", "block_cast", "nugget_cast"],
         id: "ceramic",
         displayName: "Ceramic",
         texture: "minecraft:block/terracotta",
-        maxTemp: 900
+        maxTemp: 2000,
+        canContainMetal: true
+    },
+    {
+        types: ["ingot_cast", "block_cast", "nugget_cast"],
+        id: "clay",
+        displayName: "Clay",
+        texture: "minecraft:block/clay",
+        maxTemp: -Infinity,
+        canContainMetal: false
     }
 ];
 
@@ -17,21 +51,152 @@ global.moltenMetals = [
         items: [
             {
                 id: "minecraft:gold_nugget",
+                recipeId: "nug",
                 count: 1
             },
             {
                 id: "minecraft:gold_ingot",
+                recipeId: "ing",
                 count: 9
+            },
+            {
+                id: "minecraft:raw_gold",
+                recipeId: "raw",
+                count: 9
+            },
+            {
+                id: "crossroads:dust_gold",
+                recipeId: "dst",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_clump",
+                nbt: {
+                    material: "gold"
+                },
+                recipeId: "cmp",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_gravel",
+                nbt: {
+                    material: "gold"
+                },
+                recipeId: "gvl",
+                count: 9
+            },
+            {
+                id: "minecraft:gold_ore",
+                recipeId: "ore",
+                count: 12
+            },
+            {
+                id: "minecraft:deepslate_gold_ore",
+                recipeId: "dore",
+                count: 12
+            },
+            {
+                id: "minecraft:nether_gold_ore",
+                recipeId: "nore",
+                count: 12
+            },
+            {
+                id: "minecraft:gold_block",
+                recipeId: "blk",
+                count: 81
+            },
+            {
+                id: "minecraft:raw_gold_block",
+                recipeId: "rblk",
+                count: 81
+            },
+            {
+                id: "quark:raw_gold_bricks",
+                recipeId: "rbrk",
+                count: 81
+            },
+            {
+                id: "supplementaries:gold_gate",
+                recipeId: "gate",
+                count: 11
+            },
+            {
+                id: "supplementaries:gold_door",
+                recipeId: "door",
+                count: 18
+            },
+            {
+                id: "supplementaries:gold_trapdoor",
+                recipeId: "tdoor",
+                count: 36
+            },
+            {
+                id: "crossroads:gear_base",
+                nbt: {
+                    material: "gold"
+                },
+                recipeId: "gear",
+                count: 17
+            },
+            {
+                id: "crossroads:gear_base_large",
+                nbt: {
+                    material: "gold"
+                },
+                recipeId: "lgear",
+                count: 49
+            },
+            {
+                id: "crossroads:axle",
+                nbt: {
+                    material: "gold"
+                },
+                recipeId: "axle",
+                count: 9
+            },
+            {
+                id: "crossroads:axle_mount",
+                nbt: {
+                    material: "gold"
+                },
+                recipeId: "mnt",
+                count: 3
+            },
+            {
+                id: "quark:raw_gold_bricks_stairs",
+                recipeId: "rbst",
+                count: 60
+            },
+            {
+                id: "quark:raw_gold_bricks_slab",
+                recipeId: "rbsl",
+                count: 40
+            },
+            {
+                id: "quark:raw_gold_bricks_vertical_slab",
+                recipeId: "rvsl",
+                count: 40
+            },
+            {
+                id: "quark:raw_gold_bricks_wall",
+                recipeId: "rbwl",
+                count: 81
+            },
+            {
+                id: "quark:gold_bars",
+                recipeId: "bars",
+                count: 3
             }
         ],
         results: {
-            ingot_cast: "minecraft:gold_ingot"
+            ingot_cast: "minecraft:gold_ingot",
+            block_cast: "minecraft:gold_block",
+            nugget_cast: "9x minecraft:gold_nugget"
         },
-        insideCastName: "gold",
         displayName: "Molten Gold",
         cooledDisplayName: "Gold",
         fluidTexture: "crossroads:block/molten_gold_still",
         cooledTexture: "minecraft:block/gold_block",
-        temp: 900
+        temp: 1000
     }
 ];

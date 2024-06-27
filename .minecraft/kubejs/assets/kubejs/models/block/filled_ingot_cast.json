@@ -1,7 +1,8 @@
 {
   "parent": "kubejs:block/base_ingot_cast",
   "textures": {
-    "fluid": "minecraft:block/water"
+    "fluid": "minecraft:block/water",
+		"particle": "#base"
   },
   "elements": [
     {
