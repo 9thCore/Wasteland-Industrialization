@@ -209,6 +209,11 @@ global.moltenMetals = [
                 count: 1
             },
             {
+                id: "kubejs:iron_bit",
+                recipeId: "bit",
+                count: 1
+            },
+            {
                 id: "minecraft:iron_ingot",
                 recipeId: "ing",
                 count: 9
@@ -346,6 +351,315 @@ global.moltenMetals = [
         cooledDisplayName: "Iron",
         fluidTexture: "crossroads:block/molten_iron_still",
         cooledTexture: "minecraft:block/iron_block",
+        temp: 1000
+    },
+    {
+        id: "molten_copper",
+        coolId: "copper",
+        items: [
+            {
+                id: "crossroads:nugget_copper",
+                recipeId: "nug",
+                count: 1
+            },
+            {
+                id: "kubejs:copper_bit",
+                recipeId: "bit",
+                count: 1
+            },
+            {
+                id: "minecraft:copper_ingot",
+                recipeId: "ing",
+                count: 9
+            },
+            {
+                id: "minecraft:raw_copper",
+                recipeId: "raw",
+                count: 9
+            },
+            {
+                id: "crossroads:dust_copper",
+                recipeId: "dst",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_clump",
+                nbt: {
+                    material: "copper"
+                },
+                recipeId: "cmp",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_gravel",
+                nbt: {
+                    material: "copper"
+                },
+                recipeId: "gvl",
+                count: 9
+            },
+            {
+                id: "minecraft:copper_ore",
+                recipeId: "ore",
+                count: 12
+            },
+            {
+                id: "minecraft:deepslate_copper_ore",
+                recipeId: "dore",
+                count: 12
+            },
+            {
+                id: "minecraft:copper_block",
+                recipeId: "blk",
+                count: 81
+            },
+            {
+                id: "minecraft:cut_copper",
+                recipeId: "cut",
+                count: 81
+            },
+            {
+                id: "minecraft:cut_copper_stairs",
+                recipeId: "cutst",
+                count: 60
+            },
+            {
+                id: "minecraft:cut_copper_slab",
+                recipeId: "cutsl",
+                count: 40
+            },
+            {
+                id: "minecraft:exposed_copper",
+                recipeId: "exp",
+                count: 81
+            },
+            {
+                id: "minecraft:exposed_cut_copper",
+                recipeId: "ecut",
+                count: 81
+            },
+            {
+                id: "minecraft:exposed_cut_copper_stairs",
+                recipeId: "ecutst",
+                count: 60
+            },
+            {
+                id: "minecraft:exposed_cut_copper_slab",
+                recipeId: "ecutsl",
+                count: 40
+            },
+            {
+                id: "minecraft:weathered_copper",
+                recipeId: "wea",
+                count: 81
+            },
+            {
+                id: "minecraft:weathered_cut_copper",
+                recipeId: "wcut",
+                count: 81
+            },
+            {
+                id: "minecraft:weathered_cut_copper_stairs",
+                recipeId: "wcutst",
+                count: 60
+            },
+            {
+                id: "minecraft:weathered_cut_copper_slab",
+                recipeId: "wcutsl",
+                count: 40
+            },
+            {
+                id: "minecraft:oxidized_copper",
+                recipeId: "oxi",
+                count: 81
+            },
+            {
+                id: "minecraft:oxidized_cut_copper",
+                recipeId: "ocut",
+                count: 81
+            },
+            {
+                id: "minecraft:oxidized_cut_copper_stairs",
+                recipeId: "ocutst",
+                count: 60
+            },
+            {
+                id: "minecraft:oxidized_cut_copper_slab",
+                recipeId: "ocutsl",
+                count: 40
+            },
+            {
+                id: "minecraft:waxed_copper_block",
+                recipeId: "blkw",
+                count: 81
+            },
+            {
+                id: "minecraft:waxed_cut_copper",
+                recipeId: "cutw",
+                count: 81
+            },
+            {
+                id: "minecraft:waxed_cut_copper_stairs",
+                recipeId: "cutstw",
+                count: 60
+            },
+            {
+                id: "minecraft:waxed_cut_copper_slab",
+                recipeId: "cutslw",
+                count: 40
+            },
+            {
+                id: "minecraft:waxed_weathered_copper",
+                recipeId: "weaw",
+                count: 81
+            },
+            {
+                id: "minecraft:waxed_weathered_cut_copper",
+                recipeId: "wcutw",
+                count: 81
+            },
+            {
+                id: "minecraft:waxed_weathered_cut_copper_stairs",
+                recipeId: "wcutstw",
+                count: 60
+            },
+            {
+                id: "minecraft:waxed_weathered_cut_copper_slab",
+                recipeId: "wcutslw",
+                count: 40
+            },
+            {
+                id: "minecraft:waxed_oxidized_copper",
+                recipeId: "oxiw",
+                count: 81
+            },
+            {
+                id: "minecraft:waxed_oxidized_cut_copper",
+                recipeId: "ocutw",
+                count: 81
+            },
+            {
+                id: "minecraft:waxed_oxidized_cut_copper_stairs",
+                recipeId: "ocutstw",
+                count: 60
+            },
+            {
+                id: "minecraft:waxed_oxidized_cut_copper_slab",
+                recipeId: "ocutslw",
+                count: 40
+            },
+            {
+                id: "minecraft:raw_copper_block",
+                recipeId: "rblk",
+                count: 81
+            },
+            {
+                id: "quark:raw_copper_bricks",
+                recipeId: "rbrk",
+                count: 81
+            },
+            {
+                id: "crossroads:gear_base",
+                nbt: {
+                    material: "copper"
+                },
+                recipeId: "gear",
+                count: 17
+            },
+            {
+                id: "crossroads:gear_base_large",
+                nbt: {
+                    material: "copper"
+                },
+                recipeId: "lgear",
+                count: 49
+            },
+            {
+                id: "crossroads:axle",
+                nbt: {
+                    material: "copper"
+                },
+                recipeId: "axle",
+                count: 9
+            },
+            {
+                id: "crossroads:axle_mount",
+                nbt: {
+                    material: "copper"
+                },
+                recipeId: "mnt",
+                count: 3
+            },
+            {
+                id: "quark:raw_copper_bricks_stairs",
+                recipeId: "rbst",
+                count: 60
+            },
+            {
+                id: "quark:raw_copper_bricks_slab",
+                recipeId: "rbsl",
+                count: 40
+            },
+            {
+                id: "quark:raw_copper_bricks_vertical_slab",
+                recipeId: "rvsl",
+                count: 40
+            },
+            {
+                id: "quark:raw_copper_bricks_wall",
+                recipeId: "rbwl",
+                count: 81
+            },
+            {
+                id: "quark:cut_copper_vertical_slab",
+                recipeId: "cutv",
+                count: 40
+            },
+            {
+                id: "quark:exposed_cut_copper_vertical_slab",
+                recipeId: "ecutv",
+                count: 40
+            },
+            {
+                id: "quark:weathered_cut_copper_vertical_slab",
+                recipeId: "wcutv",
+                count: 40
+            },
+            {
+                id: "quark:oxidized_cut_copper_vertical_slab",
+                recipeId: "ocutv",
+                count: 40
+            },
+            {
+                id: "quark:waxed_cut_copper_vertical_slab",
+                recipeId: "cutvw",
+                count: 40
+            },
+            {
+                id: "quark:waxed_exposed_cut_copper_vertical_slab",
+                recipeId: "ecutvw",
+                count: 40
+            },
+            {
+                id: "quark:waxed_weathered_cut_copper_vertical_slab",
+                recipeId: "wcutvw",
+                count: 40
+            },
+            {
+                id: "quark:waxed_oxidized_cut_copper_vertical_slab",
+                recipeId: "ocutvw",
+                count: 40
+            }
+        ],
+        results: {
+            ingot_cast: "minecraft:copper_ingot",
+            block_cast: "minecraft:copper_block",
+            nugget_cast: "9x crossroads:nugget_copper"
+        },
+        displayName: "Molten Copper",
+        cooledDisplayName: "Copper",
+        fluidTexture: "crossroads:block/molten_copper_still",
+        cooledTexture: "minecraft:block/copper_block",
         temp: 1000
     }
 ];
