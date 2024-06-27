@@ -198,5 +198,154 @@ global.moltenMetals = [
         fluidTexture: "crossroads:block/molten_gold_still",
         cooledTexture: "minecraft:block/gold_block",
         temp: 1000
+    },
+    {
+        id: "molten_iron",
+        coolId: "iron",
+        items: [
+            {
+                id: "minecraft:iron_nugget",
+                recipeId: "nug",
+                count: 1
+            },
+            {
+                id: "minecraft:iron_ingot",
+                recipeId: "ing",
+                count: 9
+            },
+            {
+                id: "minecraft:raw_iron",
+                recipeId: "raw",
+                count: 9
+            },
+            {
+                id: "crossroads:dust_iron",
+                recipeId: "dst",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_clump",
+                nbt: {
+                    material: "iron"
+                },
+                recipeId: "cmp",
+                count: 9
+            },
+            {
+                id: "crossroads:ore_gravel",
+                nbt: {
+                    material: "iron"
+                },
+                recipeId: "gvl",
+                count: 9
+            },
+            {
+                id: "minecraft:iron_ore",
+                recipeId: "ore",
+                count: 12
+            },
+            {
+                id: "minecraft:deepslate_iron_ore",
+                recipeId: "dore",
+                count: 12
+            },
+            {
+                id: "minecraft:iron_block",
+                recipeId: "blk",
+                count: 81
+            },
+            {
+                id: "minecraft:raw_iron_block",
+                recipeId: "rblk",
+                count: 81
+            },
+            {
+                id: "quark:raw_iron_bricks",
+                recipeId: "rbrk",
+                count: 81
+            },
+            {
+                id: "supplementaries:iron_gate",
+                recipeId: "gate",
+                count: 11
+            },
+            {
+                id: "minecraft:iron_door",
+                recipeId: "door",
+                count: 18
+            },
+            {
+                id: "minecraft:iron_trapdoor",
+                recipeId: "tdoor",
+                count: 36
+            },
+            {
+                id: "crossroads:gear_base",
+                nbt: {
+                    material: "iron"
+                },
+                recipeId: "gear",
+                count: 17
+            },
+            {
+                id: "crossroads:gear_base_large",
+                nbt: {
+                    material: "iron"
+                },
+                recipeId: "lgear",
+                count: 49
+            },
+            {
+                id: "crossroads:axle",
+                nbt: {
+                    material: "iron"
+                },
+                recipeId: "axle",
+                count: 9
+            },
+            {
+                id: "crossroads:axle_mount",
+                nbt: {
+                    material: "iron"
+                },
+                recipeId: "mnt",
+                count: 3
+            },
+            {
+                id: "quark:raw_iron_bricks_stairs",
+                recipeId: "rbst",
+                count: 60
+            },
+            {
+                id: "quark:raw_iron_bricks_slab",
+                recipeId: "rbsl",
+                count: 40
+            },
+            {
+                id: "quark:raw_iron_bricks_vertical_slab",
+                recipeId: "rvsl",
+                count: 40
+            },
+            {
+                id: "quark:raw_iron_bricks_wall",
+                recipeId: "rbwl",
+                count: 81
+            },
+            {
+                id: "minecraft:iron_bars",
+                recipeId: "bars",
+                count: 3
+            }
+        ],
+        results: {
+            ingot_cast: "minecraft:iron_ingot",
+            block_cast: "minecraft:iron_block",
+            nugget_cast: "9x minecraft:iron_nugget"
+        },
+        displayName: "Molten Iron",
+        cooledDisplayName: "Iron",
+        fluidTexture: "crossroads:block/molten_iron_still",
+        cooledTexture: "minecraft:block/iron_block",
+        temp: 1000
     }
 ];
