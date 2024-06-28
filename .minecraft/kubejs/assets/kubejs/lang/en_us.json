@@ -5,5 +5,6 @@
 	"generator.minecraft.large_biomes": "Large Biomes [UNMODDED]",
 	"generator.minecraft.amplified": "AMPLIFIED [UNMODDED]",
   	"generator.minecraft.debug_all_block_states": "Debug Mode [UNMODDED]",
-	"generator.minecraft.single_biome_surface": "Single Biome [UNMODDED]"
+	"generator.minecraft.single_biome_surface": "Single Biome [UNMODDED]",
+	"material.steel": "Steel"
 }

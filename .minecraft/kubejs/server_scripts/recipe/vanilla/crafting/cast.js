@@ -1,13 +1,9 @@
 (function() {
+    /*
     const modularRecipe = function(event, cast, type, metal, item, index) {
         const typedef = global.castTypes[type];
-        let ing = Item.of(`${item.id}`);
-        const ingArray = [];
-        ingArray.push(`kubejs:${cast.id}_${type}`);
-
-        if (item.nbt) {
-            ing = ing.withNBT(item.nbt).strongNBT();
-        }
+        const ing = Item.of(`${item.id}`).withNBT(item.nbt).strongNBT();
+        const ingArray = [`kubejs:${cast.id}_${type}`];
 
         for (let i = 0; i < index; i++) {
             ingArray.push(ing);
@@ -33,6 +29,56 @@
             return result;
         });
     };
+    */
+
+    const modularRecipe = function(event, cast, type, metal, item, idPostfix, nbt, maxRecipes) {
+        const typedef = global.castTypes[type];
+        let ingredient = nbt ? Item.of(item).withNBT(nbt).strongNBT() : Ingredient.of(item);
+        let id = `kubejs:fill_${metal.coolId}_${cast.id}_${type}`;
+
+        if (idPostfix != null) {
+            id = `${id}_${idPostfix}`;
+        }
+
+        maxRecipes = Math.min(maxRecipes ? maxRecipes : 8, 8);
+        for (let i = 0; i < maxRecipes; i++) {
+            let ingredients = [`kubejs:${cast.id}_${type}`];
+            for (let j = 0; j <= i; j++) {
+                ingredients.push(ingredient);
+            }
+
+            event.shapeless(
+                `kubejs:${cast.id}_${type}`,
+                ingredients
+            )
+            .id(`${id}_${i}`)
+            .modifyResult((grid, result) => {
+                let nbt = grid.find(`kubejs:${cast.id}_${type}`).getNbt();
+                nbt = nbt ? nbt : global.getCastNBT();
+
+                console.log("Trying to find using " + ingredient);
+                
+                const items = grid.findAll(ingredient);
+                items.forEach(ing => {
+                    console.log("Found " + ing);
+                    nbt.nugget_count += metal.valueMap[ing.id];
+                });
+                
+                if (nbt.nugget_count > typedef.size) {
+                    return Item.of("minecraft:air");
+                };
+
+                if (nbt.metal_inside && nbt.metal_inside != metal.coolId) {
+                    return Item.of("minecraft:air");
+                };
+
+                nbt.metal_inside = metal.coolId;
+                result.setNbt(nbt);
+
+                return result;
+            });
+        };
+    }
 
     const registerCastRecipes = function(event, cast, type) {
         const typedef = global.castTypes[type];
@@ -41,6 +87,9 @@
             if (metal.temp > cast.maxTemp) {
                 return;
             }
+
+            // nbt-less items
+            modularRecipe(event, cast, type, metal, `#kubejs:meltable_${metal.coolId}`, null, false, null);
             
             let j = 0;
             metal.items.forEach(item => {
@@ -70,8 +119,9 @@
                     return Item.of("mineraft:air"); // Never return a real item
                 });
 
-                for (let i = 1; i <= Math.min(8, Math.floor(typedef.size / item.count)); i++) {
-                    modularRecipe(event, cast, type, metal, item, i);
+                if (item.nbt != null) {
+                    // nbt item
+                    modularRecipe(event, cast, type, metal, item.id, item.recipeId, item.nbt, Math.floor(typedef.size / item.count));
                 };
             });
 

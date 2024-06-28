@@ -1,3 +1,5 @@
+// priority: 50
+
 ServerEvents.tags('item', event => {
 	event.add("kubejs:casts", [
 		"kubejs:ceramic_ingot_cast"
@@ -17,4 +19,22 @@ ServerEvents.tags('item', event => {
 		"kubejs:jungle_acorn",
 		"kubejs:acacia_acorn"
 	]);
+
+	global.moltenMetals.forEach(metal => {
+		metal.valueMap = {};
+
+		metal.items.forEach(item => {
+			metal.valueMap[item.id] = item.count;
+			event.add(`kubejs:meltable_${metal.coolId}_all`, item.id);
+
+			// items with nbt cannot use the tag system
+			if (item.nbt == null) {
+				event.add(`kubejs:meltable_${metal.coolId}`, item.id);
+				return;
+			};
+
+			// special tag, in case they're needed later
+			event.add(`kubejs:meltable_${metal.coolId}_with_nbt`, item.id);
+		});
+	});
 });

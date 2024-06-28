@@ -51,22 +51,18 @@ global.moltenMetals = [
         items: [
             {
                 id: "minecraft:gold_nugget",
-                recipeId: "nug",
                 count: 1
             },
             {
                 id: "minecraft:gold_ingot",
-                recipeId: "ing",
                 count: 9
             },
             {
                 id: "minecraft:raw_gold",
-                recipeId: "raw",
                 count: 9
             },
             {
                 id: "electrodynamics:dustgold",
-                recipeId: "dst",
                 count: 9
             },
             {
@@ -74,7 +70,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "gold"
                 },
-                recipeId: "cmp",
+                recipeId: "clump",
                 count: 9
             },
             {
@@ -82,52 +78,43 @@ global.moltenMetals = [
                 nbt: {
                     material: "gold"
                 },
-                recipeId: "gvl",
+                recipeId: "gravel",
                 count: 9
             },
             {
                 id: "minecraft:gold_ore",
-                recipeId: "ore",
                 count: 12
             },
             {
                 id: "minecraft:deepslate_gold_ore",
-                recipeId: "dore",
                 count: 12
             },
             {
                 id: "minecraft:nether_gold_ore",
-                recipeId: "nore",
                 count: 12
             },
             {
                 id: "minecraft:gold_block",
-                recipeId: "blk",
                 count: 81
             },
             {
                 id: "minecraft:raw_gold_block",
-                recipeId: "rblk",
                 count: 81
             },
             {
                 id: "quark:raw_gold_bricks",
-                recipeId: "rbrk",
                 count: 81
             },
             {
                 id: "supplementaries:gold_gate",
-                recipeId: "gate",
                 count: 11
             },
             {
                 id: "supplementaries:gold_door",
-                recipeId: "door",
                 count: 18
             },
             {
                 id: "supplementaries:gold_trapdoor",
-                recipeId: "tdoor",
                 count: 36
             },
             {
@@ -143,7 +130,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "gold"
                 },
-                recipeId: "lgear",
+                recipeId: "gear_large",
                 count: 49
             },
             {
@@ -159,32 +146,27 @@ global.moltenMetals = [
                 nbt: {
                     material: "gold"
                 },
-                recipeId: "mnt",
+                recipeId: "axle_mount",
                 count: 3
             },
             {
                 id: "quark:raw_gold_bricks_stairs",
-                recipeId: "rbst",
                 count: 60
             },
             {
                 id: "quark:raw_gold_bricks_slab",
-                recipeId: "rbsl",
                 count: 40
             },
             {
                 id: "quark:raw_gold_bricks_vertical_slab",
-                recipeId: "rvsl",
                 count: 40
             },
             {
                 id: "quark:raw_gold_bricks_wall",
-                recipeId: "rbwl",
                 count: 81
             },
             {
                 id: "quark:gold_bars",
-                recipeId: "bars",
                 count: 3
             }
         ],
@@ -205,27 +187,22 @@ global.moltenMetals = [
         items: [
             {
                 id: "minecraft:iron_nugget",
-                recipeId: "nug",
                 count: 1
             },
             {
                 id: "kubejs:iron_bit",
-                recipeId: "bit",
                 count: 1
             },
             {
                 id: "minecraft:iron_ingot",
-                recipeId: "ing",
                 count: 9
             },
             {
                 id: "minecraft:raw_iron",
-                recipeId: "raw",
                 count: 9
             },
             {
                 id: "electrodynamics:dustiron",
-                recipeId: "dst",
                 count: 9
             },
             {
@@ -233,7 +210,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "iron"
                 },
-                recipeId: "cmp",
+                recipeId: "clump",
                 count: 9
             },
             {
@@ -241,47 +218,39 @@ global.moltenMetals = [
                 nbt: {
                     material: "iron"
                 },
-                recipeId: "gvl",
+                recipeId: "gravel",
                 count: 9
             },
             {
                 id: "minecraft:iron_ore",
-                recipeId: "ore",
                 count: 12
             },
             {
                 id: "minecraft:deepslate_iron_ore",
-                recipeId: "dore",
                 count: 12
             },
             {
                 id: "minecraft:iron_block",
-                recipeId: "blk",
                 count: 81
             },
             {
                 id: "minecraft:raw_iron_block",
-                recipeId: "rblk",
                 count: 81
             },
             {
                 id: "quark:raw_iron_bricks",
-                recipeId: "rbrk",
                 count: 81
             },
             {
                 id: "supplementaries:iron_gate",
-                recipeId: "gate",
                 count: 11
             },
             {
                 id: "minecraft:iron_door",
-                recipeId: "door",
                 count: 18
             },
             {
                 id: "minecraft:iron_trapdoor",
-                recipeId: "tdoor",
                 count: 36
             },
             {
@@ -297,7 +266,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "iron"
                 },
-                recipeId: "lgear",
+                recipeId: "gear_large",
                 count: 49
             },
             {
@@ -313,32 +282,27 @@ global.moltenMetals = [
                 nbt: {
                     material: "iron"
                 },
-                recipeId: "mnt",
+                recipeId: "axle_mount",
                 count: 3
             },
             {
                 id: "quark:raw_iron_bricks_stairs",
-                recipeId: "rbst",
                 count: 60
             },
             {
                 id: "quark:raw_iron_bricks_slab",
-                recipeId: "rbsl",
                 count: 40
             },
             {
                 id: "quark:raw_iron_bricks_vertical_slab",
-                recipeId: "rvsl",
                 count: 40
             },
             {
                 id: "quark:raw_iron_bricks_wall",
-                recipeId: "rbwl",
                 count: 81
             },
             {
                 id: "minecraft:iron_bars",
-                recipeId: "bars",
                 count: 3
             }
         ],
@@ -359,27 +323,22 @@ global.moltenMetals = [
         items: [
             {
                 id: "electrodynamics:nuggetcopper",
-                recipeId: "nug",
                 count: 1
             },
             {
                 id: "kubejs:copper_bit",
-                recipeId: "bit",
                 count: 1
             },
             {
                 id: "minecraft:copper_ingot",
-                recipeId: "ing",
                 count: 9
             },
             {
                 id: "minecraft:raw_copper",
-                recipeId: "raw",
                 count: 9
             },
             {
                 id: "electrodynamics:dustcopper",
-                recipeId: "dst",
                 count: 9
             },
             {
@@ -387,7 +346,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "copper"
                 },
-                recipeId: "cmp",
+                recipeId: "clump",
                 count: 9
             },
             {
@@ -395,107 +354,87 @@ global.moltenMetals = [
                 nbt: {
                     material: "copper"
                 },
-                recipeId: "gvl",
+                recipeId: "gravel",
                 count: 9
             },
             {
                 id: "minecraft:copper_ore",
-                recipeId: "ore",
                 count: 12
             },
             {
                 id: "minecraft:deepslate_copper_ore",
-                recipeId: "dore",
                 count: 12
             },
             {
                 id: "minecraft:copper_block",
-                recipeId: "blk",
                 count: 81
             },
             {
                 id: "minecraft:cut_copper",
-                recipeId: "cut",
                 count: 81
             },
             {
                 id: "minecraft:cut_copper_stairs",
-                recipeId: "cutst",
                 count: 60
             },
             {
                 id: "minecraft:cut_copper_slab",
-                recipeId: "cutsl",
                 count: 40
             },
             {
                 id: "minecraft:exposed_copper",
-                recipeId: "exp",
                 count: 81
             },
             {
                 id: "minecraft:exposed_cut_copper",
-                recipeId: "ecut",
                 count: 81
             },
             {
                 id: "minecraft:exposed_cut_copper_stairs",
-                recipeId: "ecutst",
                 count: 60
             },
             {
                 id: "minecraft:exposed_cut_copper_slab",
-                recipeId: "ecutsl",
                 count: 40
             },
             {
                 id: "minecraft:weathered_copper",
-                recipeId: "wea",
                 count: 81
             },
             {
                 id: "minecraft:weathered_cut_copper",
-                recipeId: "wcut",
                 count: 81
             },
             {
                 id: "minecraft:weathered_cut_copper_stairs",
-                recipeId: "wcutst",
                 count: 60
             },
             {
                 id: "minecraft:weathered_cut_copper_slab",
-                recipeId: "wcutsl",
                 count: 40
             },
             {
                 id: "minecraft:oxidized_copper",
-                recipeId: "oxi",
                 count: 81
             },
             {
                 id: "minecraft:oxidized_cut_copper",
-                recipeId: "ocut",
                 count: 81
             },
             {
                 id: "minecraft:oxidized_cut_copper_stairs",
-                recipeId: "ocutst",
                 count: 60
             },
             {
                 id: "minecraft:oxidized_cut_copper_slab",
-                recipeId: "ocutsl",
                 count: 40
             },
             {
                 id: "minecraft:raw_copper_block",
-                recipeId: "rblk",
                 count: 81
             },
             {
                 id: "quark:raw_copper_bricks",
-                recipeId: "rbrk",
                 count: 81
             },
             {
@@ -511,7 +450,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "copper"
                 },
-                recipeId: "lgear",
+                recipeId: "gear_large",
                 count: 49
             },
             {
@@ -527,47 +466,39 @@ global.moltenMetals = [
                 nbt: {
                     material: "copper"
                 },
-                recipeId: "mnt",
+                recipeId: "axle_mount",
                 count: 3
             },
             {
                 id: "quark:raw_copper_bricks_stairs",
-                recipeId: "rbst",
                 count: 60
             },
             {
                 id: "quark:raw_copper_bricks_slab",
-                recipeId: "rbsl",
                 count: 40
             },
             {
                 id: "quark:raw_copper_bricks_vertical_slab",
-                recipeId: "rvsl",
                 count: 40
             },
             {
                 id: "quark:raw_copper_bricks_wall",
-                recipeId: "rbwl",
                 count: 81
             },
             {
                 id: "quark:cut_copper_vertical_slab",
-                recipeId: "cutv",
                 count: 40
             },
             {
                 id: "quark:exposed_cut_copper_vertical_slab",
-                recipeId: "ecutv",
                 count: 40
             },
             {
                 id: "quark:weathered_cut_copper_vertical_slab",
-                recipeId: "wcutv",
                 count: 40
             },
             {
                 id: "quark:oxidized_cut_copper_vertical_slab",
-                recipeId: "ocutv",
                 count: 40
             }
         ],
@@ -588,22 +519,18 @@ global.moltenMetals = [
         items: [
             {
                 id: "electrodynamics:nuggettin",
-                recipeId: "nug",
                 count: 1
             },
             {
                 id: "electrodynamics:ingottin",
-                recipeId: "ing",
                 count: 9
             },
             {
                 id: "electrodynamics:raworetin",
-                recipeId: "raw",
                 count: 9
             },
             {
                 id: "electrodynamics:dusttin",
-                recipeId: "dst",
                 count: 9
             },
             {
@@ -611,7 +538,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "tin"
                 },
-                recipeId: "cmp",
+                recipeId: "clump",
                 count: 9
             },
             {
@@ -619,27 +546,23 @@ global.moltenMetals = [
                 nbt: {
                     material: "tin"
                 },
-                recipeId: "gvl",
+                recipeId: "gravel",
                 count: 9
             },
             {
                 id: "electrodynamics:oretin",
-                recipeId: "ore",
                 count: 12
             },
             {
                 id: "electrodynamics:deepslateoretin",
-                recipeId: "dore",
                 count: 12
             },
             {
                 id: "electrodynamics:resourceblocktin",
-                recipeId: "blk",
                 count: 81
             },
             {
                 id: "electrodynamics:raworeblocktin",
-                recipeId: "rblk",
                 count: 81
             },
             {
@@ -655,7 +578,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "tin"
                 },
-                recipeId: "lgear",
+                recipeId: "gear_base",
                 count: 49
             },
             {
@@ -671,7 +594,7 @@ global.moltenMetals = [
                 nbt: {
                     material: "tin"
                 },
-                recipeId: "mnt",
+                recipeId: "axle_mount",
                 count: 3
             }
         ],
