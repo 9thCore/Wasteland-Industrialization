@@ -20,7 +20,6 @@ JEIEvents.removeRecipes(event => {
                     };
 
                     for (let i = 0; i < Math.floor(size / item.count); i++) {
-                        console.log(`kubejs:fill_${metal.coolId}_${cast.id}_${type}_${item.recipeId}_${i}`);
                         event.remove("minecraft:crafting", `kubejs:fill_${metal.coolId}_${cast.id}_${type}_${item.recipeId}_${i}`);
                     };
                 });
