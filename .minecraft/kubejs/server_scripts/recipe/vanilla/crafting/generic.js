@@ -79,4 +79,23 @@ ServerEvents.recipes(event => {
 			H: "minecraft:stick"
 		}
 	);
+
+	event.shaped(
+		"minecraft:coal",
+		[
+			"CCC",
+			"C C",
+			"CCC"
+		],
+		{
+			C: "kubejs:coal_bit"
+		}
+	);
+
+	event.shapeless(
+		"8x kubejs:coal_bit",
+		[
+			"minecraft:coal"
+		]
+	);
 })
