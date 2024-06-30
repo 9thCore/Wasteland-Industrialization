@@ -48,22 +48,6 @@ const stripModPrefix = (s) => {
   }
   
   /**
-   * @param {Registry.Item} e
-   * @param {string} id
-   * @param {string} displayName
-   * @param {object} modelJson
-   * @returns {Internal.BasicItemJS$Builder}
-   */
-  const registerItemCast = (e, id, displayName, modelJson) => {
-    const item = e
-      .create(id)
-      .displayName(displayName)
-      .modelJson(modelJson)
-      .maxStackSize(8)
-    return item
-  }
-  
-  /**
    * @param {Registry.Block} e
    * @param {string} id
    * @param {string} baseTexture
@@ -74,9 +58,10 @@ const stripModPrefix = (s) => {
       parent: `kubejs:block/base_${type}`,
       textures: {
         base: baseTexture,
+        particle: baseTexture
       },
     }
-    return registerItemCast(e, id, getDisplayName(id), modelJson)
+    return registerCast(e, id, getDisplayName(id), modelJson)
   }
   
   /**
@@ -100,6 +85,7 @@ const stripModPrefix = (s) => {
       textures: {
         base: baseTexture,
         fluid: fluidTexture,
+        particle: baseTexture
       },
     }
     return registerCast(e, id, displayName, modelJson).lightLevel(12)
@@ -126,6 +112,7 @@ const stripModPrefix = (s) => {
       textures: {
         base: baseTexture,
         fluid: ingotTexture,
+        particle: baseTexture
       },
     }
     return registerCast(e, id, displayName, modelJson)

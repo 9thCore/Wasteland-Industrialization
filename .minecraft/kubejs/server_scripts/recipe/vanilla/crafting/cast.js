@@ -1,36 +1,4 @@
 (function() {
-    /*
-    const modularRecipe = function(event, cast, type, metal, item, index) {
-        const typedef = global.castTypes[type];
-        const ing = Item.of(`${item.id}`).withNBT(item.nbt).strongNBT();
-        const ingArray = [`kubejs:${cast.id}_${type}`];
-
-        for (let i = 0; i < index; i++) {
-            ingArray.push(ing);
-        }
-        
-        event.shapeless(
-            `kubejs:${cast.id}_${type}`,
-            ingArray
-        )
-        .id(`kubejs:fill_${metal.coolId}_${cast.id}_${type}_${index}${item.recipeId}`)
-        .modifyResult((grid, result) => {
-            let nbt = grid.find(`kubejs:${cast.id}_${type}`).getNbt();
-            nbt = nbt ? nbt : global.getCastNBT();
-            nbt.nugget_count += index * item.count;
-            if (nbt.nugget_count > typedef.size) {
-                return Item.of("minecraft:air");
-            };
-            if (nbt.metal_inside && nbt.metal_inside != metal.coolId) {
-                return Item.of("minecraft:air");
-            };
-            nbt.metal_inside = metal.coolId;
-            result.setNbt(nbt);
-            return result;
-        });
-    };
-    */
-
     const modularRecipe = function(event, cast, type, metal, item, idPostfix, nbt, maxRecipes) {
         const typedef = global.castTypes[type];
         let ingredient = nbt ? Item.of(item).withNBT(nbt).strongNBT() : Ingredient.of(item);
@@ -55,24 +23,22 @@
             .modifyResult((grid, result) => {
                 let nbt = grid.find(`kubejs:${cast.id}_${type}`).getNbt();
                 nbt = nbt ? nbt : global.getCastNBT();
-
-                console.log("Trying to find using " + ingredient);
+                const data = nbt.BlockEntityTag.data;
                 
                 const items = grid.findAll(ingredient);
                 items.forEach(ing => {
-                    console.log("Found " + ing);
-                    nbt.nugget_count += metal.valueMap[ing.id];
+                    data.nugget_count += metal.valueMap[ing.id];
                 });
                 
-                if (nbt.nugget_count > typedef.size) {
+                if (data.nugget_count > typedef.size) {
                     return Item.of("minecraft:air");
                 };
 
-                if (nbt.metal_inside && nbt.metal_inside != metal.coolId) {
+                if (data.metal_inside && data.metal_inside != metal.coolId) {
                     return Item.of("minecraft:air");
                 };
 
-                nbt.metal_inside = metal.coolId;
+                data.metal_inside = metal.coolId;
                 result.setNbt(nbt);
 
                 return result;

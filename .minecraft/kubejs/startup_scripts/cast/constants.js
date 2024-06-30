@@ -1,27 +1,30 @@
 // priority 200
 
+// block: chance to melt every randomtick
+global.castHeatSource = {
+    "minecraft:campfire": 0.25, // about 4 minutes
+    "minecraft:lava": 0.33 // about 3 minutes
+};
+
 global.castTypes = {
     ingot_cast: {
         size: 9,
         displayName: "Ingot Cast",
         modifier: block => {
             block.box(5, 0, 3, 11, 4, 13).box(6, 3, 1, 10, 4, 15);
-        },
-        campfireMeltable: true
+        }
     },
     block_cast: {
         size: 81,
         displayName: "Block Cast",
-        modifier: block => {},
-        campfireMeltable: false
+        modifier: block => {}
     },
     nugget_cast: {
         size: 9,
         displayName: "Nuggets Cast",
         modifier: block => {
             block.box(5, 0, 3, 11, 4, 13).box(6, 3, 1, 10, 4, 15);
-        },
-        campfireMeltable: true
+        }
     }
 };
 
@@ -610,3 +613,9 @@ global.moltenMetals = [
         temp: 1000
     }
 ];
+
+global.metalIndexMapping = {};
+
+for (let i = 0; i < global.moltenMetals.length; i++) {
+    global.metalIndexMapping[global.moltenMetals[i].coolId] = i;
+}
