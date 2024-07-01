@@ -39,7 +39,7 @@
 		"Middle Y" = 0
 
 [categories]
-	automation = true
+	automation = false
 	building = true
 	management = true
 	tools = true
