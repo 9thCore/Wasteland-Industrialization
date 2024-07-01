@@ -49,6 +49,7 @@
 			]
 			id: "439FE08975BE7FDC"
 			size: 1.5d
+			subtitle: "Lore, optional"
 			tasks: [{
 				id: "5F5D36324FEBD1B0"
 				title: "huh ?"
@@ -87,7 +88,11 @@
 		}
 		{
 			dependencies: ["4A4DC3FA5748C40C"]
-			description: ["Lucky find! Some of these pebbles contain some chunks of what appears to be coal. Hopefully these bits still burn as well as the bigger counterpart."]
+			description: [
+				"Lucky find! Some of these pebbles contain some chunks of what appears to be coal."
+				""
+				"Hopefully these bits still burn as well as the bigger counterpart."
+			]
 			id: "02AF446E71CC020D"
 			tasks: [{
 				id: "6C273B50717F5853"
@@ -163,7 +168,7 @@
 			description: [
 				"Despite seeming rather unreliable, this pickaxe can hold its own and has the ability to dig through this dry ground."
 				""
-				"I can't really do much with it in its current state, maybe I can hydrate it a bit?"
+				"It's really hard to break into, maybe I can hydrate it a bit first?"
 			]
 			id: "721AE960C5034BD0"
 			tasks: [{
@@ -297,7 +302,11 @@
 				"4F97ED1810E6220B"
 				"732A38F7E7B25502"
 			]
-			description: ["The campfire is just hot enough to where clay can harden into ceramic!"]
+			description: [
+				"The campfire is just hot enough to where clay can harden into ceramic!"
+				""
+				"With this, I should be able to get started on some basic metallurgy... just gotta make sure I only throw in purely the metal I'm looking to cast. Can't have impurities in the mix!"
+			]
 			id: "71B44445EE1167F0"
 			tasks: [{
 				id: "6E5E6EB3CF592414"
@@ -327,16 +336,19 @@
 			description: ["While I can't do much with these nuggets, I can melt them down in order to make it into a useful form."]
 			id: "791DA3CE48A1E920"
 			tasks: [{
-				id: "7ECB56B266EEB204"
+				id: "6BBD2721F3102805"
 				item: {
 					Count: 1
 					id: "kubejs:ceramic_ingot_cast"
 					tag: {
-						metal_inside: "gold"
-						nugget_count: 9
+						BlockEntityTag: {
+							data: {
+								metal_inside: "gold"
+								nugget_count: 9.0d
+							}
+						}
 					}
 				}
-				match_nbt: true
 				type: "item"
 			}]
 			x: -9.5d
@@ -348,13 +360,13 @@
 				"791DA3CE48A1E920"
 			]
 			description: [
-				"The campfire saves the day again! The gold has melted down into a puddle of hot liquid, and I'm frankly kind of scared handling this..."
+				"Put it over the campfire, waited a bit... and it's now molten!"
 				""
-				"Regardless, I should probably put it down and wait for it to cool down before I burn my hands off."
+				"Well, I should probably put it down and wait for it to cool down before I burn my hands off."
 			]
 			id: "7DAB4069E683EFBF"
 			tasks: [{
-				id: "041BFDBE4F4D767B"
+				id: "7F1F64273E309B93"
 				item: "kubejs:molten_gold_ceramic_ingot_cast"
 				type: "item"
 			}]
@@ -386,7 +398,7 @@
 			id: "2F5C29F43AECC3D1"
 			rewards: [
 				{
-					count: 4
+					count: 2
 					id: "25E3FC315D652A92"
 					item: "minecraft:gold_ingot"
 					type: "item"
@@ -415,7 +427,11 @@
 		}
 		{
 			dependencies: ["2EFB56EEB2411F18"]
-			description: ["This pebble is sharp enough to where I can crack open stone with... somewhat good efficiency. I can't harvest cobblestone, but this is a better source of pebbles than whatever I can find on the surface."]
+			description: [
+				"This pebble is sharp enough to where I can crack open stone with... somewhat good efficiency."
+				""
+				"I can't harvest cobblestone, but this is a better source of pebbles than whatever I can find on the surface."
+			]
 			id: "6E49871DC57E2863"
 			tasks: [{
 				id: "3D7445D97D335C72"
