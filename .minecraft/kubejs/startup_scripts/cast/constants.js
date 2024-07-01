@@ -18,19 +18,12 @@ global.castTypes = {
         size: 81,
         displayName: "Block Cast",
         modifier: block => {}
-    },
-    nugget_cast: {
-        size: 9,
-        displayName: "Nuggets Cast",
-        modifier: block => {
-            block.box(5, 0, 3, 11, 4, 13).box(6, 3, 1, 10, 4, 15);
-        }
     }
 };
 
 global.casts = [
     {
-        types: ["ingot_cast", "block_cast", "nugget_cast"],
+        types: ["ingot_cast", "block_cast"],
         id: "ceramic",
         displayName: "Ceramic",
         texture: "minecraft:block/terracotta",
@@ -38,7 +31,7 @@ global.casts = [
         canContainMetal: true
     },
     {
-        types: ["ingot_cast", "block_cast", "nugget_cast"],
+        types: ["ingot_cast", "block_cast"],
         id: "clay",
         displayName: "Clay",
         texture: "minecraft:block/clay",
