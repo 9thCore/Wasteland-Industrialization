@@ -67,8 +67,12 @@
                 event.shapeless(
                     Item.of(`kubejs:${cast.id}_${type}`)
                     .withNBT({
-                        metal_inside: metal.coolId,
-                        nugget_count: item.count
+                        BlockEntityTag: {
+                            data: {
+                                metal_inside: metal.coolId,
+                                nugget_count: item.count
+                            }
+                        }
                     }).strongNBT(),
                     [
                         Item.of(`kubejs:${cast.id}_${type}`)
