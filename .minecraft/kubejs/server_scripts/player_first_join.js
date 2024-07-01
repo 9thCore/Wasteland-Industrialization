@@ -5,5 +5,6 @@ PlayerEvents.loggedIn((event) => {
 		player.give("ftbquests:book");
 		player.stages.add("post_first_join");
 		event.getLevel().runCommandSilent("gamerule doTraderSpawning false");
+		event.getLevel().runCommandSilent("gamerule doPatrolSpawning false");
 	};
 });
