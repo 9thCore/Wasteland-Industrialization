@@ -19,3 +19,4 @@ instance.cfg
 .minecraft/usernamecache.json
 .minecraft/.qmenu*
 .minecraft/icon.png
+.minecraft/kubejs/README.txt
