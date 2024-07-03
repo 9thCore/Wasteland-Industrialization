@@ -4,7 +4,7 @@ import { BlockCrushingRecipe } from "./recipe_type";
 ServerEvents.recipes(event => {
     BlockCrushingRecipe.register(event, "minecraft:cobblestone", null, null, [
         RecipePost.dropItem("minecraft:gravel"),
-        RecipePost.random(1, 2, [
+        RecipePost.random(1, 1, [
             RecipePost.break(),
             RecipePost.break(),
             RecipePost.break(),
