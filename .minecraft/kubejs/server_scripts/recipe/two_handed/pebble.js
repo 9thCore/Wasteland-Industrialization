@@ -18,18 +18,6 @@
         event.getLevel().runCommandSilent(`execute as ${event.getPlayer().getUuid()} at @s run particle minecraft:block minecraft:stone ^ ^1.5 ^0.5 0 0 0 1 5`);
     }
 
-    function breakOpenPebble(event, failChance, successItem) {
-        const player = event.getPlayer();
-        const level = event.getLevel();
-
-        player.getOffHandItem().shrink(1);
-        if (Math.random() <= failChance) {
-            level.runCommandSilent(`execute as ${player.getUuid()} at @s rotated as @s run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.25`);
-        } else {
-            player.give(successItem);
-        }
-    }
-
     function generatePebbleOre(event) {
         let totalWeight = 0;
         for (let i = 0; i < oreData.length; i++) {
@@ -53,49 +41,54 @@
         }
     }
 
+    function pebbleConsumer(result, giveOre) {
+        return event => {
+            pebbleBreakSound(event);
+            pebbleParticles(event);
+            TwoHandedRecipe.genericGive(result)(event);
+            if (giveOre) { generatePebbleOre(event); }
+        }
+    }
+
     TwoHandedRecipe.register(
         "kubejs:pebble", "kubejs:pebble",
         0.1,
         pebbleHitSound,
-        event => {
-            pebbleBreakSound(event);
-            pebbleParticles(event);
-            breakOpenPebble(event, 0.75, "kubejs:pebble_chiseled");
-            generatePebbleOre(event);
-        }
+        pebbleConsumer("kubejs:pebble_chiseled", true)
     );
 
     TwoHandedRecipe.register(
         "kubejs:pebble", "kubejs:pebble_chiseled",
         0.075,
         pebbleHitSound,
-        event => {
-            pebbleBreakSound(event);
-            pebbleParticles(event);
-            breakOpenPebble(event, 0.75, "kubejs:pebble_sharp");
-        }
+        pebbleConsumer("kubejs:pebble_sharp", false)
     );
 
     TwoHandedRecipe.register(
         "kubejs:pebble_sharp", "kubejs:pebble",
         0.2,
         pebbleHitSound,
-        event => {
-            pebbleBreakSound(event);
-            pebbleParticles(event);
-            breakOpenPebble(event, 0.4, "kubejs:pebble_chiseled");
-            generatePebbleOre(event);
-        }
+        pebbleConsumer("kubejs:pebble_chiseled", true)
     );
 
     TwoHandedRecipe.register(
         "kubejs:pebble_sharp", "kubejs:pebble_chiseled",
         0.3,
         pebbleHitSound,
-        event => {
-            pebbleBreakSound(event);
-            pebbleParticles(event);
-            breakOpenPebble(event, 0.3, "kubejs:pebble_sharp");
-        }
+        pebbleConsumer("kubejs:pebble_sharp", false)
+    );
+
+    TwoHandedRecipe.register(
+        Ingredient.of("#forge:tools/pickaxe"), "kubejs:pebble",
+        1.0,
+        pebbleHitSound,
+        pebbleConsumer("kubejs:pebble_chiseled", true)
+    );
+
+    TwoHandedRecipe.register(
+        Ingredient.of("#forge:tools/pickaxe"), "kubejs:pebble_chiseled",
+        1.0,
+        pebbleHitSound,
+        pebbleConsumer("kubejs:pebble_sharp", false)
     );
 })();
