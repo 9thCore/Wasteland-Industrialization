@@ -92,15 +92,18 @@ ServerEvents.recipes(event => {
 	event.shapeless(
 		"ftbquests:book",
 		[
-			"kubejs:pebble"
+			"kubejs:pebble",
+			"minecraft:stick"
 		]
-	);
+	).id("ftbquests:book");
 
 	event.shapeless(
-		"essentials:guide_book",
+		Item.of("essentials:guide_book").withNBT({
+			"patchouli:book": "essentials:manual"
+		}).strongNBT(),
 		[
 			"crossroads:gear_base",
 			"crossroads:axle"
 		]
-	);
+	).id("essentials:essentials_guide_book");
 })
