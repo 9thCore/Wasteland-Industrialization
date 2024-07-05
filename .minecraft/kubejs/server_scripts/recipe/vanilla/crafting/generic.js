@@ -23,17 +23,6 @@ ServerEvents.recipes(event => {
 	);
 
 	event.shaped(
-		"kubejs:clay_block_cast",
-		[
-			"C C",
-			"CCC"
-		],
-		{
-			C: "minecraft:clay"
-		}
-	);
-
-	event.shaped(
 		"kubejs:string_sieve",
 		[
 			"SSS",

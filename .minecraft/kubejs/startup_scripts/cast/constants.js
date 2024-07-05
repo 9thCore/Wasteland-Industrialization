@@ -13,17 +13,12 @@ global.castTypes = {
         modifier: block => {
             block.box(5, 0, 3, 11, 4, 13).box(6, 3, 1, 10, 4, 15);
         }
-    },
-    block_cast: {
-        size: 81,
-        displayName: "Block Cast",
-        modifier: block => {}
     }
 };
 
 global.casts = [
     {
-        types: ["ingot_cast", "block_cast"],
+        types: ["ingot_cast"],
         id: "ceramic",
         displayName: "Ceramic",
         texture: "minecraft:block/terracotta",
@@ -31,7 +26,7 @@ global.casts = [
         canContainMetal: true
     },
     {
-        types: ["ingot_cast", "block_cast"],
+        types: ["ingot_cast"],
         id: "clay",
         displayName: "Clay",
         texture: "minecraft:block/clay",
@@ -79,97 +74,19 @@ global.moltenMetals = [
             },
             {
                 id: "minecraft:gold_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:deepslate_gold_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:nether_gold_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:gold_block",
-                count: 81
-            },
-            {
-                id: "minecraft:raw_gold_block",
-                count: 81
-            },
-            {
-                id: "quark:raw_gold_bricks",
-                count: 81
-            },
-            {
-                id: "supplementaries:gold_gate",
-                count: 11
-            },
-            {
-                id: "supplementaries:gold_door",
-                count: 18
-            },
-            {
-                id: "supplementaries:gold_trapdoor",
-                count: 36
-            },
-            {
-                id: "crossroads:gear_base",
-                nbt: {
-                    material: "gold"
-                },
-                recipeId: "gear",
-                count: 17
-            },
-            {
-                id: "crossroads:gear_base_large",
-                nbt: {
-                    material: "gold"
-                },
-                recipeId: "gear_large",
-                count: 49
-            },
-            {
-                id: "crossroads:axle",
-                nbt: {
-                    material: "gold"
-                },
-                recipeId: "axle",
                 count: 9
             },
             {
-                id: "crossroads:axle_mount",
-                nbt: {
-                    material: "gold"
-                },
-                recipeId: "axle_mount",
-                count: 3
+                id: "minecraft:deepslate_gold_ore",
+                count: 9
             },
             {
-                id: "quark:raw_gold_bricks_stairs",
-                count: 60
-            },
-            {
-                id: "quark:raw_gold_bricks_slab",
-                count: 40
-            },
-            {
-                id: "quark:raw_gold_bricks_vertical_slab",
-                count: 40
-            },
-            {
-                id: "quark:raw_gold_bricks_wall",
-                count: 81
-            },
-            {
-                id: "quark:gold_bars",
-                count: 3
+                id: "minecraft:nether_gold_ore",
+                count: 9
             }
         ],
         results: {
-            ingot_cast: "minecraft:gold_ingot",
-            block_cast: "minecraft:gold_block",
-            nugget_cast: "9x minecraft:gold_nugget"
+            ingot_cast: "minecraft:gold_ingot"
         },
         displayName: "Molten Gold",
         cooledDisplayName: "Gold",
@@ -219,93 +136,15 @@ global.moltenMetals = [
             },
             {
                 id: "minecraft:iron_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:deepslate_iron_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:iron_block",
-                count: 81
-            },
-            {
-                id: "minecraft:raw_iron_block",
-                count: 81
-            },
-            {
-                id: "quark:raw_iron_bricks",
-                count: 81
-            },
-            {
-                id: "supplementaries:iron_gate",
-                count: 11
-            },
-            {
-                id: "minecraft:iron_door",
-                count: 18
-            },
-            {
-                id: "minecraft:iron_trapdoor",
-                count: 36
-            },
-            {
-                id: "crossroads:gear_base",
-                nbt: {
-                    material: "iron"
-                },
-                recipeId: "gear",
-                count: 17
-            },
-            {
-                id: "crossroads:gear_base_large",
-                nbt: {
-                    material: "iron"
-                },
-                recipeId: "gear_large",
-                count: 49
-            },
-            {
-                id: "crossroads:axle",
-                nbt: {
-                    material: "iron"
-                },
-                recipeId: "axle",
                 count: 9
             },
             {
-                id: "crossroads:axle_mount",
-                nbt: {
-                    material: "iron"
-                },
-                recipeId: "axle_mount",
-                count: 3
-            },
-            {
-                id: "quark:raw_iron_bricks_stairs",
-                count: 60
-            },
-            {
-                id: "quark:raw_iron_bricks_slab",
-                count: 40
-            },
-            {
-                id: "quark:raw_iron_bricks_vertical_slab",
-                count: 40
-            },
-            {
-                id: "quark:raw_iron_bricks_wall",
-                count: 81
-            },
-            {
-                id: "minecraft:iron_bars",
-                count: 3
+                id: "minecraft:deepslate_iron_ore",
+                count: 9
             }
         ],
         results: {
-            ingot_cast: "minecraft:iron_ingot",
-            block_cast: "minecraft:iron_block",
-            nugget_cast: "9x minecraft:iron_nugget"
+            ingot_cast: "minecraft:iron_ingot"
         },
         displayName: "Molten Iron",
         cooledDisplayName: "Iron",
@@ -355,153 +194,15 @@ global.moltenMetals = [
             },
             {
                 id: "minecraft:copper_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:deepslate_copper_ore",
-                count: 12
-            },
-            {
-                id: "minecraft:copper_block",
-                count: 81
-            },
-            {
-                id: "minecraft:cut_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:cut_copper_stairs",
-                count: 60
-            },
-            {
-                id: "minecraft:cut_copper_slab",
-                count: 40
-            },
-            {
-                id: "minecraft:exposed_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:exposed_cut_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:exposed_cut_copper_stairs",
-                count: 60
-            },
-            {
-                id: "minecraft:exposed_cut_copper_slab",
-                count: 40
-            },
-            {
-                id: "minecraft:weathered_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:weathered_cut_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:weathered_cut_copper_stairs",
-                count: 60
-            },
-            {
-                id: "minecraft:weathered_cut_copper_slab",
-                count: 40
-            },
-            {
-                id: "minecraft:oxidized_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:oxidized_cut_copper",
-                count: 81
-            },
-            {
-                id: "minecraft:oxidized_cut_copper_stairs",
-                count: 60
-            },
-            {
-                id: "minecraft:oxidized_cut_copper_slab",
-                count: 40
-            },
-            {
-                id: "minecraft:raw_copper_block",
-                count: 81
-            },
-            {
-                id: "quark:raw_copper_bricks",
-                count: 81
-            },
-            {
-                id: "crossroads:gear_base",
-                nbt: {
-                    material: "copper"
-                },
-                recipeId: "gear",
-                count: 17
-            },
-            {
-                id: "crossroads:gear_base_large",
-                nbt: {
-                    material: "copper"
-                },
-                recipeId: "gear_large",
-                count: 49
-            },
-            {
-                id: "crossroads:axle",
-                nbt: {
-                    material: "copper"
-                },
-                recipeId: "axle",
                 count: 9
             },
             {
-                id: "crossroads:axle_mount",
-                nbt: {
-                    material: "copper"
-                },
-                recipeId: "axle_mount",
-                count: 3
-            },
-            {
-                id: "quark:raw_copper_bricks_stairs",
-                count: 60
-            },
-            {
-                id: "quark:raw_copper_bricks_slab",
-                count: 40
-            },
-            {
-                id: "quark:raw_copper_bricks_vertical_slab",
-                count: 40
-            },
-            {
-                id: "quark:raw_copper_bricks_wall",
-                count: 81
-            },
-            {
-                id: "quark:cut_copper_vertical_slab",
-                count: 40
-            },
-            {
-                id: "quark:exposed_cut_copper_vertical_slab",
-                count: 40
-            },
-            {
-                id: "quark:weathered_cut_copper_vertical_slab",
-                count: 40
-            },
-            {
-                id: "quark:oxidized_cut_copper_vertical_slab",
-                count: 40
+                id: "minecraft:deepslate_copper_ore",
+                count: 9
             }
         ],
         results: {
-            ingot_cast: "minecraft:copper_ingot",
-            block_cast: "minecraft:copper_block",
-            nugget_cast: "9x electrodynamics:nuggetcopper"
+            ingot_cast: "minecraft:copper_ingot"
         },
         displayName: "Molten Copper",
         cooledDisplayName: "Copper",
@@ -547,57 +248,15 @@ global.moltenMetals = [
             },
             {
                 id: "electrodynamics:oretin",
-                count: 12
-            },
-            {
-                id: "electrodynamics:deepslateoretin",
-                count: 12
-            },
-            {
-                id: "electrodynamics:resourceblocktin",
-                count: 81
-            },
-            {
-                id: "electrodynamics:raworeblocktin",
-                count: 81
-            },
-            {
-                id: "crossroads:gear_base",
-                nbt: {
-                    material: "tin"
-                },
-                recipeId: "gear",
-                count: 17
-            },
-            {
-                id: "crossroads:gear_base_large",
-                nbt: {
-                    material: "tin"
-                },
-                recipeId: "gear_base",
-                count: 49
-            },
-            {
-                id: "crossroads:axle",
-                nbt: {
-                    material: "tin"
-                },
-                recipeId: "axle",
                 count: 9
             },
             {
-                id: "crossroads:axle_mount",
-                nbt: {
-                    material: "tin"
-                },
-                recipeId: "axle_mount",
-                count: 3
+                id: "electrodynamics:deepslateoretin",
+                count: 9
             }
         ],
         results: {
-            ingot_cast: "electrodynamics:ingottin",
-            block_cast: "electrodynamics:resourceblocktin",
-            nugget_cast: "9x electrodynamics:nuggettin"
+            ingot_cast: "electrodynamics:ingottin"
         },
         displayName: "Molten Tin",
         cooledDisplayName: "Tin",
