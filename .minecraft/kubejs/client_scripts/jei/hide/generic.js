@@ -27,4 +27,6 @@ JEIEvents.hideItems(event => {
     event.hide('electrodynamics:geartin');
     event.hide('electrodynamics:gearsteel');
     event.hide('electrodynamics:gearbronze');
+    
+    event.hide('essentials:auto_crafter');
 })
