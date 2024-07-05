@@ -6,5 +6,6 @@ PlayerEvents.loggedIn((event) => {
 		player.stages.add("post_first_join");
 		event.getLevel().runCommandSilent("gamerule doTraderSpawning false");
 		event.getLevel().runCommandSilent("gamerule doPatrolSpawning false");
+		event.getLevel().runCommandSilent("gamerule doInsomnia false");
 	};
 });

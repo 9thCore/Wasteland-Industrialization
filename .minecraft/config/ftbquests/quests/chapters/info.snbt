@@ -83,14 +83,14 @@
 		}
 		{
 			dependencies: ["0C834DACB9259664"]
-			description: ["No mobs will naturally spawn (except for Phantoms), so venturing into caves is safe."]
+			description: ["No mobs will naturally spawn, so venturing into caves is safe."]
 			id: "413ABC71EEDA16A2"
 			tasks: [{
 				id: "74C733F6950B23D6"
 				title: "No mobs except Phantoms"
 				type: "checkmark"
 			}]
-			title: "No pesky mobs! (except Phantoms)"
+			title: "No pesky mobs!"
 			x: -1.5d
 			y: 1.5d
 		}
