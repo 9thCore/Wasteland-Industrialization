@@ -106,4 +106,23 @@ ServerEvents.recipes(event => {
 			"crossroads:axle"
 		]
 	).id("essentials:essentials_guide_book");
+
+	event.shaped(
+		"crossroads:block_salt",
+		[
+			"SSS",
+			"SSS",
+			"SSS"
+		],
+		{
+			S: "electrodynamics:dustsalt"
+		}
+	).id("crossroads:base_materials/salt_block");
+
+	event.shapeless(
+		"9x electrodynamics:dustsalt",
+		[
+			"crossroads:block_salt"
+		]
+	).id("crossroads:base_materials/salt");
 })
