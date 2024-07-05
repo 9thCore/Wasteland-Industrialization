@@ -16,7 +16,7 @@ var TwoHandedRecipe = {
  * @param {Function} successFunc - Callback in case of success
  */
 TwoHandedRecipe.register = function(mainHand, offHand, chance, failFunc, successFunc) {
-    ItemEvents.rightClicked(mainHand, event => {
+    ItemEvents.rightClicked(event => {
         // Only allow main hand interaction
         if (event.getHand() != TwoHandedRecipe.$InteractionHand.MAIN_HAND) {
             return;
@@ -28,15 +28,15 @@ TwoHandedRecipe.register = function(mainHand, offHand, chance, failFunc, success
             return;
         }
 
-        if (player.getMainHandItem().getId() != mainHand) {
+        if (!Ingredient.of(mainHand).test(player.getMainHandItem())) {
             return;
         }
 
-        if (player.getOffHandItem().getId() != offHand) {
+        if (!Ingredient.of(offHand).test(player.getOffHandItem())) {
             return;
         }
 
-        if (chance <= Math.random()) {
+        if (chance < Math.random()) {
             failFunc(event);
             return;
         }
@@ -53,10 +53,11 @@ TwoHandedRecipe.register = function(mainHand, offHand, chance, failFunc, success
 TwoHandedRecipe.genericGive = function(result) {
     return event => {
         const player = event.getPlayer();
-        const item = player.getOffHandItem();
-
-        item.shrink(1);
-        player.give(result);
+        player.getOffHandItem().shrink(1);
+        player.getMainHandItem().hurtAndBreak(1, player, _ => {
+            event.getLevel().broadcastEntityEvent(player, 47); 
+        });
+        player.giveInHand(result);
     }
 }
 
