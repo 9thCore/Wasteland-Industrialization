@@ -37,7 +37,7 @@
 
         if (chosenOre > 0) {
             const ore = oreData[chosenOre];
-            event.getPlayer().give(ore.id);
+            event.getPlayer().giveInHand(ore.id);
         }
     }
 
@@ -52,42 +52,42 @@
 
     TwoHandedRecipe.register(
         "kubejs:pebble", "kubejs:pebble",
-        0.1,
+        1/23,
         pebbleHitSound,
         pebbleConsumer("kubejs:pebble_chiseled", true)
     );
 
     TwoHandedRecipe.register(
         "kubejs:pebble", "kubejs:pebble_chiseled",
-        0.075,
+        1/17,
         pebbleHitSound,
         pebbleConsumer("kubejs:pebble_sharp", false)
     );
 
     TwoHandedRecipe.register(
         "kubejs:pebble_sharp", "kubejs:pebble",
-        0.2,
+        1/14,
         pebbleHitSound,
         pebbleConsumer("kubejs:pebble_chiseled", true)
     );
 
     TwoHandedRecipe.register(
         "kubejs:pebble_sharp", "kubejs:pebble_chiseled",
-        0.3,
+        1/12,
         pebbleHitSound,
         pebbleConsumer("kubejs:pebble_sharp", false)
     );
 
     TwoHandedRecipe.register(
-        Ingredient.of("#forge:tools/pickaxe"), "kubejs:pebble",
-        1.0,
+        "#minecraft:pickaxes", "kubejs:pebble",
+        1/4,
         pebbleHitSound,
         pebbleConsumer("kubejs:pebble_chiseled", true)
     );
 
     TwoHandedRecipe.register(
-        Ingredient.of("#forge:tools/pickaxe"), "kubejs:pebble_chiseled",
-        1.0,
+        "#minecraft:pickaxes", "kubejs:pebble_chiseled",
+        1/3,
         pebbleHitSound,
         pebbleConsumer("kubejs:pebble_sharp", false)
     );
