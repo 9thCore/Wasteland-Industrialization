@@ -88,4 +88,19 @@ ServerEvents.recipes(event => {
 			"minecraft:coal"
 		]
 	);
+
+	event.shapeless(
+		"ftbquests:book",
+		[
+			"kubejs:pebble"
+		]
+	);
+
+	event.shapeless(
+		"essentials:guide_book",
+		[
+			"crossroads:gear_base",
+			"crossroads:axle"
+		]
+	);
 })
