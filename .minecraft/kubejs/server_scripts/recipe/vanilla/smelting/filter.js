@@ -1,6 +1,6 @@
 // priority: 1000
 
-export const Filters = {
+const Filters = {
     generic: function(type, output) {
         return {type: type, output: output};
     },

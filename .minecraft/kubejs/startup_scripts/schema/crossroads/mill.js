@@ -1,7 +1,5 @@
 // priority: 100
 
-import { Classes } from "../util";
-
 StartupEvents.recipeSchemaRegistry(event => {
     const components = event.getComponents();
 

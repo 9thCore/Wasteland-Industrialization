@@ -1,6 +1,3 @@
-import { RecipePost } from "../post";
-import { BlockCrushingRecipe } from "./recipe_type";
-
 ServerEvents.recipes(event => {
     BlockCrushingRecipe.register(event, "minecraft:gravel", null, null, [
         RecipePost.dropItem("minecraft:sand"),

@@ -1,6 +1,6 @@
 // priority: 100
 
-export const RecipePost = {};
+const RecipePost = {};
 
 /**
  * 

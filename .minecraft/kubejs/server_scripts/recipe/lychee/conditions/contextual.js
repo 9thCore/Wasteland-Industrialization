@@ -1,6 +1,6 @@
 // priority: 100
 
-export const ContextualCondititions = {};
+const ContextualCondititions = {};
 
 /**
  * 

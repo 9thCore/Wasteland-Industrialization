@@ -1,6 +1,3 @@
-import { RecipePost } from "../post";
-import { ItemApplicationRecipe } from "./recipe_type"
-
 ServerEvents.recipes(event => {
     ItemApplicationRecipe.register(event, "kubejs:pebble_sharp", "minecraft:stone",
         [

@@ -1,6 +1,3 @@
-import { RecipePost } from "../post";
-import { BlockClickRecipe } from "./recipe_type"
-
 ServerEvents.recipes(event => {
     BlockClickRecipe.register(event, "kubejs:pebble_sharp", "minecraft:dead_bush", [
         RecipePost.preventDefault(),
