@@ -107,15 +107,21 @@
         });
 
         event.shapeless(
-            `kubejs:${cast.id}_${type}`,
+            Item.of(`kubejs:${cast.id}_${type}`)
+            .withNBT(global.getCastNBT())
+            .strongNBT(),
             `kubejs:${cast.id}_${type}`
         ).id(`kubejs:empty_${cast.id}_${type}`);
 
         event.shapeless(
             `kubejs:${cast.id}_${type}`,
             Item.of(`kubejs:${cast.id}_${type}`).withNBT({
-                metal_inside: "any metal",
-                nugget_count: "?"
+                BlockEntityTag: {
+                    data: {
+                        metal_inside: "any metal",
+                        nugget_count: "?"
+                    }
+                }
             }).strongNBT()
         ).id(`kubejs:empty_hint_${cast.id}_${type}`);
     };
