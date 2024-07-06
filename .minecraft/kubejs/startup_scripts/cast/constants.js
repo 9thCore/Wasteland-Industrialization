@@ -265,9 +265,3 @@ global.moltenMetals = [
         temp: 1000
     }
 ];
-
-global.metalIndexMapping = {};
-
-for (let i = 0; i < global.moltenMetals.length; i++) {
-    global.metalIndexMapping[global.moltenMetals[i].coolId] = i;
-}

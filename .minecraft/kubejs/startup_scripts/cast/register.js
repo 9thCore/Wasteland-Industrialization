@@ -49,6 +49,11 @@
                             metal.cooledTexture,
                             type
                         )
+                        .rightClick(e => {
+                            const block = e.block;
+                            block.popItemFromFace(metal.results[type], Direction.UP);
+                            e.level.setBlockAndUpdate(block.pos, Block.id(`kubejs:${material.id}_${type}`).getBlockState());
+                        })
                     );
                 };
             });
@@ -71,29 +76,20 @@
                         return;
                     }
 
-                    let size = null;
-                    Object.keys(global.castTypes).some(key => {
-                        if (id.includes(key)) {
-                            size = global.castTypes[key].size;
-                            return true;
-                        };
-                    });
-
-                    if (size == null) {
-                        console.warn(pos + ": Not a valid cast type??");
-                        return;
-                    };
-
+                    const size = global.castTypes[type].size;
                     const nbt = entity.serializeNBT();
                     const data = nbt?.data;
                     
                     if (nbt == null
                         || data == null
-                        || data.nugget_count == null
-                        || data.metal_inside == null) {
+                        || data.nugget_count == null) {
                         console.warn(pos + ": Malformed NBT data??");
                         return;
                     };
+
+                    if (data.metal_inside == null) {
+                        return; // no metal
+                    }
 
                     if (data.nugget_count < size) {
                         return; // not enough metal
@@ -103,18 +99,6 @@
                     const meltChance = global.castHeatSource[blockBelow.id];
                     if (meltChance == null || Math.random() <= meltChance) {
                         return; // not a heat source or chance did not proc
-                    };
-
-                    const index = global.metalIndexMapping[data.metal_inside];
-                    if (index == null) {
-                        console.warn(pos + ": Invalid metal (no index)??");
-                        return;
-                    };
-
-                    const metal = global.moltenMetals[index];
-                    if (metal == null) {
-                        console.warn(pos + ": Invalid metal (index pointing nowhere)??");
-                        return;
                     };
 
                     level.setBlockAndUpdate(pos, Block.id(`kubejs:${metal.id}_${id.substring(7)}`).getBlockState());
