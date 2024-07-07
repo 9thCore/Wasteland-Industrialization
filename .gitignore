@@ -20,3 +20,4 @@ instance.cfg
 .minecraft/.qmenu*
 .minecraft/icon.png
 .minecraft/kubejs/README.txt
+.minecraft/config/jei
