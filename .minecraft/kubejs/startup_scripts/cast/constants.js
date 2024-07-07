@@ -77,10 +77,6 @@ global.moltenMetals = [
                 count: 9
             },
             {
-                id: "minecraft:deepslate_gold_ore",
-                count: 9
-            },
-            {
                 id: "minecraft:nether_gold_ore",
                 count: 9
             }
@@ -137,10 +133,6 @@ global.moltenMetals = [
             {
                 id: "minecraft:iron_ore",
                 count: 9
-            },
-            {
-                id: "minecraft:deepslate_iron_ore",
-                count: 9
             }
         ],
         results: {
@@ -195,10 +187,6 @@ global.moltenMetals = [
             {
                 id: "minecraft:copper_ore",
                 count: 9
-            },
-            {
-                id: "minecraft:deepslate_copper_ore",
-                count: 9
             }
         ],
         results: {
@@ -248,10 +236,6 @@ global.moltenMetals = [
             },
             {
                 id: "electrodynamics:oretin",
-                count: 9
-            },
-            {
-                id: "electrodynamics:deepslateoretin",
                 count: 9
             }
         ],
