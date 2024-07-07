@@ -7,7 +7,7 @@
 	#The materials that should not have grinder to dust recipes added.
 	toDustMaterialBlacklist = []
 	#The materials that should not have crusher to plate recipes added.
-	toPlateMaterialBlacklist = []
+	toPlateMaterialBlacklist = ["copper"]
 	#The materials that should not have lathe to rod recipes added.
 	toRodMaterialBlacklist = []
 
