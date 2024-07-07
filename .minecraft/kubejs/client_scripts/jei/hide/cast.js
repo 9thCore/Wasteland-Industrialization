@@ -10,7 +10,7 @@ JEIEvents.removeRecipes(event => {
                     return;
                 };
 
-                for (let i = 0; i < 9; i++) {
+                for (let i = 0; i < 8; i++) {
                     event.remove("minecraft:crafting", `kubejs:fill_${metal.coolId}_${cast.id}_${type}_${i}`);
                 };
 
