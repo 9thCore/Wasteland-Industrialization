@@ -20,6 +20,14 @@ ServerEvents.tags('item', event => {
 		"kubejs:acacia_acorn"
 	]);
 
+	event.add("kubejs:crafting_plates", [
+		"#forge:plates/copper",
+		"#forge:plates/iron",
+		"#forge:plates/steel",
+		"#forge:plates/lead",
+		"#forge:plates/bronze"
+	])
+
 	global.moltenMetals.forEach(metal => {
 		metal.valueMap = {};
 
