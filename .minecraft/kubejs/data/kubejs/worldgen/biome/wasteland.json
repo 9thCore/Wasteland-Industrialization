@@ -51,7 +51,21 @@
 			"kubejs:ore_emerald",
 			"minecraft:ore_lapis",
 			"minecraft:ore_lapis_buried",
-			"minecraft:ore_copper"
+			"minecraft:ore_copper",
+			"electrodynamics:ore_tin",
+			"electrodynamics:ore_aluminum",
+			"electrodynamics:ore_chromium",
+			"electrodynamics:ore_fluorite",
+			"electrodynamics:ore_lead",
+			"electrodynamics:ore_lithium",
+			"electrodynamics:ore_molybdenum",
+			"electrodynamics:ore_niter",
+			"electrodynamics:ore_silver",
+			"electrodynamics:ore_sylvite",
+			"electrodynamics:ore_thorium",
+			"electrodynamics:ore_titanium",
+			"electrodynamics:ore_uranium",
+			"electrodynamics:ore_vanadium"
 		],
 		[],
 		[
