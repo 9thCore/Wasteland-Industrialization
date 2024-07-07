@@ -22,3 +22,4 @@ instance.cfg
 .minecraft/kubejs/README.txt
 .minecraft/config/jei
 .minecraft/kubejs/config
+.minecraft/config/defaultworldtype/world-presets.txt
