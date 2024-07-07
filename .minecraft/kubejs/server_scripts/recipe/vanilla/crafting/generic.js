@@ -114,4 +114,19 @@ ServerEvents.recipes(event => {
 			"crossroads:block_salt"
 		]
 	).id("crossroads:base_materials/salt");
+
+	event.shaped(
+		"minecraft:furnace",
+		[
+			"FCF",
+			"CPC",
+			"SSS"
+		],
+		{
+			P: "electrodynamics:plateiron",
+			S: "minecraft:smooth_stone",
+			F: "supplementaries:flint_block",
+			C: "minecraft:cobblestone"
+		}
+	).id("minecraft:furnace");
 })
