@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         const fluid = recipe.outputValues()[0].getValue();
         const id = input.first.id
         if (id == "crossroads:ore_clump"
-            || id == "jaopca:crossroads_clumps.silver"
+            || id == "jaopca:crossroads_clumps.lead"
             || id == "jaopca:crossroads_clumps.silver"
         ) {
             event.recipes.crossroads.cr_blast_furnace(
