@@ -243,4 +243,106 @@ ServerEvents.recipes(event => {
 			B: "crossroads:nugget_bronze"
 		}
 	).id("crossroads:base_materials/bronze_ingot_nugg");
+
+	event.shaped(
+		"24x crossroads:fluid_tube",
+		[
+			"BBB",
+			"   ",
+			"BBB"
+		],
+		{
+			B: "electrodynamics:platebronze"
+		}
+	).id("crossroads:fluid_tube");
+
+	event.shaped(
+		"crossroads:fluid_tank",
+		[
+			"FBF",
+			"BUB",
+			"FBF"
+		],
+		{
+			B: "electrodynamics:platebronze",
+			F: "crossroads:fluid_tube",
+			U: "minecraft:bucket"
+		}
+	).id("crossroads:fluid_tank");
+
+	event.shaped(
+		"crossroads:steam_boiler",
+		[
+			"BBB",
+			"BFB",
+			"CHC"
+		],
+		{
+			B: "electrodynamics:ingotbronze",
+			C: "electrodynamics:platecopper",
+			F: "crossroads:fluid_tank",
+			H: "#kubejs:steam_compatible_heat_cables"
+		}
+	).id("crossroads:boiler");
+
+	event.shaped(
+		"crossroads:blast_furnace",
+		[
+			"IAI",
+			"BFB",
+			"BTB"
+		],
+		{
+			B: "minecraft:bricks",
+			A: "crossroads:axle",
+			I: "electrodynamics:plateiron",
+			T: "crossroads:fluid_tank",
+			F: "minecraft:furnace"
+		}
+	).id("crossroads:blast_furnace");
+
+	event.shaped(
+		"crossroads:firebox",
+		[
+			"CHC",
+			"IFI",
+			"CCC"
+		],
+		{
+			C: "minecraft:cobblestone",
+			H: "#kubejs:steam_compatible_heat_cables",
+			I: "minecraft:iron_trapdoor",
+			F: "minecraft:furnace"
+		}
+	).id("crossroads:firebox");
+
+	event.shaped(
+		"crossroads:water_centrifuge",
+		[
+			"BAB",
+			"FTF",
+			"BBB"
+		],
+		{
+			B: "electrodynamics:platebronze",
+			A: "crossroads:axle",
+			T: "crossroads:fluid_tank",
+			F: "crossroads:fluid_tube"
+		}
+	).id("crossroads:water_centrifuge");
+
+	event.shaped(
+		"crossroads:ore_cleanser",
+		[
+			"IWI",
+			"FTF",
+			"III"
+		],
+		{
+			W: "crossroads:water_centrifuge",
+			T: "crossroads:fluid_tank",
+			I: "electrodynamics:ingottin",
+			F: "crossroads:fluid_tube"
+		}
+	).id("crossroads:ore_cleanser");
 })

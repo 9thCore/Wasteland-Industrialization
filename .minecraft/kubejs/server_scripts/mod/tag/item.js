@@ -26,7 +26,14 @@ ServerEvents.tags('item', event => {
 		"#forge:plates/steel",
 		"#forge:plates/lead",
 		"#forge:plates/bronze"
-	])
+	]);
+
+	event.add("kubejs:steam_compatible_heat_cables", [
+		"crossroads:heat_cable_wool",
+		"crossroads:heat_cable_obsidian",
+		"crossroads:heat_cable_ceramic",
+		"crossroads:heat_cable_densus"
+	]);
 
 	global.moltenMetals.forEach(metal => {
 		metal.valueMap = {};

@@ -1,0 +1,644 @@
+{
+	autofocus_id: "1F3E53D0BE04BD7F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_ii"
+	group: "0C436F923DB943E2"
+	icon: {
+		Count: 1
+		id: "crossroads:gear_base"
+		tag: {
+			material: "gold"
+		}
+	}
+	id: "2457B7FEEE9569EA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Right, well, now that I'm getting slightly more technologically advanced, I should start thinking about what to do in the future."
+				""
+				"I guess my first priority should be establishing some sort of connection with the base... because I doubt I'll be able to get back there immediately. It's constantly on the move, I'd need its coordinates regardless."
+				""
+				"But how am I going to contact them? I don't know how to create the high-power machinery required for such a long(?) distance."
+				""
+				"For the time being, however, I should better my equipment. A gold pickaxe isn't going to be very useful."
+			]
+			id: "1F3E53D0BE04BD7F"
+			size: 1.5d
+			subtitle: "Lore, optional"
+			tasks: [{
+				id: "79CFAB656C2E4A50"
+				title: "Page #27"
+				type: "checkmark"
+			}]
+			title: "Page 71"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F3E53D0BE04BD7F"]
+			description: ["Cobblestone, the basis of all rock-related crafts. No more of that individual pebble mess!"]
+			id: "6DF906AD5067D7A5"
+			tasks: [{
+				id: "377FAD909379FE8C"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DF906AD5067D7A5"]
+			description: ["Just like with the wooden tools, I can't seem to construct a stable tool out of stone... I hope iron changes things. I don't like the very limited durability that gold offers!"]
+			id: "23E0856BD607A9B1"
+			tasks: [{
+				id: "6C2A459210050277"
+				title: "No stone either?"
+				type: "checkmark"
+			}]
+			title: "No stone tools either?"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F3E53D0BE04BD7F"]
+			description: ["An iconic image for anything metal related. Allows repairing, but is also a strong block affected by gravity."]
+			id: "179E2D167E395E6D"
+			tasks: [{
+				id: "308239EDE8562BAE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:anvil)"
+					}
+				}
+				title: "Any #minecraft:anvil"
+				type: "item"
+			}]
+			title: "Anvil"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6DF906AD5067D7A5"
+				"179E2D167E395E6D"
+			]
+			description: ["Crushing the cobblestone under an anvil grants me access to gravel, and subsequently, flint!"]
+			id: "1A4E6EFCEE3CEC54"
+			tasks: [{
+				id: "51C7DBBC3E562BF5"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"179E2D167E395E6D"
+				"1A4E6EFCEE3CEC54"
+			]
+			description: ["One more round of crushing from gravel leads to sand. This means sandstone, glass... and uhh....... hmm"]
+			id: "14CEBC589FF5AE4E"
+			tasks: [{
+				id: "0889BCDAA858A0A2"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1F3E53D0BE04BD7F"]
+			description: [
+				"Feeling excited about my new pickaxe, I tried harvesting an ore..."
+				""
+				"...unfortunately, the tool's construction is not the best, for it breaks the raw ore down into bits. Iron should be better in this regard, but for now, this is the best I can do."
+			]
+			id: "06EAFE72DE30B94D"
+			tasks: [{
+				id: "49184284504E3A7C"
+				title: "Ores"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6DF906AD5067D7A5"
+				"179E2D167E395E6D"
+			]
+			description: ["It seems that crushing the cobblestone down also reveals some ore bits, lucky!"]
+			id: "484E2053178F1C55"
+			tasks: [{
+				id: "0D4160AC0958BBE6"
+				title: "Ores"
+				type: "checkmark"
+			}]
+			title: "Extra Ore Source"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6DF906AD5067D7A5"
+				"69B6D2E08E4D84CF"
+			]
+			description: [
+				"Ah, it's been a while since I last had no access to electricity and had to rely on one of these!"
+				""
+				"The stone out here doesn't seem quite as strong as I'd hoped, so I substituted some of it with some flint. "
+				""
+				"The heart of any mechanically-driven system. Been many a times when I forgot to add one to a network and nothing could rotate, haha."
+			]
+			id: "45A48EBCE1B10441"
+			tasks: [{
+				id: "6C48D99DA993EFAC"
+				item: "crossroads:master_axis"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["45A48EBCE1B10441"]
+			description: ["One of the two moving parts of a mechanical system."]
+			id: "011387DA2A76C140"
+			tasks: [
+				{
+					id: "33F56908291B58C3"
+					item: {
+						Count: 1
+						id: "crossroads:gear_base"
+						tag: { }
+					}
+					title: "Any Gear"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "3839935B1BD229EA"
+					item: {
+						Count: 1
+						id: "crossroads:gear_base_large"
+						tag: { }
+					}
+					title: "Any Large Gear"
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "Any Gear"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A4E6EFCEE3CEC54"]
+			description: ["A stable and solid block formed from a lot of gravel's worth of flint. Should work well enough for tasks involving structural integrity and, optionally, times when heat must be contained."]
+			id: "69B6D2E08E4D84CF"
+			tasks: [{
+				id: "2FA90414B88F47CD"
+				item: "supplementaries:flint_block"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["45A48EBCE1B10441"]
+			description: ["One of the two moving parts of a mechanical system."]
+			id: "6B0AD4C9C25BC711"
+			tasks: [{
+				id: "0853012D0D4248CB"
+				item: {
+					Count: 1
+					id: "crossroads:axle"
+					tag: { }
+				}
+				title: "Any Axle"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["45A48EBCE1B10441"]
+			description: [
+				"An &oEssential&r tool for working with these systems."
+				""
+				"My pickaxe only has so much durability and is rather unreliable, for I tend to end up taking down the neighbouring gears as well by accident, but I have a much easier time configuring things with the wrench."
+			]
+			id: "0837F886839A6538"
+			tasks: [{
+				id: "0066DB941EA3A4D1"
+				item: "essentials:wrench"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["69B6D2E08E4D84CF"]
+			description: ["the furnace uses iron because what else do you cook stuff on, air? :)"]
+			id: "150C2E565BC1759D"
+			tasks: [{
+				id: "73FD21994C994431"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2FCD234A0E4CB79F"
+				"09A88FDAB6880B21"
+				"0B31CBEFFF492914"
+			]
+			description: ["A boiler whose only purpose is to boil water into steam. (obviously)"]
+			id: "184778A59654EFAB"
+			tasks: [{
+				id: "2D0FD52A0D7252CE"
+				item: "crossroads:steam_boiler"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2FCD234A0E4CB79F"]
+			description: ["Machinery that can distill water, be it dirty or clean. May result in by-products."]
+			id: "4045CCCF359B7A8F"
+			tasks: [{
+				id: "1D7E169EAFBF5C5B"
+				item: "crossroads:water_centrifuge"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4045CCCF359B7A8F"
+				"719B3654421872A0"
+				"601426AEEC099B7D"
+			]
+			description: [
+				"This dirty water can be separated into distilled water and one of many byproducts, most notably gunpowder, bone meal and redstone!"
+				""
+				"I dislike those pesky creepers and skeletons as much as the next person, but they're unfortunately the only renewable sources of these items. Good thing I can still get them through other means!"
+			]
+			id: "7B72021DBF889881"
+			tasks: [
+				{
+					id: "225B63E0051431B6"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "2720E27BF0BEF21A"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "79B279BB0464FBB0"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "Useful byproducts"
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["512BCC66044F509C"]
+			description: [
+				"With the new ceramic coating applied on the stick, I finally managed to forge a stable iron pickaxe! The plates should also make the ends fine enough to not completely break down ores!"
+				""
+				"With newfound access to the entire piece of raw ore, I should be able to process them a little more efficiently now."
+			]
+			id: "7BBEC2BAEA16DCA6"
+			rewards: [{
+				count: 7
+				id: "3C3682B568D35983"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "75A3BC77CB5DE953"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4045CCCF359B7A8F"]
+			description: ["A capable machine that can wash ores using steam. Vital in the ore multiplication process."]
+			id: "4F87D71530C8153F"
+			tasks: [{
+				id: "0B6BB8125F0158F7"
+				item: "crossroads:ore_cleanser"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7BBEC2BAEA16DCA6"
+				"4F87D71530C8153F"
+				"184778A59654EFAB"
+			]
+			description: [
+				"Requiring more effort than just smelting down in the blast furnace or crucible, cleansing the ores with steam and following the process resulting from the dust."
+				""
+				"Additionally, some dirty water is created in the process."
+			]
+			id: "719B3654421872A0"
+			tasks: [{
+				id: "56D2986AA740CB56"
+				title: "Dirty Water"
+				type: "checkmark"
+			}]
+			title: "1:1.5 Ore Processing"
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"498E8C690D4BCFEF"
+				"63099B2C9DC13878"
+			]
+			description: [
+				"Smelting down ores in the blast furnace results in a 1:1 ore to molten metal ratio, which is not bad by any means, considering it's very simple and just requires some rotation and coal."
+				""
+				"And, as it turns out, the resultant slag can also be cleansed into cobblestone and dirty water."
+			]
+			id: "601426AEEC099B7D"
+			tasks: [{
+				id: "3F8BEAF1BFA30AD6"
+				item: "crossroads:slag"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["150C2E565BC1759D"]
+			description: ["A high-power furnace, finally capable of melting down metals, but &oso&r high-power that they become molten fluid instead."]
+			id: "498E8C690D4BCFEF"
+			tasks: [{
+				id: "2DCD30F629367F38"
+				item: "crossroads:blast_furnace"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7BBEC2BAEA16DCA6"
+				"2C9740EB514EFB3B"
+			]
+			description: ["Simple yet effective,"]
+			id: "63099B2C9DC13878"
+			tasks: [{
+				id: "7239D06F65AD86FF"
+				title: "1:1 Ore Processing"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"150C2E565BC1759D"
+				"6324B9ECCAC34BF1"
+			]
+			description: [
+				"The simplest form of melting, only requiring heat from various sources."
+				""
+				"Also does not result in any by-products, as opposed to the blast furnace or the cleansing process."
+			]
+			id: "0866C9FF657D4B52"
+			tasks: [{
+				id: "505BBA7E33FECDAD"
+				item: "crossroads:heating_crucible"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"498E8C690D4BCFEF"
+				"0866C9FF657D4B52"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Both of these methods provide a pretty simple way of melting down metals into fluid form, but their simplicity is also their downfall, for they only result in one ingot per ore."]
+			id: "2C9740EB514EFB3B"
+			tasks: [{
+				id: "1B1163BE8E8E2038"
+				title: "Simple melting"
+				type: "checkmark"
+			}]
+			title: "Simple Melting"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["179E2D167E395E6D"]
+			description: [
+				"I can't seem to be able to crush ingots into anything meaningful, a block of iron can be crushed into two plates!"
+				""
+				"...this rate is awful! 9:2? Really??"
+			]
+			id: "1BCF36DA553816AF"
+			tasks: [{
+				id: "10ABD0A02D3C775B"
+				item: "electrodynamics:plateiron"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1BCF36DA553816AF"]
+			description: ["The good old bucket... that, somehow, cannot store anything less than a full bucket of fluid. But still useful for moving around fluids in-world!"]
+			id: "63B3DAAE8292A2AC"
+			tasks: [{
+				id: "49EA656D85D53D25"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1BCF36DA553816AF"]
+			description: ["Small fluid container with a whopping storage space of 360mB. Great for transferring liquid like molten metal."]
+			id: "0FDE21DCC36D02CE"
+			tasks: [{
+				id: "14AA14B193D92898"
+				item: "kubejs:canister"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"63B3DAAE8292A2AC"
+				"14CEBC589FF5AE4E"
+			]
+			description: [
+				"...and ceramic! Yes, that's right, ceramic..."
+				""
+				"so I guess me calling the terracotta cast \"ceramic\" was a bit of a misnomer. Oh well."
+			]
+			id: "3C25CA4005671137"
+			tasks: [{
+				id: "0E992CB3A302D8F1"
+				item: "electrodynamics:ceramicwet"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3C25CA4005671137"
+				"150C2E565BC1759D"
+			]
+			description: ["Durable ball of sand and clay with multiple uses."]
+			id: "430DBD429580C7F2"
+			tasks: [{
+				id: "4450E2674AEBF0B6"
+				item: "electrodynamics:ceramiccooked"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["430DBD429580C7F2"]
+			description: ["A plate obtained by compressing ceramic, still through crushing with an anvil. At least it's a 4:1 process...?"]
+			id: "6324B9ECCAC34BF1"
+			tasks: [{
+				id: "49EA61DB7E62A3A2"
+				item: "electrodynamics:ceramicplate"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3765DA7F057FF912"]
+			description: ["The dust, same as many other metals, can be melted and casted into an ingot for proper use later."]
+			id: "2FCD234A0E4CB79F"
+			tasks: [{
+				id: "6B42CE0AC5CE7DC2"
+				item: "electrodynamics:ingotbronze"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"26D9716A6A67BB84"
+				"3B13BEE68A155634"
+			]
+			description: [
+				"Take some tin dust, take double as much copper dust, pack them a bit in your hands, and you get bronze!"
+				""
+				"Don't question it."
+			]
+			id: "3765DA7F057FF912"
+			tasks: [{
+				id: "217085EB63F5D00E"
+				item: "electrodynamics:dustbronze"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6324B9ECCAC34BF1"]
+			id: "512BCC66044F509C"
+			tasks: [{
+				id: "721D1E3BB9BA83A9"
+				item: "kubejs:ceramic_stick"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B31CBEFFF492914"]
+			description: ["The firebox smelts fuels like a furnace, producing heat. Not the most renewable way of generating it, but easiest and most reliable to set up, at least temporarily."]
+			id: "09A88FDAB6880B21"
+			tasks: [{
+				id: "00028EAB271E0DE9"
+				item: "crossroads:firebox"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["179E2D167E395E6D"]
+			description: ["Obtained from crushing down a tin ingot, or a raw ore, with an anvil. May fail."]
+			hide_dependency_lines: true
+			id: "26D9716A6A67BB84"
+			tasks: [{
+				id: "63AA978D04DCD1AE"
+				item: "electrodynamics:dusttin"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["179E2D167E395E6D"]
+			description: ["Obtained from crushing down a copper ingot, or a raw ore, with an anvil. May fail."]
+			hide_dependency_lines: true
+			id: "3B13BEE68A155634"
+			tasks: [{
+				id: "3F586AB359EC04AA"
+				item: "electrodynamics:dustcopper"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6324B9ECCAC34BF1"]
+			description: ["A cable that can be used to transfer heat, made out of ceramic. The other option, at this point, is wool insulation, but it can't sustain the temperatures required... well, not like I have a great way of getting wool, anyway!"]
+			id: "0B31CBEFFF492914"
+			tasks: [{
+				id: "59977B3CB91D2720"
+				item: "crossroads:heat_cable_ceramic"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.0d
+		}
+	]
+	title: "Chapter II"
+}
