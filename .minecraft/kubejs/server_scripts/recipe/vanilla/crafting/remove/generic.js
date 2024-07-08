@@ -5,4 +5,5 @@ ServerEvents.recipes(event => {
         type: "minecraft:crafting_shaped",
         output: "#kubejs:crafting_plates"
     });
+    event.remove("electrodynamics:ceramic_plate");
 });
