@@ -13,4 +13,9 @@ ServerEvents.recipes(event => {
         "minecraft:smooth_stone",
         "minecraft:stone"
     ).cookingTime(600);
+
+    event.smelting(
+        "electrodynamics:ceramiccooked",
+        "electrodynamics:ceramicwet"
+    ).cookingTime(400);
 })

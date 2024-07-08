@@ -31,4 +31,6 @@ JEIEvents.hideItems(event => {
     event.hide('essentials:auto_crafter');
     event.hide('crossroads:dust_salt');
     event.hide('crossroads:sulfur');
+    
+    event.hide('minecraft:blast_furnace');
 })

@@ -1,4 +1,4 @@
 ServerEvents.recipes(event => {
-    event.remove(Filters.either("#forge:ingots"));
-    event.remove(Filters.either("#forge:gems"));
+    event.remove(Filters.smelting("#forge:ingots"));
+    event.remove(Filters.smelting("#forge:gems"));
 });
