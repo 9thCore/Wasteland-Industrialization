@@ -129,4 +129,54 @@ ServerEvents.recipes(event => {
 			C: "minecraft:cobblestone"
 		}
 	).id("minecraft:furnace");
+
+	event.shaped(
+		"kubejs:canister",
+		[
+			" P ",
+			"I I",
+			" P "
+		],
+		{
+			P: "electrodynamics:plateiron",
+			I: "minecraft:iron_ingot"
+		}
+	);
+
+	event.shaped(
+		"minecraft:bucket",
+		[
+			"P P",
+			" P "
+		],
+		{
+			P: "electrodynamics:plateiron"
+		}
+	).id("minecraft:bucket");
+
+	event.shaped(
+		"minecraft:cauldron",
+		[
+			"I I",
+			"I I",
+			"PPP"
+		],
+		{
+			P: "electrodynamics:plateiron",
+			I: "minecraft:iron_ingot"
+		}
+	).id("minecraft:cauldron");
+
+	event.shaped(
+		"crossroads:heating_crucible",
+		[
+			"P P",
+			"PCP",
+			"PPP"
+		],
+		{
+			P: "electrodynamics:ceramicplate",
+			C: "minecraft:cauldron"
+		}
+	).id("crossroads:crucible");
 })
