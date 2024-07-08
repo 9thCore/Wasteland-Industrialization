@@ -179,4 +179,68 @@ ServerEvents.recipes(event => {
 			C: "minecraft:cauldron"
 		}
 	).id("crossroads:crucible");
+
+	event.shaped(
+		"kubejs:ceramic_stick",
+		[
+			"P",
+			"S",
+			"P"
+		],
+		{
+			P: "electrodynamics:ceramicplate",
+			S: "minecraft:stick"
+		}
+	).id("kubejs:ceramic_stick_v");
+
+	event.shaped(
+		"kubejs:ceramic_stick",
+		[
+			"PSP"
+		],
+		{
+			P: "electrodynamics:ceramicplate",
+			S: "minecraft:stick"
+		}
+	).id("kubejs:ceramic_stick_h");
+
+	event.shaped(
+		"minecraft:iron_pickaxe",
+		[
+			"PIP",
+			" C ",
+			" S "
+		],
+		{
+			P: "electrodynamics:plateiron",
+			I: "minecraft:iron_ingot",
+			C: "kubejs:ceramic_stick",
+			S: "minecraft:stick"
+		}
+	).id("minecraft:iron_pickaxe");
+
+	event.shaped(
+		"crossroads:heat_cable_ceramic",
+		[
+			"CCC",
+			"III",
+			"CCC"
+		],
+		{
+			C: "electrodynamics:ceramicplate",
+			I: "minecraft:copper_ingot"
+		}
+	).id("crossroads:heat_cables/heat_cable_ceramic");
+
+	event.shaped(
+		"electrodynamics:ingotbronze",
+		[
+			"BBB",
+			"BBB",
+			"BBB"
+		],
+		{
+			B: "crossroads:nugget_bronze"
+		}
+	).id("crossroads:base_materials/bronze_ingot_nugg");
 })
