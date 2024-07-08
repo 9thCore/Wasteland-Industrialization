@@ -1,5 +1,0 @@
-
-[general]
-	#The material blacklist of this module.
-	materialBlacklist = materialBlacklist = ["steel", "superconductive", "vanadium", "brick", "netherite", "titanium", "vanadiumsteel", "titaniumcarbide", "bronze", "stainlesssteel", "chromium", "amethyst", "mercury", "lapis", "prismarine", "hslasteel", "diamond", "quartz", "nether_brick", "ruby", "lithium"]
-
