@@ -59,4 +59,7 @@ StartupEvents.registry('item', event => {
 	event.create('canister')
 	.displayName('Canister')
 	.attachCapability(CapabilityBuilder.FLUID.itemStack(360));
+
+	event.create('ceramic_stick')
+	.displayName('Ceramic-Hardened Stick')
 })
