@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
 			P: "electrodynamics:plateiron",
 			S: "minecraft:smooth_stone",
 			F: "supplementaries:flint_block",
-			C: "minecraft:cobblestone"
+			C: "quark:sturdy_stone"
 		}
 	).id("minecraft:furnace");
 
@@ -345,4 +345,18 @@ ServerEvents.recipes(event => {
 			F: "crossroads:fluid_tube"
 		}
 	).id("crossroads:ore_cleanser");
+
+	event.shaped(
+		"crossroads:master_axis",
+		[
+			"CCC",
+			"C C",
+			"PAP"
+		],
+		{
+			P: "electrodynamics:plateiron",
+			C: "minecraft:cobblestone",
+			A: "crossroads:axle"
+		}
+	).id("crossroads:master_axis");
 })
