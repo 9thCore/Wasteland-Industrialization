@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
-    ItemApplicationRecipe.register(event, "kubejs:pebble_sharp", "minecraft:stone",
+    LycheeUtils.register(
+        event,
+        ItemApplicationRecipe.construct("kubejs:pebble_sharp", "minecraft:stone"),
         [
             RecipePost.preventDefault(),
             RecipePost.random(1, 1, [
@@ -23,7 +25,9 @@ ServerEvents.recipes(event => {
         ]
     );
     
-    ItemApplicationRecipe.register(event, "kubejs:pebble_sharp", "minecraft:cobblestone",
+    LycheeUtils.register(
+        event,
+        ItemApplicationRecipe.construct("kubejs:pebble_sharp", "minecraft:cobblestone"),
         [
             RecipePost.preventDefault(),
             RecipePost.random(1, 1, [

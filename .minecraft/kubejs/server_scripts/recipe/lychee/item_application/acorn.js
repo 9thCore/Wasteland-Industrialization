@@ -34,16 +34,22 @@
 
     ServerEvents.recipes(event => {
         acorns.forEach(acorn => {
-            ItemApplicationRecipe.register(event, acorn.id, acorn.soil, [
-                RecipePost.placeBlock(0, 1, 0, acorn.sapling)
-            ], [
-                ContextualCondititions.location(0, 1, 0, {
-                    block: {
-                        blocks: ["minecraft:air"]
-                    }
-                }),
-                ContextualCondititions.direction("up")
-            ]);
+            LycheeUtils.register(
+                event, 
+                ItemApplicationRecipe.construct(acorn.id, acorn.soil),
+                [
+                    RecipePost.placeBlock(0, 1, 0, acorn.sapling)
+                ],
+                null,
+                [
+                    ContextualCondititions.location(0, 1, 0, {
+                        block: {
+                            blocks: ["minecraft:air"]
+                        }
+                    }),
+                    ContextualCondititions.direction("up")
+                ]
+            )
         });
     });
 })();

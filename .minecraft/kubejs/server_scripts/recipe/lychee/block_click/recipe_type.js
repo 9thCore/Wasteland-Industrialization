@@ -4,24 +4,14 @@ const BlockClickRecipe = {};
 
 /**
  * 
- * @param {Internal.RecipesEventJS} event 
  * @param {String|String[]} items
  * @param {Object} blockPredicate
  * @param {Object} post
  */
-BlockClickRecipe.register = function(event, items, blockPredicate, post) {
-    let items_in = [];
-    items = Array.isArray(items) ? items : [items];
-    items.forEach(name => {
-        items_in.push({
-            item: name
-        });
-    });
-
-    event.custom({
+BlockClickRecipe.construct = function(items, blockPredicate) {
+    return {
         type: "lychee:block_clicking",
-        item_in: items_in,
-        block_in: blockPredicate,
-        post: post
-    });
+        item_in: LycheeUtils.KJSItemListToLychee(items),
+        block_in: blockPredicate
+    };
 };

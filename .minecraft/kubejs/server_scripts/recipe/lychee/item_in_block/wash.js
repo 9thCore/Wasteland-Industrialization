@@ -1,9 +1,17 @@
 ServerEvents.recipes(event => {
-    ItemInBlockRecipe.register(event, "kubejs:dry_dirt", "minecraft:water", 2, null, [
-        RecipePost.dropItem("minecraft:dirt")
-    ]);
+    LycheeUtils.register(
+        event,
+        ItemInBlockRecipe.construct("kubejs:dry_dirt", "minecraft:water", 2),
+        [
+            RecipePost.dropItem("minecraft:dirt")
+        ]
+    )
     
-    ItemInBlockRecipe.register(event, "kubejs:dirty_gold", "minecraft:water", 3, null, [
-        RecipePost.dropItem("minecraft:gold_nugget")
-    ]);
+    LycheeUtils.register(
+        event,
+        ItemInBlockRecipe.construct("kubejs:dirty_gold", "minecraft:water", 3),
+        [
+            RecipePost.dropItem("minecraft:gold_nugget")
+        ]
+    )
 });

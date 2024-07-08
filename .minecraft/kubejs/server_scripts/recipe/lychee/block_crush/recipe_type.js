@@ -4,33 +4,25 @@ const BlockCrushingRecipe = {};
 
 /**
  * 
- * @param {Internal.RecipesEventJS} event 
  * @param {String|String[]} [items]
  * @param {Object} [fallingBlockPredicate]
  * @param {Object} [landingBlockPredicate]
  * @param {Object} post
  */
-BlockCrushingRecipe.register = function(event, items, fallingBlockPredicate, landingBlockPredicate, post) {
-    let items_in = [];
-    items = Array.isArray(items) ? items : [items];
-    items.forEach(name => {
-        items_in.push({
-            item: name
-        });
-    });
-
+BlockCrushingRecipe.construct = function(items, fallingBlockPredicate, landingBlockPredicate) {
     const recipe = {
-        type: "lychee:block_crushing",
-        item_in: items_in,
-        post: post
+        type: "lychee:block_crushing"
     };
-    
-    if (fallingBlockPredicate) {
+
+    if (items != null) {
+        recipe.item_in = LycheeUtils.KJSItemListToLychee(items);
+    }
+    if (fallingBlockPredicate != null) {
         recipe.falling_block = fallingBlockPredicate;
     };
-    if (landingBlockPredicate) {
+    if (landingBlockPredicate != null) {
         recipe.landing_block = landingBlockPredicate;
     };
 
-    event.custom(recipe);
+    return recipe;
 };

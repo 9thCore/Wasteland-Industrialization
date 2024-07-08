@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
-    ItemApplicationRecipe.register(event, "kubejs:string_sieve", "minecraft:dirt",
+    LycheeUtils.register(
+        event,
+        ItemApplicationRecipe.construct("kubejs:string_sieve", "minecraft:dirt"),
         [
             RecipePost.damageItem(),
             RecipePost.preventDefault(),
@@ -40,7 +42,9 @@ ServerEvents.recipes(event => {
         ]
     );
     
-    ItemApplicationRecipe.register(event, "minecraft:air", "minecraft:dirt",
+    LycheeUtils.register(
+        event,
+        ItemApplicationRecipe.construct("minecraft:air", "minecraft:dirt"),
         [
             RecipePost.preventDefault(),
             RecipePost.random(1, 1, [
