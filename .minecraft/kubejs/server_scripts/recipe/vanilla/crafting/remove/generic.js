@@ -6,4 +6,5 @@ ServerEvents.recipes(event => {
         output: "#kubejs:crafting_plates"
     });
     event.remove("electrodynamics:ceramic_plate");
+    event.remove("crossroads:heat_cables/heat_cable_dirt");
 });
