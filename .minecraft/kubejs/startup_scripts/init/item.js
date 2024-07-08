@@ -55,4 +55,8 @@ StartupEvents.registry('item', event => {
 
 	event.create('dark_oak_acorn')
 	.displayName('Dark Oak Acorn')
+
+	event.create('canister')
+	.displayName('Canister')
+	.attachCapability(CapabilityBuilder.FLUID.itemStack(360));
 })
