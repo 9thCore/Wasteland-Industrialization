@@ -65,6 +65,28 @@
                     material.texture,
                     type
                 )
+                .rightClick(e => {
+                    const player = e.player;
+                    const item = player.getMainHandItem();
+                    const cap = item.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM);
+
+                    cap.ifPresent(c => {
+                        const tank = c.getFluidInTank(0);
+                        if (tank.isEmpty() || tank.amount < 90) {
+                            // Not enough to drain out
+                            return;
+                        }
+
+                        const id = tank.fluid.arch$registryName();
+                        global.moltenMetals.some(metal => {
+                            if (id.getPath().includes(metal.id)) {
+                                c.drain(Fluid.of(id.toString(), 90), "execute");
+                                e.level.setBlockAndUpdate(e.block.pos, Block.id(`kubejs:${metal.id}_${material.id}_${type}`).getBlockState());
+                                return true;
+                            };
+                        });
+                    });
+                })
                 .randomTick(e => {
                     const level = e.level;
                     const block = e.block;
