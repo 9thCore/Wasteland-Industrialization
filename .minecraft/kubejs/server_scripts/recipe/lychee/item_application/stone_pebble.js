@@ -5,19 +5,9 @@ ServerEvents.recipes(event => {
         [
             RecipePost.preventDefault(),
             RecipePost.random(1, 1, [
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.dropItem("kubejs:pebble_chiseled"),
+                RecipePost.break().setWeight(9),
+                RecipePost.dropItem("kubejs:pebble_chiseled").setWeight(2),
                 RecipePost.dropItem("kubejs:pebble"),
-                RecipePost.dropItem("kubejs:pebble_chiseled"),
                 RecipePost.dropItem("2x kubejs:pebble"),
                 RecipePost.dropItem("6x kubejs:pebble")
             ]),
@@ -31,8 +21,7 @@ ServerEvents.recipes(event => {
         [
             RecipePost.preventDefault(),
             RecipePost.random(1, 1, [
-                RecipePost.break(),
-                RecipePost.break(),
+                RecipePost.break().setWeight(2),
                 RecipePost.dropItem("2x kubejs:pebble_sharp"),
                 RecipePost.dropItem("kubejs:pebble_chiseled"),
                 RecipePost.dropItem("3x kubejs:pebble_sharp"),
