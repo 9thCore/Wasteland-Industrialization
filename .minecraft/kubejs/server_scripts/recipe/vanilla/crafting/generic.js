@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
 			"SSS"
 		],
 		{
-			P: "electrodynamics:plateiron",
+			P: "minecraft:iron_trapdoor",
 			S: "minecraft:smooth_stone",
 			F: "supplementaries:flint_block",
 			C: "quark:sturdy_stone"
