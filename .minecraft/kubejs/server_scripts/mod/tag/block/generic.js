@@ -10,13 +10,17 @@ ServerEvents.tags("block", event => {
 	]);
 
 	event.add("forge:needs_wood_tool", [
-		"#forge:ores_in_ground/stone",
+		"minecraft:iron_ore",
+		"minecraft:coal_ore",
+		"minecraft:copper_ore",
+		"#forge:ores/tin",
 		"minecraft:raw_iron_block",
 		"minecraft:iron_block",
 		"supplementaries:flint_block"
 	]);
 
 	event.add("minecraft:needs_iron_tool", [
+		"minecraft:lapis_ore",
 		"minecraft:deepslate",
 		"minecraft:polished_deepslate",
 		"minecraft:polished_deepslate_stairs",
@@ -62,6 +66,11 @@ ServerEvents.tags("block", event => {
 		"electrodynamics:resourceblocktin",
 		"electrodynamics:raworeblocktin",
 		"electrodynamics:resourceblockbronze",
+		"#forge:ores/molybdenum",
+		"#forge:ores/saltpeter",
+		"#forge:ores/salt",
+		"#forge:ores/sulfur",
+		"#forge:ores/potassiumchloride",
 		"crossroads:block_cavorite",
 		"crossroads:block_bright_quartz",
 		"crossroads:block_pure_quartz",
