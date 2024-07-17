@@ -7,23 +7,11 @@ ServerEvents.recipes(event => {
             RecipePost.destroyBlock(),
             RecipePost.dropItem("kubejs:dry_fiber"),
             RecipePost.random(1, 1, [
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
+                RecipePost.break().setWeight(5),
                 RecipePost.dropItem("kubejs:dry_fiber")
             ]),
             RecipePost.random(1, 1, [
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
+                RecipePost.break().setWeight(8),
                 RecipePost.dropItem("kubejs:dry_fiber")
             ])
         ]
