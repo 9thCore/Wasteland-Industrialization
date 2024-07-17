@@ -26,6 +26,9 @@ StartupEvents.registry('item', event => {
 	event.create('iron_bit')
 	.displayName('Iron Bit')
 
+	event.create('tin_bit')
+	.displayName('Tin Bit')
+
 	event.create('dirty_gold')
 	.displayName('Dirty Gold Nugget')
 
