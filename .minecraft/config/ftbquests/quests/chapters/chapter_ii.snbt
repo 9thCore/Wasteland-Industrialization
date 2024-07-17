@@ -16,7 +16,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3177C2AEEE406D0C"]
+			dependencies: ["2F5C29F43AECC3D1"]
 			description: [
 				"Right, well, now that I'm getting slightly more technologically advanced, I should start thinking about what to do in the future."
 				""
@@ -141,7 +141,7 @@
 				title: "Ores"
 				type: "checkmark"
 			}]
-			title: "Extra Ore Source"
+			title: "Replenishable Ore Source"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -411,7 +411,7 @@
 				"7BBEC2BAEA16DCA6"
 				"2C9740EB514EFB3B"
 			]
-			description: ["Simple yet effective,"]
+			description: ["Simple yet effective, a quick way to get ore processing up and going... or well, 1:1 processing, anyway. Doesn't require much effort, space or time to setup, though."]
 			id: "63099B2C9DC13878"
 			tasks: [{
 				id: "7239D06F65AD86FF"
@@ -446,14 +446,18 @@
 				"0866C9FF657D4B52"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Both of these methods provide a pretty simple way of melting down metals into fluid form, but their simplicity is also their downfall, for they only result in one ingot per ore."]
+			description: [
+				"the only reason this exists in my q- er. journal is because either the blast furnace or crucible can be used to melt down ores into liquid  "
+				""
+				""
+				"lol"
+			]
 			id: "2C9740EB514EFB3B"
 			tasks: [{
-				id: "1B1163BE8E8E2038"
-				title: "Simple melting"
+				id: "53D8B95A52E4D729"
+				title: "\"or\" dependency task"
 				type: "checkmark"
 			}]
-			title: "Simple Melting"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -576,6 +580,7 @@
 		}
 		{
 			dependencies: ["6324B9ECCAC34BF1"]
+			description: ["A stick, but wrapped in ceramic! Increases the durability... slightly, and offers holes where tool heads can be mounted onto!"]
 			id: "512BCC66044F509C"
 			tasks: [{
 				id: "721D1E3BB9BA83A9"
