@@ -16,6 +16,11 @@ StartupEvents.registry('item', event => {
 	.maxStackSize(1)
 	.maxDamage(200)
 
+	event.create('iron_sieve')
+	.displayName('Iron Sieve')
+	.maxStackSize(1)
+	.maxDamage(500)
+
 	event.create('copper_bit')
 	.displayName('Copper Bit')
 
