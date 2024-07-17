@@ -4,18 +4,36 @@ const RecipePost = {};
 
 /**
  * 
+ * @param {Number} num 
+ */
+RecipePost.weight = function(num) {
+    this.weight = num;
+    return this;
+}
+
+/**
+ * 
+ * @param {Object} obj 
+ */
+RecipePost.applyMethods = function(obj) {
+    obj.setWeight = RecipePost.weight;
+    return obj;
+}
+
+/**
+ * 
  * @param {String} item
  * @param {Object} nbt
  * @returns {Object}
  */
 RecipePost.dropItem = function(item, nbt) {
     const [count, name] = stripCountFromItem(item);
-    return {
+    return RecipePost.applyMethods({
         type: "drop_item",
         item: name,
         count: count,
         nbt: nbt ? nbt : "{}"
-    };
+    });
 }
 
 /**
@@ -27,13 +45,13 @@ RecipePost.dropItem = function(item, nbt) {
  * @returns {Object}
  */
 RecipePost.placeBlock = function(offsetX, offsetY, offsetZ, block) {
-    return {
+    return RecipePost.applyMethods({
         type: "place",
         offsetX: offsetX ? offsetX : 0,
         offsetY: offsetY ? offsetY : 0,
         offsetZ: offsetZ ? offsetZ : 0,
         block: block
-    };
+    });
 }
 
 /**
@@ -55,12 +73,12 @@ RecipePost.destroyBlock = function(offsetX, offsetY, offsetZ) {
  * @returns {Object}
  */
 RecipePost.runCommand = function(command, hide, repeat) {
-    return {
+    return RecipePost.applyMethods({
         type: "execute",
         command: command,
         hide: hide ? hide : false,
         repeat: repeat ? (repeat > 0 ? true : false) : false
-    };
+    });
 }
 
 /**
@@ -89,14 +107,14 @@ RecipePost.playSound = function(sound, type, volume, pitch, hide, repeat) {
  * @returns {Object}
  */
 RecipePost.random = function(rollMin, rollMax, entries) {
-    return {
+    return RecipePost.applyMethods({
         type: "random",
         rolls: {
             min: rollMin,
             max: rollMax
         },
         entries: entries
-    };
+    });
 }
 
 /**
@@ -104,9 +122,9 @@ RecipePost.random = function(rollMin, rollMax, entries) {
  * @returns {Object}
  */
 RecipePost.break = function() {
-    return {
+    return RecipePost.applyMethods({
         type: "break"
-    };
+    });
 }
 
 /**
@@ -114,9 +132,9 @@ RecipePost.break = function() {
  * @returns {Object}
  */
 RecipePost.preventDefault = function() {
-    return {
+    return RecipePost.applyMethods({
         type: "prevent_default"
-    };
+    });
 }
 
 /**
@@ -127,15 +145,15 @@ RecipePost.preventDefault = function() {
  */
 RecipePost.damageItem = function(damage, target) {
     if (target != null) {
-        return {
+        return RecipePost.applyMethods({
             type: "damage_item",
             damage: damage ? damage : 1,
             target: target
-        }
+        })
     }
 
-    return {
+    return RecipePost.applyMethods({
         type: "damage_item",
         damage: damage ? damage : 1
-    }
+    })
 }
