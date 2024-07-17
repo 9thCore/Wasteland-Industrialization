@@ -5,26 +5,11 @@ ServerEvents.recipes(event => {
         [
             RecipePost.dropItem("minecraft:gravel"),
             RecipePost.random(1, 1, [
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.dropItem("kubejs:coal_bit"),
-                RecipePost.dropItem("kubejs:coal_bit"),
-                RecipePost.dropItem("kubejs:coal_bit"),
-                RecipePost.dropItem("kubejs:coal_bit"),
-                RecipePost.dropItem("kubejs:coal_bit"),
-                RecipePost.dropItem("kubejs:iron_bit"),
-                RecipePost.dropItem("kubejs:iron_bit"),
-                RecipePost.dropItem("kubejs:iron_bit"),
-                RecipePost.dropItem("kubejs:iron_bit"),
-                RecipePost.dropItem("kubejs:tin_bit"),
-                RecipePost.dropItem("kubejs:tin_bit"),
-                RecipePost.dropItem("kubejs:tin_bit"),
-                RecipePost.dropItem("kubejs:copper_bit"),
-                RecipePost.dropItem("kubejs:copper_bit")
+                RecipePost.break().setWeight(6),
+                RecipePost.dropItem("kubejs:coal_bit").setWeight(5),
+                RecipePost.dropItem("kubejs:iron_bit").setWeight(4),
+                RecipePost.dropItem("kubejs:tin_bit").setWeight(3),
+                RecipePost.dropItem("kubejs:copper_bit").setWeight(2)
             ])
         ]
     );

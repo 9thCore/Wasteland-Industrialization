@@ -5,13 +5,7 @@ ServerEvents.recipes(event => {
         [
             RecipePost.dropItem("minecraft:gravel"),
             RecipePost.random(1, 1, [
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
-                RecipePost.break(),
+                RecipePost.break().setWeight(7),
                 RecipePost.dropItem("kubejs:coal_bit"),
                 RecipePost.dropItem("2x kubejs:copper_bit"),
                 RecipePost.dropItem("kubejs:copper_bit"),
