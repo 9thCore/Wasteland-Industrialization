@@ -8,7 +8,6 @@ ItemEvents.tooltip(event => {
             };
 
             const id = stack.fluid.arch$registryName();
-            console.log(text);
             text.add(1, Text.translate(`fluid.${id.toLanguageKey()}`).darkGray());
             text.add(1, Text.gray(`${stack.amount} mB / ${c.getTankCapacity(0)} mB`));
         });
