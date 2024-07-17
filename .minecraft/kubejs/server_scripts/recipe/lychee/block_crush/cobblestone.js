@@ -1,0 +1,31 @@
+ServerEvents.recipes(event => {
+    LycheeUtils.register(
+        event, 
+        BlockCrushingRecipe.construct("minecraft:cobblestone"),
+        [
+            RecipePost.dropItem("minecraft:gravel"),
+            RecipePost.random(1, 1, [
+                RecipePost.break(),
+                RecipePost.break(),
+                RecipePost.break(),
+                RecipePost.break(),
+                RecipePost.break(),
+                RecipePost.break(),
+                RecipePost.dropItem("kubejs:coal_bit"),
+                RecipePost.dropItem("kubejs:coal_bit"),
+                RecipePost.dropItem("kubejs:coal_bit"),
+                RecipePost.dropItem("kubejs:coal_bit"),
+                RecipePost.dropItem("kubejs:coal_bit"),
+                RecipePost.dropItem("kubejs:iron_bit"),
+                RecipePost.dropItem("kubejs:iron_bit"),
+                RecipePost.dropItem("kubejs:iron_bit"),
+                RecipePost.dropItem("kubejs:iron_bit"),
+                RecipePost.dropItem("kubejs:tin_bit"),
+                RecipePost.dropItem("kubejs:tin_bit"),
+                RecipePost.dropItem("kubejs:tin_bit"),
+                RecipePost.dropItem("kubejs:copper_bit"),
+                RecipePost.dropItem("kubejs:copper_bit")
+            ])
+        ]
+    );
+});
