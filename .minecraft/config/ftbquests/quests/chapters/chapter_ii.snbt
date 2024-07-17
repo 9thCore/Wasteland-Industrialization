@@ -16,6 +16,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["3177C2AEEE406D0C"]
 			description: [
 				"Right, well, now that I'm getting slightly more technologically advanced, I should start thinking about what to do in the future."
 				""
@@ -360,7 +361,7 @@
 				"184778A59654EFAB"
 			]
 			description: [
-				"Requiring more effort than just smelting down in the blast furnace or crucible, cleansing the ores with steam and following the process resulting from the dust."
+				"Requiring more effort than directly smelting the raw ore down in the blast furnace or crucible, cleansing the ores with steam into dust, which then melts down into 1.5 ingots in the blast furnace."
 				""
 				"Additionally, some dirty water is created in the process."
 			]
