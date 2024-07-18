@@ -45,6 +45,10 @@ global.moltenMetals = [
                 count: 1
             },
             {
+                id: "kubejs:gold_bit",
+                count: 1
+            },
+            {
                 id: "minecraft:gold_ingot",
                 count: 9
             },

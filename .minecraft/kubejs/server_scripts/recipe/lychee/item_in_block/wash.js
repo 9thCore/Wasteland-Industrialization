@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         event,
         ItemInBlockRecipe.construct("kubejs:dirty_gold", "minecraft:water", 3),
         [
-            RecipePost.dropItem("minecraft:gold_nugget")
+            RecipePost.dropItem("kubejs:gold_bit")
         ]
     )
 });

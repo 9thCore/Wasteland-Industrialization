@@ -34,8 +34,11 @@ StartupEvents.registry('item', event => {
 	event.create('tin_bit')
 	.displayName('Tin Bit')
 
+	event.create('gold_bit')
+	.displayName('Gold Bit')
+
 	event.create('dirty_gold')
-	.displayName('Dirty Gold Nugget')
+	.displayName('Dirty Gold Bit')
 
 	event.create('dry_fiber')
 	.displayName('Dry Fiber')
