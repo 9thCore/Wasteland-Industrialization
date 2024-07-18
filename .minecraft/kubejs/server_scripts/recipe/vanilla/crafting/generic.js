@@ -25,9 +25,9 @@ ServerEvents.recipes(event => {
 	event.shaped(
 		"kubejs:string_sieve",
 		[
-			"SSS",
+			" S ",
 			"SES",
-			"SSS"
+			" S "
 		],
 		{
 			E: "kubejs:empty_sieve",
