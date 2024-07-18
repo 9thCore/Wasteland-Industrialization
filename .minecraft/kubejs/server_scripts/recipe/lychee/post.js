@@ -157,3 +157,10 @@ RecipePost.damageItem = function(damage, target) {
         damage: damage ? damage : 1
     })
 }
+
+RecipePost.nothing = function() {
+    return RecipePost.applyMethods({
+        type: "custom",
+        id: "do_nothing"
+    });
+}

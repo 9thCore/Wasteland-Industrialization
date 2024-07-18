@@ -1,0 +1,1 @@
+LycheeEvents.customAction("do_nothing", () => {});
