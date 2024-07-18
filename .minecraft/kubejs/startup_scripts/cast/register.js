@@ -105,7 +105,7 @@
                     if (nbt == null
                         || data == null
                         || data.nugget_count == null) {
-                        console.warn(pos + ": Malformed NBT data??");
+                        // console.warn(pos + ": Malformed NBT data??");
                         return;
                     };
 
