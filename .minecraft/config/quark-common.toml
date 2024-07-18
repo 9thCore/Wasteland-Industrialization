@@ -39,7 +39,7 @@
 		"Middle Y" = 0
 
 [categories]
-	automation = false
+	automation = true
 	building = true
 	management = true
 	tools = true
@@ -52,17 +52,17 @@
 
 [automation]
 	"Chains Connect Blocks" = true
-	Chute = true
+	Chute = false
 	Crafter = true
-	"Dispensers Place Blocks" = true
+	"Dispensers Place Blocks" = false
 	"Ender Watcher" = true
-	"Feeding Trough" = true
+	"Feeding Trough" = false
 	Gravisand = true
-	"Iron Rod" = true
+	"Iron Rod" = false
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
-	"Redstone Randomizer" = true
+	"Pistons Move Tile Entities" = false
+	"Redstone Randomizer" = false
 
 	[automation.crafter]
 		#Setting this to true will change the Crafter to use Emi's original design instead of Mojang's.
