@@ -321,8 +321,8 @@
 			description: ["A small amount of gold, obtained from the ground I'm standing on. I don't have access to a way to make it useful right now, though..."]
 			id: "6D7B880AADB8B30C"
 			tasks: [{
-				id: "29359E3A79EAF9DB"
-				item: "minecraft:gold_nugget"
+				id: "282BA9EF7AC3AFB6"
+				item: "kubejs:gold_bit"
 				type: "item"
 			}]
 			x: -7.5d
@@ -333,7 +333,7 @@
 				"71B44445EE1167F0"
 				"6D7B880AADB8B30C"
 			]
-			description: ["While I can't do much with these nuggets, I can melt them down in order to make it into a useful form."]
+			description: ["While I can't do much with these bits, I can melt them down in order to make it into a useful form."]
 			id: "791DA3CE48A1E920"
 			tasks: [{
 				id: "6BBD2721F3102805"
