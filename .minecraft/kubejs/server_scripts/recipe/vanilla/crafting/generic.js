@@ -38,13 +38,12 @@ ServerEvents.recipes(event => {
 	event.shaped(
 		"kubejs:iron_sieve",
 		[
-			"SIS",
+			" I ",
 			"IEI",
-			"SIS"
+			" I "
 		],
 		{
 			E: "kubejs:empty_sieve",
-			S: "minecraft:string",
 			I: "minecraft:iron_bars"
 		}
 	);
