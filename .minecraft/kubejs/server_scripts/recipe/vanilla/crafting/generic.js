@@ -372,4 +372,75 @@ ServerEvents.recipes(event => {
 			A: "crossroads:axle"
 		}
 	).id("crossroads:master_axis");
+
+	event.shaped(
+		"supplementaries:lock_block",
+		[
+			"PWP",
+			"WRW",
+			"PWP"
+		],
+		{
+			R: "minecraft:redstone",
+			P: "electrodynamics:plateiron",
+			W: "#minecraft:planks"
+		}
+	).id("supplementaries:lock_block");
+
+	event.shaped(
+		"minecraft:hopper",
+		[
+			"I I",
+			"ICI",
+			" P "
+		],
+		{
+			C: "#forge:chests/wooden",
+			I: "minecraft:iron_ingot",
+			P: "electrodynamics:plateiron"
+		}
+	).id("minecraft:hopper");
+
+	event.shaped(
+		"minecraft:hopper",
+		[
+			"ILI",
+			"ILI",
+			" P "
+		],
+		{
+			L: "#minecraft:logs",
+			I: "minecraft:iron_ingot",
+			P: "electrodynamics:plateiron"
+		}
+	).id("quark:tweaks/crafting/utility/misc/easy_hopper");
+
+	event.shaped(
+		"essentials:sorting_hopper",
+		[
+			"CRC",
+			"PHP",
+			" P "
+		],
+		{
+			R: "supplementaries:lock_block",
+			C: "minecraft:copper_ingot",
+			P: "electrodynamics:platecopper",
+			H: "minecraft:hopper"
+		}
+	).id("essentials:sorting_hopper");
+
+	event.shaped(
+		"essentials:speed_hopper",
+		[
+			"GCG",
+			"GHG",
+			" G "
+		],
+		{
+			G: "electrodynamics:platebronze",
+			C: "electrodynamics:circuitbasic",
+			H: "essentials:sorting_hopper"
+		}
+	).id("essentials:speed_hopper");
 })
