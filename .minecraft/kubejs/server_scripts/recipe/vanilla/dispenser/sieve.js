@@ -68,4 +68,5 @@
     };
 
     $DispenserBlock.registerBehavior(Item.of("kubejs:string_sieve"), SieveHandler);
+    $DispenserBlock.registerBehavior(Item.of("kubejs:iron_sieve"), SieveHandler);
 })();
