@@ -42,7 +42,8 @@
                 const context = builder.create(recipe.getType().contextParamSet);
 
                 // make a clone so lychee isnt allowed to interfere with the original item in any way
-                context.itemHolders = $ItemHolderCollectionInventory.of(context, item.copy(), Item.empty);
+                const copy = item.copy();
+                context.itemHolders = $ItemHolderCollectionInventory.of(context, copy, Item.empty);
 
                 if (recipe.tickOrApply(context)) {
                     // i cant figure out playsound so this is fine enough for now
@@ -55,6 +56,8 @@
                         item.shrink(1);
                     }
                 }
+
+                copy.shrink(1);
             }
             
             return recipeExists;
