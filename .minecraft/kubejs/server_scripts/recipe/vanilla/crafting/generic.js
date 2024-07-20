@@ -218,21 +218,6 @@ ServerEvents.recipes(event => {
 	).id("kubejs:ceramic_stick_h");
 
 	event.shaped(
-		"minecraft:iron_pickaxe",
-		[
-			"PIP",
-			" C ",
-			" S "
-		],
-		{
-			P: "electrodynamics:plateiron",
-			I: "minecraft:iron_ingot",
-			C: "kubejs:ceramic_stick",
-			S: "minecraft:stick"
-		}
-	).id("minecraft:iron_pickaxe");
-
-	event.shaped(
 		"crossroads:heat_cable_ceramic",
 		[
 			"CCC",
