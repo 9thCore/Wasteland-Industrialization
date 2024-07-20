@@ -6,5 +6,7 @@
 	"generator.minecraft.amplified": "AMPLIFIED [UNMODDED]",
   	"generator.minecraft.debug_all_block_states": "Debug Mode [UNMODDED]",
 	"generator.minecraft.single_biome_surface": "Single Biome [UNMODDED]",
-	"material.steel": "Steel"
+	"material.steel": "Steel",
+	"item.jaopca.crossroads_clumps.silver": "Silver Clump",
+	"item.jaopca.crossroads_clumps.lead": "Lead Clump"
 }
