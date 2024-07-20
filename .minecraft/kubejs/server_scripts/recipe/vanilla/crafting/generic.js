@@ -443,4 +443,19 @@ ServerEvents.recipes(event => {
 			H: "essentials:sorting_hopper"
 		}
 	).id("essentials:speed_hopper");
+
+	event.shaped(
+		"crossroads:stamp_mill",
+		[
+			"PAP",
+			"PBP",
+			"SSS"
+		],
+		{
+			P: "#minecraft:planks",
+			A: Item.of("crossroads:axle").withNBT({material: "steel"}).strongNBT(),
+			B: "electrodynamics:resourceblocksteel",
+			S: "minecraft:stone_brick_slab"
+		}
+	).id("crossroads:stamp_mill");
 })
