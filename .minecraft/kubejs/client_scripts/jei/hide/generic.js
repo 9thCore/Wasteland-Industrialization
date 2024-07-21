@@ -14,6 +14,7 @@ JEIEvents.hideItems(event => {
     event.hide('crossroads:nugget_tin');
     event.hide('crossroads:raw_tin');
     event.hide('crossroads:block_tin');
+    event.hide('crossroads:block_raw_tin');
     event.hide('crossroads:ore_tin');
     event.hide('crossroads:ore_tin_deep');
     
