@@ -482,4 +482,19 @@ ServerEvents.recipes(event => {
 			R: "minecraft:redstone"
 		}
 	).id("minecraft:piston");
+
+	event.shaped(
+		"minecraft:blast_furnace",
+		[
+			"IDI",
+			"IFI",
+			"SSS"
+		],
+		{
+			I: "electrodynamics:plateiron",
+			D: "minecraft:deepslate",
+			F: "crossroads:blast_furnace",
+			S: "minecraft:smooth_stone_slab"
+		}
+	).id("minecraft:blast_furnace")
 })

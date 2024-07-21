@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
     });
     event.remove("electrodynamics:ceramic_plate");
     event.remove("crossroads:heat_cables/heat_cable_dirt");
-    event.remove("minecraft:blast_furnace");
     event.remove("essentials:piston");
     event.remove("crossroads:block_raw_tin");
 });
