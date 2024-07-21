@@ -18,4 +18,9 @@ ServerEvents.recipes(event => {
         "electrodynamics:ceramiccooked",
         "electrodynamics:ceramicwet"
     ).cookingTime(400);
+
+    event.blasting(
+        "electrodynamics:coalcoke",
+        "#crossroads:blast_furnace_carbon"
+    ).cookingTime(300);
 })
