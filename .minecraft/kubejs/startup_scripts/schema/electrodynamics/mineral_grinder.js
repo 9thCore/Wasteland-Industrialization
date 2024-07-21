@@ -20,7 +20,7 @@ StartupEvents.recipeSchemaRegistry(event => {
         Component("outputItem").key("output"),
         Component("anyDoubleNumber").key("experience"),
         ChancedItemArray("anyString").key("iteminputs").preferred("itemInputs"),
-        ChancedItem("outputItem").key("itembi").defaultOptional(),
+        ChancedItemArray("outputItem").key("itembi").preferred("itemByproducts").defaultOptional(),
         Component("ticks").key("ticks").optional(20),
         Component("anyDoubleNumber").key("usagepertick").optional(1.0).preferred("usagePerTick")
     ));
