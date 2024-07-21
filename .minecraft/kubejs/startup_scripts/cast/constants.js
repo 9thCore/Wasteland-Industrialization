@@ -251,5 +251,31 @@ global.moltenMetals = [
         fluidTexture: "crossroads:block/molten_tin_still",
         cooledTexture: "electrodynamics:block/resource/resourceblocktin",
         temp: 1000
+    },
+    {
+        id: "molten_steel",
+        coolId: "steel",
+        items: [
+            {
+                id: "electrodynamics:nuggetsteel",
+                count: 1
+            },
+            {
+                id: "electrodynamics:ingotsteel",
+                count: 9
+            },
+            {
+                id: "electrodynamics:duststeel",
+                count: 9
+            }
+        ],
+        results: {
+            ingot_cast: "electrodynamics:ingotsteel"
+        },
+        displayName: "Molten Steel",
+        cooledDisplayName: "Steel",
+        fluidTexture: "kubejs:fluid/molten_steel",
+        cooledTexture: "electrodynamics:block/resource/resourceblocksteel",
+        temp: 1000
     }
 ];

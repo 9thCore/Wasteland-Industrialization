@@ -1,7 +1,7 @@
 
 [general]
 	#The material blacklist of this module.
-	materialBlacklist = ["steel", "superconductive", "vanadium", "brick", "netherite", "titanium", "vanadiumsteel", "titaniumcarbide", "stainlesssteel", "chromium", "amethyst", "mercury", "lapis", "prismarine", "hslasteel", "diamond", "emerald", "quartz", "nether_brick", "ruby", "lithium", "aluminum", "molybdenum"]
+	materialBlacklist = ["superconductive", "vanadium", "brick", "netherite", "titanium", "vanadiumsteel", "titaniumcarbide", "stainlesssteel", "chromium", "amethyst", "mercury", "lapis", "prismarine", "hslasteel", "diamond", "emerald", "quartz", "nether_brick", "ruby", "lithium", "aluminum", "molybdenum"]
 
 [recipes]
 	#The materials that should not have mill to dust recipes added.
