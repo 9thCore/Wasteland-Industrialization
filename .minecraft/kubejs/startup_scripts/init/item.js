@@ -73,4 +73,7 @@ StartupEvents.registry('item', event => {
 
 	event.create('ceramic_stick')
 	.displayName('Ceramic-Hardened Stick')
+
+	event.create('steel_stick')
+	.displayName('Steel-Ceramic-Hardened Stick')
 })

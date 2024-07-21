@@ -218,6 +218,30 @@ ServerEvents.recipes(event => {
 	).id("kubejs:ceramic_stick_h");
 
 	event.shaped(
+		"kubejs:steel_stick",
+		[
+			"P",
+			"S",
+			"P"
+		],
+		{
+			P: "electrodynamics:platesteel",
+			S: "kubejs:ceramic_stick"
+		}
+	).id("kubejs:steel_stick_v");
+
+	event.shaped(
+		"kubejs:steel_stick",
+		[
+			"PSP"
+		],
+		{
+			P: "electrodynamics:platesteel",
+			S: "kubejs:ceramic_stick"
+		}
+	).id("kubejs:steel_stick_h");
+
+	event.shaped(
 		"crossroads:heat_cable_ceramic",
 		[
 			"CCC",
@@ -443,4 +467,19 @@ ServerEvents.recipes(event => {
 			S: "minecraft:stone_brick_slab"
 		}
 	).id("crossroads:stamp_mill");
+
+	event.shaped(
+		"minecraft:piston",
+		[
+			"PPP",
+			"SIS",
+			"SRS"
+		],
+		{
+			P: "#minecraft:planks",
+			S: "quark:sturdy_stone",
+			I: "electrodynamics:plateiron",
+			R: "minecraft:redstone"
+		}
+	).id("minecraft:piston");
 })
