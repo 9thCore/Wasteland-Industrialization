@@ -29,5 +29,6 @@
         helper(event, ["electrodynamics:ingotsilver", "electrodynamics:raworesilver"], "electrodynamics:dustsilver");
         helper(event, "electrodynamics:ingotsteel", "electrodynamics:duststeel");
         helper(event, ["electrodynamics:ingotlead", "electrodynamics:raworelead"], "electrodynamics:dustlead");
+        helper(event, "electrodynamics:coalcoke", "kubejs:coke_dust");
     });
 })();

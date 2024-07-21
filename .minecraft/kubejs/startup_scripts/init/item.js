@@ -76,4 +76,7 @@ StartupEvents.registry('item', event => {
 
 	event.create('steel_stick')
 	.displayName('Steel-Ceramic-Hardened Stick')
+
+	event.create('coke_dust')
+	.displayName('Coal Coke Dust')
 })
