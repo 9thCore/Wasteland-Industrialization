@@ -1342,7 +1342,7 @@
 	Forgotten = true
 	Foxhound = true
 	Shiba = true
-	Stonelings = false
+	Stonelings = true
 	Toretoise = false
 	Wraith = true
 
@@ -1459,7 +1459,7 @@
 
 		[mobs.stonelings.dimensions]
 			"Is Blacklist" = false
-			Dimensions = ["minecraft:overworld"]
+			Dimensions = []
 
 		[mobs.stonelings.spawn_config]
 			#Allowed values: (0,)
@@ -1474,12 +1474,12 @@
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[mobs.stonelings.spawn_config.biomes.tags]
 					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
-					"Is Blacklist" = true
+					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
 				[mobs.stonelings.spawn_config.biomes.biomes]
 					Biomes = []
-					"Is Blacklist" = true
+					"Is Blacklist" = false
 
 	[mobs.toretoise]
 		"Max Y Level" = 0
