@@ -283,7 +283,6 @@
 			dependencies: [
 				"4045CCCF359B7A8F"
 				"719B3654421872A0"
-				"601426AEEC099B7D"
 			]
 			description: [
 				"This dirty water can be separated into distilled water and one of many byproducts, most notably gunpowder, bone meal and redstone!"
@@ -391,7 +390,7 @@
 				item: "crossroads:slag"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
