@@ -497,4 +497,47 @@ ServerEvents.recipes(event => {
 			S: "minecraft:smooth_stone_slab"
 		}
 	).id("minecraft:blast_furnace");
+
+	event.shaped(
+		"assemblyline:crate",
+		[
+			"SSS",
+			"SCS",
+			"BBB"
+		],
+		{
+			C: "#forge:chests",
+			S: "electrodynamics:platesteel",
+			B: "electrodynamics:resourceblockaluminum"
+		}
+	).id("assemblyline:crate_small");
+
+	event.shaped(
+		"assemblyline:cratemedium",
+		[
+			"SSS",
+			"TCT",
+			"BBB"
+		],
+		{
+			C: "assemblyline:crate",
+			S: "electrodynamics:platesteel",
+			T: "electrodynamics:platetitanium",
+			B: "electrodynamics:resourceblockhslasteel"
+		}
+	).id("assemblyline:crate_medium");
+
+	event.shaped(
+		"assemblyline:cratelarge",
+		[
+			"TTT",
+			"TCT",
+			"BBB"
+		],
+		{
+			C: "assemblyline:cratemedium",
+			T: "electrodynamics:platetitanium",
+			B: "crossroads:block_copshowium"
+		}
+	).id("assemblyline:crate_large");
 })
