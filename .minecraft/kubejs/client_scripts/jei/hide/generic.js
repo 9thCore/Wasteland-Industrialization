@@ -32,4 +32,13 @@ JEIEvents.hideItems(event => {
     event.hide('essentials:auto_crafter');
     event.hide('crossroads:dust_salt');
     event.hide('crossroads:sulfur');
+
+    event.hide('assemblyline:conveyorbelt');
+    event.hide('assemblyline:sorterbelt');
+    event.hide('assemblyline:autocrafter');
+    event.hide('assemblyline:blockbreaker');
+    event.hide('assemblyline:blockplacer');
+    event.hide('assemblyline:rancher');
+    event.hide('assemblyline:mobgrinder');
+    event.hide('assemblyline:farmer');
 })
