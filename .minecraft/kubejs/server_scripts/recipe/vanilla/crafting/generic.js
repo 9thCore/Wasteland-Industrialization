@@ -540,4 +540,12 @@ ServerEvents.recipes(event => {
 			B: "crossroads:block_copshowium"
 		}
 	).id("assemblyline:crate_large");
+
+	event.shapeless(
+		"minecraft:flint_and_steel",
+		[
+			Item.of("minecraft:flint"),
+			Item.of("electrodynamics:ingotsteel")
+		]
+	).id("minecraft:flint_and_steel");
 })
