@@ -496,5 +496,5 @@ ServerEvents.recipes(event => {
 			F: "crossroads:blast_furnace",
 			S: "minecraft:smooth_stone_slab"
 		}
-	).id("minecraft:blast_furnace")
+	).id("minecraft:blast_furnace");
 })
