@@ -377,18 +377,11 @@
 			dependencies: ["7DAB4069E683EFBF"]
 			description: ["Look at this shiny piece of metal... I would not have expected I could have reached gold tools before the iron, stone or even wood tier... but here we are!"]
 			id: "4BDDE142AB757ABE"
-			tasks: [
-				{
-					id: "5B417F6F303FC61F"
-					item: "minecraft:gold_ingot"
-					type: "item"
-				}
-				{
-					id: "23E944EFB2557ABD"
-					item: "kubejs:gold_ceramic_ingot_cast"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5B417F6F303FC61F"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
 			x: -13.5d
 			y: -0.5d
 		}
