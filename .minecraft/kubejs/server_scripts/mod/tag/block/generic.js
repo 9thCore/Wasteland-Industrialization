@@ -66,15 +66,16 @@ ServerEvents.tags("block", event => {
 		"electrodynamics:resourceblocktin",
 		"electrodynamics:raworeblocktin",
 		"electrodynamics:resourceblockbronze",
-		"#forge:ores/molybdenum",
-		"#forge:ores/saltpeter",
-		"#forge:ores/salt",
-		"#forge:ores/sulfur",
-		"#forge:ores/potassiumchloride",
 		"crossroads:block_cavorite",
 		"crossroads:block_bright_quartz",
 		"crossroads:block_pure_quartz",
-		"crossroads:block_copshowium",
+		"crossroads:block_copshowium"
+	]);
+
+	event.add("minecraft:needs_diamond_tool", [
+		"#forge:ores/saltpeter",
+		"#forge:ores/potassiumchloride",
+		"#forge:ores/molybdenum",
 		"minecraft:blackstone",
 		"minecraft:gilded_blackstone",
 		"minecraft:blackstone_stairs",
@@ -101,18 +102,15 @@ ServerEvents.tags("block", event => {
 		"quark:blackstone_bricks_stairs",
 		"quark:blackstone_bricks_slab",
 		"quark:blackstone_bricks_wall",
-		"crossroads:ore_ruby",
-		"crossroads:block_ruby",
 		"minecraft:chiseled_polished_blackstone",
 		"#forge:netherrack",
-		"#forge:ores_in_ground/netherrack"
-	]);
-
-	event.add("minecraft:needs_diamond_tool", [
+		"#forge:ores_in_ground/netherrack",
 		"electrodynamics:resourceblocksteel",
 		"electrodynamics:resourceblockstainlesssteel",
 		"electrodynamics:resourceblockvanadiumsteel",
 		"electrodynamics:resourceblockbronze",
-		"electrodynamics:resourceblockaluminum"
+		"electrodynamics:resourceblockaluminum",
+		"crossroads:ore_ruby",
+		"crossroads:block_ruby"
 	]);
 });
