@@ -1,0 +1,38 @@
+{
+	"temperature": 2.0,
+	"downfall": 0.0,
+	"has_precipitation": false,
+	"effects": {
+		"sky_color": 6588415,
+		"fog_color": 3344392,
+		"water_color": 664118,
+		"water_fog_color": 329011
+	},
+	"spawners": {},
+	"spawn_costs": {},
+	"carvers": {
+		"air": []
+	},
+	"features": [
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:glowstone",
+			"minecraft:glowstone_extra",
+			"minecraft:brown_mushroom_nether",
+			"minecraft:red_mushroom_nether",
+			"minecraft:ore_gold_nether",
+			"minecraft:ore_quartz_nether",
+			"crossroads:ore_ruby",
+			"kubejs:ore_soulsoil"
+		],
+		[],
+		[]
+	]
+}
