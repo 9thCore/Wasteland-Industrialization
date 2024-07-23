@@ -12,15 +12,15 @@ StartupEvents.recipeSchemaRegistry(event => {
     );
 
     const ChancedItemArray = itemType => builder(
-        ChancedItem(itemType).key("0"),
+        Component(itemType).key("0"),
         Component("anyIntNumber").key("count").optional(1)
     );
 
     event.register("electrodynamics:mineral_grinder_recipe", new Classes.$RecipeSchema(
         Component("outputItem").key("output"),
         Component("anyDoubleNumber").key("experience"),
-        ChancedItemArray("anyString").key("iteminputs").preferred("itemInputs"),
-        ChancedItemArray("outputItem").key("itembi").preferred("itemByproducts").defaultOptional(),
+        ChancedItemArray("inputItem").inputRole().key("iteminputs").preferred("itemInputs"),
+        ChancedItemArray("outputItem").outputRole().key("itembi").defaultOptional().preferred("itemByproducts"),
         Component("ticks").key("ticks").optional(20),
         Component("anyDoubleNumber").key("usagepertick").optional(1.0).preferred("usagePerTick")
     ));
