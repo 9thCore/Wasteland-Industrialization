@@ -79,4 +79,7 @@ StartupEvents.registry('item', event => {
 
 	event.create('coke_dust')
 	.displayName('Coal Coke Dust')
+
+	event.create('diamond_plate')
+	.displayName('Diamond Plate')
 })
