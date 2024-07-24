@@ -43,4 +43,10 @@ JEIEvents.hideItems(event => {
     event.hide('assemblyline:rancher');
     event.hide('assemblyline:mobgrinder');
     event.hide('assemblyline:farmer');
+    
+    event.hide('essentials:fluid_shifter');
+    event.hide('essentials:fluid_splitter');
+    event.hide('essentials:basic_fluid_splitter');
+    event.hide('essentials:item_splitter');
+    event.hide('essentials:basic_item_splitter');
 })

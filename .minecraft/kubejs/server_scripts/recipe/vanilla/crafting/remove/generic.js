@@ -26,4 +26,9 @@ ServerEvents.recipes(event => {
             }
         ]
     });
+    event.remove("essentials:fluid_shifter");
+    event.remove("essentials:basic_fluid_splitter");
+    event.remove("essentials:fluid_splitter");
+    event.remove("essentials:item_splitter");
+    event.remove("essentials:basic_item_splitter");
 });
