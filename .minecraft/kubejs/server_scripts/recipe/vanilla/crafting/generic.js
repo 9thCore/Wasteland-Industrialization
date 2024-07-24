@@ -548,4 +548,56 @@ ServerEvents.recipes(event => {
 			Item.of("electrodynamics:ingotsteel")
 		]
 	).id("minecraft:flint_and_steel");
+
+	event.shaped(
+		"scuba_gear:scuba_helmet",
+		[
+			"BBB",
+			"GTG",
+			"GGG"
+		],
+		{
+			B: "electrodynamics:platebronze",
+			T: "#forge:glass/colorless",
+			G: "minecraft:gold_ingot"
+		}
+	);
+
+	event.shaped(
+		"scuba_gear:scuba_chestplate",
+		[
+			"B B",
+			"GBG",
+			"GGG"
+		],
+		{
+			B: "electrodynamics:platebronze",
+			G: "minecraft:gold_ingot"
+		}
+	);
+
+	event.shaped(
+		"scuba_gear:scuba_leggings",
+		[
+			"GGG",
+			"B B",
+			"G G"
+		],
+		{
+			B: "electrodynamics:platebronze",
+			G: "minecraft:gold_ingot"
+		}
+	);
+
+	event.shaped(
+		"scuba_gear:scuba_boots",
+		[
+			"G G",
+			"B B"
+		],
+		{
+			B: "electrodynamics:platebronze",
+			G: "minecraft:gold_ingot"
+		}
+	);
 })
