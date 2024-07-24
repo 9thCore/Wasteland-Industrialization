@@ -628,4 +628,20 @@ ServerEvents.recipes(event => {
 			D: "minecraft:dropper"
 		}
 	).id("essentials:item_shifter");
+
+	event.shaped(
+		"quark:crafter",
+		[
+			"SRS",
+			"PCP",
+			"SDS"
+		],
+		{
+			C: "minecraft:crafting_table",
+			P: "electrodynamics:ceramicplate",
+			S: "electrodynamics:platesteel",
+			R: "minecraft:redstone_block",
+			D: "minecraft:dropper"
+		}
+	).id("quark:automation/crafting/crafter");
 })
