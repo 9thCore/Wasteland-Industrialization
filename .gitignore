@@ -24,3 +24,4 @@ instance.cfg
 .minecraft/kubejs/config
 .minecraft/config/defaultworldtype/world-presets.txt
 .minecraft/modernfix
+.minecraft/config/sidebar_buttons.json
