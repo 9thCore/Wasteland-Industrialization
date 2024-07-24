@@ -600,4 +600,32 @@ ServerEvents.recipes(event => {
 			G: "minecraft:gold_ingot"
 		}
 	);
+
+	event.shaped(
+		"24x essentials:item_chute",
+		[
+			"SHS",
+			"S S",
+			"SHS"
+		],
+		{
+			S: "electrodynamics:platesteel",
+			H: "minecraft:hopper"
+		}
+	).id("essentials:item_chute");
+
+	event.shaped(
+		"essentials:item_shifter",
+		[
+			"ITI",
+			"IDI",
+			"SSS"
+		],
+		{
+			T: "essentials:item_chute",
+			I: "electrodynamics:plateiron",
+			S: "quark:sturdy_stone",
+			D: "minecraft:dropper"
+		}
+	).id("essentials:item_shifter");
 })
