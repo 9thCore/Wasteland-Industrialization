@@ -602,10 +602,10 @@ ServerEvents.recipes(event => {
 	);
 
 	event.shaped(
-		"24x essentials:item_chute",
+		"16x essentials:item_chute",
 		[
 			"SHS",
-			"S S",
+			"SHS",
 			"SHS"
 		],
 		{
