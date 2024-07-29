@@ -56,7 +56,7 @@
         // Cloud
         
         // Check if at cloud level
-        if (affectedPos.y < 192) {
+        if (affectedPos.y < 192 || affectedPos.y > 195) {
             item.shrink(1);
             SimulateDispense(block, Item.of(item, 1));
             return item;
