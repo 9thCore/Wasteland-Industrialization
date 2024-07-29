@@ -465,7 +465,7 @@
 			description: [
 				"I can't seem to be able to crush ingots into anything meaningful, a block of iron can be crushed into two plates!"
 				""
-				"...this rate is awful! 9:2? Really??"
+				"...this rate is awful! 3:1? Really??"
 			]
 			id: "1BCF36DA553816AF"
 			tasks: [{
@@ -536,7 +536,7 @@
 		}
 		{
 			dependencies: ["430DBD429580C7F2"]
-			description: ["A plate obtained by compressing ceramic, still through crushing with an anvil. At least it's a 4:1 process...?"]
+			description: ["A plate obtained by compressing ceramic, still through crushing with an anvil. Still a 3:1 process..."]
 			id: "6324B9ECCAC34BF1"
 			tasks: [{
 				id: "49EA61DB7E62A3A2"
