@@ -644,4 +644,33 @@ ServerEvents.recipes(event => {
 			D: "minecraft:dropper"
 		}
 	).id("quark:automation/crafting/crafter");
+
+	event.shaped(
+		"minecraft:dropper",
+		[
+			"SSS",
+			"S S",
+			"TRT"
+		],
+		{
+			S: "quark:sturdy_stone",
+			T: "minecraft:smooth_stone",
+			R: "minecraft:redstone"
+		}
+	).id("minecraft:dropper");
+
+	event.shaped(
+		"minecraft:dispenser",
+		[
+			"SSS",
+			"SBS",
+			"TRT"
+		],
+		{
+			S: "quark:sturdy_stone",
+			T: "minecraft:smooth_stone",
+			R: "minecraft:redstone",
+			B: "minecraft:bow"
+		}
+	).id("minecraft:dispenser");
 })
