@@ -25,3 +25,5 @@ instance.cfg
 .minecraft/config/defaultworldtype/world-presets.txt
 .minecraft/modernfix
 .minecraft/config/sidebar_buttons.json
+emi.json
+emi.css
